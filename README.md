@@ -1,11 +1,11 @@
-# Learning PowerShell Resources
+# PowerShell Resources
 
 ## Practical Hands-on
 
 - **[PSKoans](https://github.com/vexx32/PSKoans)**
 
 - **[UnderTheWire Wargames](https://underthewire.tech/wargames)**
-  - I've completed the first set, but the second set focuses heavily on encryption, which may not be enjoyable for everyone. It's still practical and helps you think critically about solving issues without being spoon-fed.
+  - Fun little ssh challenges that require you to fact find on the host to get password to next ssh session . Practical and helps you think critically about solving issues without being spoon-fed.
 
 - **[HacktheBox Academy](https://academy.hackthebox.com/)**
   - The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.

@@ -81,3 +81,8 @@
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 - [ImportExcel](https://github.com/dfinke/ImportExcel)
   - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
+
+## Lab Setup ##
+
+ - [On-Prem Mockup WS22 AD, SCCM, SQL, and Workstations](https://github.com/DeploymentResearch/HydrationKitWS2022)
+ - [Microsoft 365 Test Environment](https://github.com/DevClate/365AutomatedLab)

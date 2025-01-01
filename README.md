@@ -11,6 +11,21 @@
   - [Modules Commonly Used](#modules-commonly-used)
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
+- [Certifications](#certifications)
+  - [CompTIA](#comptia)
+    - [A+](#a)
+    - [Network+](#network)
+    - [Security+](#security)
+    - [Linux+](#linux)
+  - [Microsoft](#microsoft)
+    - [900s/foundations exams](#900sfoundations-exams)
+    - [MD-102 – Endpoint Administrator](#md-102--endpoint-administrator)
+    - [SC-300 – Identity and Access Administrator](#sc-300--identity-and-access-administrator)
+    - [MS-102 – Enterprise Administrator](#ms-102--enterprise-administrator)
+    - [AZ-104 – Azure Administrator](#az-104--azure-administrator)
+    - [AZ-305 – Azure Solutions Architect](#az-305--azure-solutions-architect)
+    - [AZ-800/801 – Windows Server Hybrid Administrator](#az-800801--windows-server-hybrid-administrator)
+    - [Specialty: Azure Virtual Desktop](#specialty-azure-virtual-desktop)
 
 # PowerShell Resources
 
@@ -108,3 +123,58 @@
    - On-Prem Mockup WS22 AD, SCCM, SQL, and Workstations
  - [Microsoft 365 Test Environment](https://github.com/DevClate/365AutomatedLab)
    - If you don't have a dev tenant before they stopped issuing them.
+
+# Certifications #
+
+Personal thoughts on industry certification usefulness, all opinions my own.
+
+## CompTIA ##
+
+These are great as they are vendor agnostic. The CompTIA certs are slightly costly, especially at the beginning of your career, ranging in the $300-400 price range per certification.  They last three years from earning if you don't get one that renews "[downstream](https://www.comptia.org/continuing-education/learn/renewing-multiple-certifications)".  They also renew/stay current if you get other vendor's certifications - my Microsoft ones renew everything I've earned.
+
+### A+ ###
+- The industry standard certification for IT professionals starting their careers. It's a mile wide and an inch deep.  It's there to introduce you to the basics of everything.  This one takes two tests to pass, you are not A+ certified until you pass both.  By itself, holds no weight on the resume, but will get you to the interview for entry level jobs.
+
+### Network+ ###
+- This focuses on wired and wireless networks with emphasis on subnetting without a calculator like a monster.  It will give foundational network familiarity that goes beyond what the A+ does.  If I had to do-over I would get a CCNA instead as it holds more weight and goes slightly beyond with ios commands.
+
+### Security+ ###
+- It covers key topics like network security, risk management, cryptography, and threat mitigation. This one is the one you'll get the most mileage out of on your resume.  Virtually any professional IT-adjacent would benefit from the concepts in this, you don't have to be shooting for a InfoSec or Pentest position.
+
+### Linux+ ###
+- Honestly I bought the voucher to Linux+ with the above CompTIA vouchers to get the most discount of my CompTIA Store subscription.  I took it a week before the voucher expired with 0 prep and passed.  TLDR: it teaches a surface level of Linux that anyone slightly familiar could pass, LPIC or RHEL certs would get more mileage.
+
+## Microsoft ##
+
+### 900s/foundations exams ###
+- These last a lifetime and provide a very general overview of what that category/service entails.  They won’t add value to a resume or validate skills but it’s good to dip your feet in.  I picture these as existing for recruiters, non-technical managers to get an overall understanding, or a way to see if it’s something you’re interested in.
+  **Note:**	Never pay for these as you can get for free via a [virtual training day](https://events.microsoft.com/en-us/mvtd?startTime=08:00&endTime=17:00) event.  Sign up for any event, join the day of, and earn a free voucher that’s applicable to any -900 not just the one you attended.  These happen at least twice a month in English, sign up for one and your inbox will forever be spammed on new ones.
+
+All other MS exam vouchers cost $165 each and if passed the certification is valid for a year.  The option to renew being free and a self paced quiz via your Microsoft account that will also have some Learn pages with anything new compared to when you last took it.
+
+An overall view of existing certifications and their prerequisites can be found at [Become Microsoft Certified](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI) with click throughs to the specific exam(s) and the associated Learn pages.
+Speaking of, the Learn pages are excellent study materials for the exams and completely free.  I would recommend the Learn pages over the Linkedin Learning videos on the same topic, as they are often out-of-date and incorrect from the few I’ve audited.
+
+It’s tough to practice some of these outside of a production environment as things become more cloud based and the average subscriptions aren’t feasible for a personal user.  
+•	You can setup a free trial via [Azure Free Trial | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/) and then further activate free trial licenses for various plans you are testing.  Be cautious when going this route as generally you have to put a card on file and if you’re not careful you may blow past the $200/mo free cap pretty easily.
+
+### MD-102 – Endpoint Administrator ###
+- A lot of people I’ve talked to think this is Microsoft’s equivalent of the A+ because it used to be called Managing Modern Desktops, but it provides a lot more value if you are working with the Windows stack.  This describes everything from the different versions of Windows (10/11, Home, Professional, Enterprise, etc), Windows Server, registry, active directory, as well as going in depth on prem/cloud solutions like GPO’s/OMA-URI’s, MDT/Autopilot, SCCM/Intune, WSUS/WufB.  I would really recommend this as the first Microsoft cert to get if you are dealing with workstations on a regular basis.  Also if you’re discussing with someone and they mention the old MCSA, this is the one that translates most to it.
+
+### SC-300 – Identity and Access Administrator ###
+– This is a great foundation for understanding the Entra tenant.  Users, groups, roles, application registrations, SSO, etc.  If you deal or are looking to deal with IAM, this would be a great validation/intro.
+
+### MS-102 – Enterprise Administrator ###
+- This is an Expert certification that builds on the knowledge from MD-102 and SC-300 as well as some voip/teams.  This has emphasis on building out a tenant, IAM, how to configure Defender, and managing retention/compliance policies with Purview.  This is the nearest equivalent of the older MCSE.
+
+### AZ-104 – Azure Administrator ###
+- This is great for showing you have the technical skills for Azure with an emphasis on DevOps.  Managing VMs, Networks, Subscriptions, Kubernetes clusters, and Storage solutions with Powershell, Az CLI, or ARM templates to implement them to describe a few.
+
+### AZ-305 – Azure Solutions Architect ###
+- This is an Expert level certification with AZ-104 as a pre-requisite.  While AZ-104 focuses on the technical aspects and how to implement, this focuses on the why.  Emphasis on VM change control, network peering/failover, disaster recovery solutions, choosing different SQL implementations, requirements to shift from on-prem to cloud, and auditing role assignments between subscriptions as some examples.
+
+### AZ-800/801 – Windows Server Hybrid Administrator ###
+- Unlike the MD/MS-102 Microsoft hasn’t combined both into a single exam yet and there is some overlap.  In most companies you’ll have a hybrid tenant at some level not pure cloud (unless you get lucky) and the Learn pages will provide a great benefit in the configuration needed to implement it.  This is also really the only path currently available for Windows Server skill validation.
+
+### Specialty: Azure Virtual Desktop ### 
+- AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation and they did it surprisingly well.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to run and administrate it.

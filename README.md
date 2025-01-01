@@ -52,9 +52,9 @@
 
 - **[PowerShell Master Class - PowerShell Fundamentals](https://www.youtube.com/watch?v=sQm4zRvvX58&list=PLlVtbbG169nFq_hR7FcMYg32xsSAObuq8)**
 
-- **[Sessions from the PowerShell + DevOps Global Summit 2023](https://www.youtube.com/watch?v=MguCp6jdY20&list=PLfeA8kIs7Cof3Ev-KGonHLdFh8joxDFdW&pp=iAQB)**
+- **[PowerShell + DevOps Global Summits](https://www.youtube.com/@PowershellOrg/playlists)**
 
-- **[Sessions from the PowerShell Conference EU 2023](https://www.youtube.com/watch?v=ce2uZDaM5oE&list=PLDCEho7foSopknKI3VEqjdVpssJa41qs3)**
+- **[PowerShell Conferences EU](https://www.youtube.com/@PowerShellConferenceEU/playlists)**
 
 ## Discords
 

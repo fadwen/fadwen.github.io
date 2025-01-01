@@ -4,9 +4,10 @@
   - [Videos](#videos)
   - [Discords](#discords)
   - [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
-  - [Working with PowerShell](#working-with-powershell)
+- [VSCode](#vscode)
   - [VSCode Extensions](#vscode-extensions)
   - [More VSCode Goodies](#more-vscode-goodies)
+- [Working with PowerShell](#working-with-powershell)
   - [Modules Commonly Used](#modules-commonly-used)
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
@@ -55,11 +56,7 @@
 
 ---
 
-## Working with PowerShell
-
-> There are two versions of PowerShell.  Windows PowerShell `powershell.exe` that comes baked into the OS and PowerShell 7.x.x `pwsh.exe` which has to be downloaded and installed separately.  Install PowerShell 7 and make it your default in everything before you start installing modules as it will just make things easier.  Most modules developed after 2020 are intended for 7, and if you need to run something that errors and requires the 5.x of Windows PowerShell, you can use the `-UseWindowsPowerShell` switch when you import the modules.
->
-> Also to note that PowerShell ISE does not support 7 and is not getting any new features.  Learn to use VSCode, install it on your servers, set up an ADMX with Intune to ensure only approved extensions and features are used.
+# VSCode
 
 ## VSCode Extensions
 
@@ -74,6 +71,12 @@
   - Good-to-know keybindings. Example: `CTRL + H` for find and replace makes things smoother.
 - [Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
   - Different themes for your terminal.  VS Code font types has to be setup through the Integrated Font Family settings.  Current favorites are `night-owl` and `quick-term`
+
+# Working with PowerShell
+
+> There are two versions of PowerShell.  Windows PowerShell `powershell.exe` that comes baked into the OS and PowerShell 7.x.x `pwsh.exe` which has to be downloaded and installed separately.  Install PowerShell 7 and make it your default in everything before you start installing modules as it will just make things easier.  Most modules developed after 2020 are intended for 7, and if you need to run something that errors and requires the 5.x of Windows PowerShell, you can use the `-UseWindowsPowerShell` switch when you import the modules.
+>
+> Also to note that PowerShell ISE does not support 7 and is not getting any new features.  Learn to use VSCode, install it on your servers, set up an ADMX with Intune to ensure only approved extensions and features are used.
 
 ## Modules Commonly Used
 

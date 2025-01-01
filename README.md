@@ -1,3 +1,16 @@
+- [PowerShell Resources](#powershell-resources)
+  - [Practical Hands-on](#practical-hands-on)
+  - [Books](#books)
+  - [Videos](#videos)
+  - [Discords](#discords)
+  - [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
+  - [Working with PowerShell](#working-with-powershell)
+  - [VSCode Extensions](#vscode-extensions)
+  - [More VSCode Goodies](#more-vscode-goodies)
+  - [Modules Commonly Used](#modules-commonly-used)
+- [Test Lab](#test-lab)
+  - [Lab Setup](#lab-setup)
+
 # PowerShell Resources
 
 ## Practical Hands-on
@@ -38,7 +51,7 @@
 ## Exchange Investigation, DNR, etc.
 
 - [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com)
-  - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some batshit-crazy-on-the-fly PowerShell instead. Put it here to try to remember. Doesn't work.
+  - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.
 
 ---
 
@@ -84,7 +97,11 @@
 - [ImportExcel](https://github.com/dfinke/ImportExcel)
   - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
 
+# Test Lab #
+
 ## Lab Setup ##
 
- - [On-Prem Mockup WS22 AD, SCCM, SQL, and Workstations](https://github.com/DeploymentResearch/HydrationKitWS2022)
+ - [HydrationKit for WS22](https://github.com/DeploymentResearch/HydrationKitWS2022)
+   - On-Prem Mockup WS22 AD, SCCM, SQL, and Workstations
  - [Microsoft 365 Test Environment](https://github.com/DevClate/365AutomatedLab)
+   - If you don't have a dev tenant before they stopped issuing them.

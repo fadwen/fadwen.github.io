@@ -3,7 +3,7 @@
   - [Books](#books)
   - [Videos](#videos)
   - [Discords](#discords)
-  - [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
+- [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
 - [VSCode](#vscode)
   - [VSCode Extensions](#vscode-extensions)
   - [More VSCode Goodies](#more-vscode-goodies)
@@ -49,12 +49,10 @@
 - **[PowerShell](https://discord.gg/PowerShell)**
   - A bunch of hard-hitting PowerShell nerds here, from people involved with the actual PowerShell GitHub/dev to those who manage aspects of VSCode. Very friendly place as I haven't been shamed for any of the pretty dumb questions I've put to them.
 
-## Exchange Investigation, DNR, etc.
+# Exchange Investigation, DNR, etc.
 
 - [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com)
   - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.
-
----
 
 # VSCode
 

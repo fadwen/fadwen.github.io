@@ -12,6 +12,10 @@
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
 - [Certifications](#certifications)
+  - [Axelos](#axelos)
+    - [ITIL 4 Foundation](#itil-4-foundation)
+  - [BetterCloud](#bettercloud)
+    - [BetterCloud Certified Administrator](#bettercloud-certified-administrator)
   - [CompTIA](#comptia)
     - [A+](#a)
     - [Network+](#network)
@@ -26,6 +30,8 @@
     - [AZ-305 – Azure Solutions Architect](#az-305--azure-solutions-architect)
     - [AZ-800/801 – Windows Server Hybrid Administrator](#az-800801--windows-server-hybrid-administrator)
     - [Specialty: Azure Virtual Desktop](#specialty-azure-virtual-desktop)
+  - [Okta](#okta)
+    - [Okta Certified Professional](#okta-certified-professional)
 
 # PowerShell Resources
 
@@ -128,6 +134,22 @@
 
 Personal thoughts on industry certification usefulness, all opinions my own.
 
+## Axelos ##
+
+Whether it was due to acquisition by PeopleCert or their own fault, this company is everything bad with the certification industry.  They make you pay a subscription in order to keep your digital badge up to date, they introduced renewals on their certs despite adding no new knowledge.  That being said they are firmly entrenched in the industry now, with Agile, ITIL, Prince2, PMP, etc.  We just have to suck it up and deal with their demands.
+
+### ITIL 4 Foundation ###
+
+- This establishes a framework that modern enterprises follow.  Change management, Issue vs Incident vs Problem, and a ton of other ITIL specific vocabulary that requires rote memorization.  This is a general purpose certification that adds value to a resume, whether you are technically inclined, sales, or management.  This used to be a lifetime certification, but now renews on a 3 year cycle, despite there being no revisions to the learning material.
+
+## BetterCloud ##
+
+The product itself is not complex, competing with other lifecycle management tools: Entra, Okta, etc.  It seems to have emphasis/more functionality on working with Google Workspace and Slack functionality over Microsoft offerings.  The plus side is their learning website gives you a free code to take their exams, on top of swag mailed to you on completion.
+
+### BetterCloud Certified Administrator ###
+
+ - This exam tests for competency in the product as an administrator: connecting to HRIS, connecting to IDP,  DLP options, etc. With a spoon fed free learning webinar that will walk you through what the exam tests on, if you fail it I assume you have never been in the admin portal at all.  Anecdotally I've never met another person who's worked in the product, and a recruiter has never reached out to me for it.
+
 ## CompTIA ##
 
 These are great as they are vendor agnostic. The CompTIA certs are slightly costly, especially at the beginning of your career, ranging in the $300-400 price range per certification.  They last three years from earning if you don't get one that renews "[downstream](https://www.comptia.org/continuing-education/learn/renewing-multiple-certifications)".  They also renew/stay current if you get other vendor's certifications - my Microsoft ones renew everything I've earned.
@@ -144,6 +166,7 @@ These are great as they are vendor agnostic. The CompTIA certs are slightly cost
 ### Linux+ ###
 - Honestly I bought the voucher to Linux+ with the above CompTIA vouchers to get the most discount of my CompTIA Store subscription.  I took it a week before the voucher expired with 0 prep and passed.  TLDR: it teaches a surface level of Linux that anyone slightly familiar could pass, LPIC or RHEL certs would get more mileage.
 
+
 ## Microsoft ##
 
 ### 900s/foundations exams ###
@@ -156,13 +179,14 @@ An overall view of existing certifications and their prerequisites can be found 
 Speaking of, the Learn pages are excellent study materials for the exams and completely free.  I would recommend the Learn pages over the Linkedin Learning videos on the same topic, as they are often out-of-date and incorrect from the few I’ve audited.
 
 It’s tough to practice some of these outside of a production environment as things become more cloud based and the average subscriptions aren’t feasible for a personal user.  
-•	You can setup a free trial via [Azure Free Trial | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/) and then further activate free trial licenses for various plans you are testing.  Be cautious when going this route as generally you have to put a card on file and if you’re not careful you may blow past the $200/mo free cap pretty easily.
+
+You can setup a free trial via [Azure Free Trial | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/) and then further activate free trial licenses for various plans you are testing.  Be cautious when going this route as generally you have to put a card on file and if you’re not careful you may blow past the $200/mo free cap pretty easily.
 
 ### MD-102 – Endpoint Administrator ###
 - A lot of people I’ve talked to think this is Microsoft’s equivalent of the A+ because it used to be called Managing Modern Desktops, but it provides a lot more value if you are working with the Windows stack.  This describes everything from the different versions of Windows (10/11, Home, Professional, Enterprise, etc), Windows Server, registry, active directory, as well as going in depth on prem/cloud solutions like GPO’s/OMA-URI’s, MDT/Autopilot, SCCM/Intune, WSUS/WufB.  I would really recommend this as the first Microsoft cert to get if you are dealing with workstations on a regular basis.  Also if you’re discussing with someone and they mention the old MCSA, this is the one that translates most to it.
 
 ### SC-300 – Identity and Access Administrator ###
-– This is a great foundation for understanding the Entra tenant.  Users, groups, roles, application registrations, SSO, etc.  If you deal or are looking to deal with IAM, this would be a great validation/intro.
+- This is a great foundation for understanding the Entra tenant.  Users, groups, roles, application registrations, SSO, etc.  If you deal or are looking to deal with IAM, this would be a great validation/intro.
 
 ### MS-102 – Enterprise Administrator ###
 - This is an Expert certification that builds on the knowledge from MD-102 and SC-300 as well as some voip/teams.  This has emphasis on building out a tenant, IAM, how to configure Defender, and managing retention/compliance policies with Purview.  This is the nearest equivalent of the older MCSE.
@@ -178,3 +202,11 @@ It’s tough to practice some of these outside of a production environment as th
 
 ### Specialty: Azure Virtual Desktop ### 
 - AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation and they did it surprisingly well.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to run and administrate it.
+
+## Okta ##
+
+Okta tests are interesting in that you cannot go back and review your answers/change them.  The format I've had is that each question is weighted and you have to choose the best answer, not necessarily the right answer.
+
+### Okta Certified Professional ###
+
+- This is a bit more intensive than a -900 from Microsoft but still geared to Sales, Managers, or entry level administrators.  You'll know the capabilities of the product and a base level of things to do with it.  I earned mine while having basic help desk permissions within the product, and renewed it successfully on my first try after not touching it for two years and no studying.  I'm not sure if this adds anything of value to your resume for job seekers.

@@ -3,6 +3,7 @@
   - [Books](#books)
   - [Videos](#videos)
   - [Discords](#discords)
+  - [Browser Extensions](#browser-extensions)
 - [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
 - [VSCode](#vscode)
   - [VSCode Extensions](#vscode-extensions)
@@ -33,9 +34,9 @@
   - [Okta](#okta)
     - [Okta Certified Professional](#okta-certified-professional)
 
-# PowerShell Resources
+# PowerShell Resources #
 
-## Practical Hands-on
+## Practical Hands-on ##
 
 - **[PSKoans](https://github.com/vexx32/PSKoans)**
 
@@ -45,7 +46,7 @@
 - **[HacktheBox Academy](https://academy.hackthebox.com/)**
   - The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
 
-## Books
+## Books ##
 
 - **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-PowerShell-in-a-month-of-lunches)**
   - I bought the physical copy and went through it. The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. They try hard to sell PowerShell as good for Linux and Mac with the 4th edition. Which, if you want to do that then you do you do.
@@ -54,7 +55,7 @@
 
 - **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
 
-## Videos
+## Videos ##
 
 - **[PowerShell Master Class - PowerShell Fundamentals](https://www.youtube.com/watch?v=sQm4zRvvX58&list=PLlVtbbG169nFq_hR7FcMYg32xsSAObuq8)**
 
@@ -62,7 +63,9 @@
 
 - **[PowerShell Conferences EU](https://www.youtube.com/@PowerShellConferenceEU/playlists)**
 
-## Discords
+- **[Getting Started with Graph](https://www.youtube.com/playlist?list=PLKROqDcmQsFls8cPHk3HFz2mUURHx46_O)**
+
+## Discords ##
 
 - **[WinAdmins](https://discord.gg/winadmins)**
   - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during East Coast business hours.
@@ -70,7 +73,19 @@
 - **[PowerShell](https://discord.gg/PowerShell)**
   - A bunch of hard-hitting PowerShell nerds here, from people involved with the actual PowerShell GitHub/dev to those who manage aspects of VSCode. Very friendly place as I haven't been shamed for any of the pretty dumb questions I've put to them.
 
-# Exchange Investigation, DNR, etc.
+## Browser Extensions ##
+
+- [Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)
+  - With every MS product having a portal and no connecting links, saves so much time flipping through tabs/bookmarks.
+  
+- [Graph X-Ray](https://graphxray.merill.net/)
+  - Great way to see what GUI actions use Graph behind the scenes as well as translating to powershell for your own scripts.
+
+- [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
+  - For when you want to see the api query on something Graph X-ray/browser dev tools doesn't capture.
+
+
+# Exchange Investigation, DNR, etc. #
 
 - [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com)
   - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.

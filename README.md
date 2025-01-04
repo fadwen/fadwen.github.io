@@ -1,15 +1,16 @@
 - [PowerShell Resources](#powershell-resources)
   - [Practical Hands-on](#practical-hands-on)
+  - [Websites](#websites)
   - [Books](#books)
   - [Videos](#videos)
   - [Discords](#discords)
   - [Browser Extensions](#browser-extensions)
-- [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
 - [VSCode](#vscode)
   - [VSCode Extensions](#vscode-extensions)
   - [More VSCode Goodies](#more-vscode-goodies)
 - [Working with PowerShell](#working-with-powershell)
   - [Modules Commonly Used](#modules-commonly-used)
+- [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
 - [Certifications](#certifications)
@@ -46,14 +47,24 @@
 - **[HacktheBox Academy](https://academy.hackthebox.com/)**
   - The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
 
-## Books ##
+## Websites ##
 
-- **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**
-  - I bought the physical copy and went through it. The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. They try hard to sell PowerShell as good for Linux and Mac with the 4th edition. Which, if you want to do that then you do you do.
+- **[Deep Dives on MSLearn](https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/overview?view=powershell-7.4&viewFallbackFrom=powershell-7.3)**
 
 - **[PowerShell Practice and Style](https://poshcode.gitbook.io/PowerShell-practice-and-style)**
 
+- **[Sample Code](https://powershell.one/code)**
+
+## Books ##
+
+- **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**
+  - The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. Really informative book that I wish I'd been recommended instead of stumbling through trial and error.  They try hard to sell PowerShell as good for Linux and Mac with the 4th edition. Which, if you want to do that then you do you do.
+
+- **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**
+  - This goes above and beyond the above book, assuming your familiarity and that you are now writing your own modules/functions.
+
 - **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
+  - Honestly any of the [DevOps Collective](https://leanpub.com/u/devopscollective) books are recommended.
 
 ## Videos ##
 
@@ -83,12 +94,6 @@
 
 - [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
   - For when you want to see the api query on something Graph X-ray/browser dev tools doesn't capture.
-
-
-# Exchange Investigation, DNR, etc. #
-
-- [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com)
-  - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.
 
 # VSCode
 
@@ -120,7 +125,7 @@
 - Az
 - ExchangeOnlineManagement
 - Microsoft.Graph and Microsoft.Graph.Beta
-  - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest` direct can provide more functionality than this module.
+  - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest`or `Invoke-RestMethod` direct can provide more functionality than this module.  The Microsoft.Graph.PlusPlus module below helps if you really hate the structure.
 - [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta
   - This was made for Admins who weren't used to the structuring graph expects, and is a direct replacement for AzureAD module.
 - Microsoft.Online.SharePoint.PowerShell
@@ -131,10 +136,22 @@
 - MicrosoftTeams
 - PowerShellGet
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
-- [PSClippy.FBP.CrossPlatform](https://github.com/HCRitter/PSClippy.FBP.CrossPlatform) 
-  - For getting advices to improve cross platform scripts, while scripting.
+
 - [ImportExcel](https://github.com/dfinke/ImportExcel)
   - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
+- [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph)
+  - Extends Microsoft.Graph SDK to be more PowerShell like.
+- [platyPS](https://github.com/PowerShell/platyPS)
+  - Great for building out documentation for modules you make once you get used to the schema it needs.
+- [PSClippy.FBP.CrossPlatform](https://github.com/HCRitter/PSClippy.FBP.CrossPlatform) 
+  - For getting advices to improve cross platform scripts, while scripting.
+- [psframework](https://github.com/PowershellFrameworkCollective/psframework)
+  - A great logging module that I wish I had found years ago, saves so much time.
+
+# Exchange Investigation, DNR, etc. #
+
+- [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com)
+  - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.
 
 # Test Lab #
 

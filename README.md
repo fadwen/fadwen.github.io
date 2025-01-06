@@ -121,6 +121,8 @@
 
 ## Modules Commonly Used
 
+**Microsoft Modules:**
+
 - ActiveDirectory
 - Az
 - ExchangeOnlineManagement
@@ -137,6 +139,9 @@
 - PowerShellGet
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 
+**3rd Party Modules, assess and evaluate before implementing:**
+- [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM)
+  - Activating PIM roles via CLI rather than GUI blades.
 - [ImportExcel](https://github.com/dfinke/ImportExcel)
   - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
 - [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph)

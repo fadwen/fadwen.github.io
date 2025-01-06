@@ -186,6 +186,8 @@ The product itself is not complex, competing with other lifecycle management too
 
 These are great as they are vendor agnostic. The CompTIA certs are slightly costly, especially at the beginning of your career, ranging in the $300-400 price range per certification.  They last three years from earning if you don't get one that renews "[downstream](https://www.comptia.org/continuing-education/learn/renewing-multiple-certifications)".  They also renew/stay current if you get other vendor's certifications - my Microsoft ones renew everything I've earned.
 
+There are plenty of learning sources out there, but I can't recommend [ProfessorMesser](https://www.professormesser.com/) enough for the "CompTIA Trifecta" (A/Net/Sec).  His Youtube playlists are updated to the latest versions, comprehensive, and always free.
+
 ### [A+](https://www.comptia.org/certifications/a) ###
 - The industry standard certification for IT professionals starting their careers. It's a mile wide and an inch deep.  It's there to introduce you to the basics of everything.  This one takes two tests to pass, you are not A+ certified until you pass both.  By itself, holds no weight on the resume, but will get you to the interview for entry level jobs.
 
@@ -200,6 +202,8 @@ These are great as they are vendor agnostic. The CompTIA certs are slightly cost
 
 
 ## Microsoft ##
+
+This mainly goes into the certifications as those add value to the resume/employers, but Microsoft does have something relatively new called [Applied Skills](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=applied%20skills) which are free to take and showcase your proficiency in a specific task.  I'm not sure if they are prestigious enough to add to a resume, but it can certainly validate a role-based skill if you're looking to make an internal move.
 
 ### [-900s/foundations exams](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&levels=beginner) ###
 - These last a lifetime and provide a very general overview of what that category/service entails.  They won’t add value to a resume or validate skills but it’s good to dip your feet in.  I picture these as existing for recruiters, non-technical managers to get an overall understanding, or a way to see if it’s something you’re interested in.
@@ -233,7 +237,7 @@ You can setup a free trial via [Azure Free Trial](https://azure.microsoft.com/en
 - Unlike the MD/MS-102 Microsoft hasn’t combined both into a single exam yet and there is some overlap.  In most companies you’ll have a hybrid tenant at some level not pure cloud (unless you get lucky) and the Learn pages will provide a great benefit in the configuration needed to implement it.  This is also really the only path currently available for Windows Server skill validation.
 
 ### [Specialty: Azure Virtual Desktop](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ### 
-- AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation and they did it surprisingly well.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to run and administrate it.
+- AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation and they did it surprisingly well.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to implement and administrate it.
 
 ## Okta ##
 

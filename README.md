@@ -98,6 +98,9 @@
 
 - **[PowerShell Practice and Style](https://poshcode.gitbook.io/PowerShell-practice-and-style)**
 
+- **[RegExLibrary](https://regexlib.com/)**
+  - While not PowerShell specific, useful for regex examples. [RegEx Tester](https://www.regextester.com/) can be used to validate.
+
 - **[Sample Code](https://powershell.one/code)**
 
 # VSCode

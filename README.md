@@ -58,7 +58,7 @@
 ## Books ##
 
 - **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**
-  - The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. Really informative book that I wish I'd been recommended instead of stumbling through trial and error.  They try hard to sell PowerShell as good for Linux and Mac with the 4th edition. Which, if you want to do that then you do you do.
+  - The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. Really informative book that I wish I'd been recommended instead of stumbling through trial and error.  They try hard to sell PowerShell as good for Linux and Mac with the 4th edition. Which, if you want to do that then you do you.
 
 - **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**
   - This goes above and beyond the above book, assuming your familiarity and that you are now writing your own modules/functions.

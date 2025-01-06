@@ -1,16 +1,21 @@
 - [PowerShell Resources](#powershell-resources)
-  - [Practical Hands-on](#practical-hands-on)
-  - [Websites](#websites)
   - [Books](#books)
-  - [Videos](#videos)
-  - [Discords](#discords)
   - [Browser Extensions](#browser-extensions)
+  - [Discords](#discords)
+  - [Practical Hands-on](#practical-hands-on)
+  - [Videos](#videos)
+  - [Websites](#websites)
 - [VSCode](#vscode)
   - [VSCode Extensions](#vscode-extensions)
   - [More VSCode Goodies](#more-vscode-goodies)
 - [Working with PowerShell](#working-with-powershell)
   - [Modules Commonly Used](#modules-commonly-used)
-- [Exchange Investigation, DNR, etc.](#exchange-investigation-dnr-etc)
+    - [Microsoft Modules](#microsoft-modules)
+    - [3rd Party Modules](#3rd-party-modules)
+- [Useful non-portal MS websites](#useful-non-portal-ms-websites)
+  - [365 Configuration Tool](#365-configuration-tool)
+  - [Graph Explorer](#graph-explorer)
+  - [Microsoft Remote Connectivity Analyzer](#microsoft-remote-connectivity-analyzer)
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
 - [Certifications](#certifications)
@@ -37,24 +42,6 @@
 
 # PowerShell Resources #
 
-## Practical Hands-on ##
-
-- **[PSKoans](https://github.com/vexx32/PSKoans)**
-
-- **[UnderTheWire Wargames](https://underthewire.tech/wargames)**
-  - Fun little ssh challenges that require you to fact find on the host to get password to next ssh session . Practical and helps you think critically about solving issues without being spoon-fed.
-
-- **[HacktheBox Academy](https://academy.hackthebox.com/)**
-  - The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
-
-## Websites ##
-
-- **[Deep Dives on MSLearn](https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/overview?view=powershell-7.4&viewFallbackFrom=powershell-7.3)**
-
-- **[PowerShell Practice and Style](https://poshcode.gitbook.io/PowerShell-practice-and-style)**
-
-- **[Sample Code](https://powershell.one/code)**
-
 ## Books ##
 
 - **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**
@@ -66,6 +53,35 @@
 - **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
   - Honestly any of the [DevOps Collective](https://leanpub.com/u/devopscollective) books are recommended.
 
+## Browser Extensions ##
+
+- [Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)
+  - With every MS product having a portal and no connecting links, saves so much time flipping through tabs/bookmarks.
+  
+- [Graph X-Ray](https://graphxray.merill.net/)
+  - Great way to see what GUI actions use Graph behind the scenes as well as translating to powershell for your own scripts.
+
+- [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
+  - For when you want to see or replay the api query on something Graph X-ray/browser dev tools doesn't capture.
+
+## Discords ##
+
+- **[PowerShell](https://discord.gg/PowerShell)**
+  - A bunch of hard-hitting PowerShell nerds here, from people involved with the actual PowerShell GitHub/dev to those who manage aspects of VSCode. Very friendly place as I haven't been shamed for any of the pretty dumb questions I've put to them.
+
+- **[WinAdmins](https://discord.gg/winadmins)**
+  - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during East Coast business hours.
+
+## Practical Hands-on ##
+
+- **[HacktheBox Academy](https://academy.hackthebox.com/)**
+  - The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
+
+- **[PSKoans](https://github.com/vexx32/PSKoans)**
+
+- **[UnderTheWire Wargames](https://underthewire.tech/wargames)**
+  - Fun little ssh challenges that require you to fact find on the host to get password to next ssh session . Practical and helps you think critically about solving issues without being spoon-fed.
+
 ## Videos ##
 
 - **[PowerShell Master Class - PowerShell Fundamentals](https://www.youtube.com/watch?v=sQm4zRvvX58&list=PLlVtbbG169nFq_hR7FcMYg32xsSAObuq8)**
@@ -76,28 +92,19 @@
 
 - **[Getting Started with Graph](https://www.youtube.com/playlist?list=PLKROqDcmQsFls8cPHk3HFz2mUURHx46_O)**
 
-## Discords ##
+## Websites ##
 
-- **[WinAdmins](https://discord.gg/winadmins)**
-  - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during East Coast business hours.
+- **[Deep Dives on MSLearn](https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/overview?view=powershell-7.4&viewFallbackFrom=powershell-7.3)**
 
-- **[PowerShell](https://discord.gg/PowerShell)**
-  - A bunch of hard-hitting PowerShell nerds here, from people involved with the actual PowerShell GitHub/dev to those who manage aspects of VSCode. Very friendly place as I haven't been shamed for any of the pretty dumb questions I've put to them.
+- **[PowerShell Practice and Style](https://poshcode.gitbook.io/PowerShell-practice-and-style)**
 
-## Browser Extensions ##
-
-- [Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)
-  - With every MS product having a portal and no connecting links, saves so much time flipping through tabs/bookmarks.
-  
-- [Graph X-Ray](https://graphxray.merill.net/)
-  - Great way to see what GUI actions use Graph behind the scenes as well as translating to powershell for your own scripts.
-
-- [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
-  - For when you want to see the api query on something Graph X-ray/browser dev tools doesn't capture.
+- **[Sample Code](https://powershell.one/code)**
 
 # VSCode
 
-> Note that PowerShell ISE does not support version 7+ and is not getting any new features.  Learn to use VSCode, install it on your servers, set up an ADMX with Intune to ensure only approved extensions and features are used.
+> Note that PowerShell ISE does not support version 7+ and is not getting any new features.  Learn to use VSCode, install it on your servers that used ISE, set up an ADMX with Intune to ensure only approved extensions and features are used.
+> 
+> Tunnels are a great remoting feature if you secure them properly.
 >
 > If VSCode is too dev-y and you really liked ISE [Powershell Studio](https://www.sapien.com/software/powershell_studio) is a solid replacement.  If you can get the approval to shell out for the $550 license.
 
@@ -113,7 +120,7 @@
 - [VS Code Keybindings](https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing)
   - Good-to-know keybindings. Example: `CTRL + H` for find and replace makes things smoother.
 - [Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
-  - Different themes for your terminal.  VS Code font types has to be setup through the Integrated Font Family settings.  Current favorites are `night-owl` and `quick-term`
+  - Different themes for your terminal.  VS Code font types has to be setup through the Integrated Font Family settings.  `$PROFILE` for VSCode is separate from your non-vscode pwsh. Current favorites are `night-owl` and `quick-term`.
 
 # Working with PowerShell
 
@@ -121,7 +128,7 @@
 
 ## Modules Commonly Used
 
-**Microsoft Modules:**
+### Microsoft Modules ###
 
 - ActiveDirectory
 - Az
@@ -139,7 +146,8 @@
 - PowerShellGet
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 
-**3rd Party Modules, assess and evaluate before implementing:**
+### 3rd Party Modules ###
+**Always make sure to assess and evaluate before implementing in production.**
 - [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM)
   - Activating PIM roles via CLI rather than GUI blades.
 - [ImportExcel](https://github.com/dfinke/ImportExcel)
@@ -153,9 +161,15 @@
 - [psframework](https://github.com/PowershellFrameworkCollective/psframework)
   - A great logging module that I wish I had found years ago, saves so much time.
 
-# Exchange Investigation, DNR, etc. #
+# Useful non-portal MS websites #
 
-- [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com)
+## [365 Configuration Tool](https://config.office.com/deploymentsettings)
+ - I often see people deploying scripts or remediations for Office configs when this tool should be used instead.
+
+## [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+  - Useful to explore Graph's URI structure, needed permissions, and responses.
+
+## [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com) ##
   - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.
 
 # Test Lab #

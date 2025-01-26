@@ -1,3 +1,12 @@
+  <a href="https://www.linkedin.com/in/jeffrey-stuhr-034214aa/">
+    <img height="22" width="22" alt="LinkedInUrl" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png" target= "_blank" />
+  <a href="https://bsky.app/profile/techbyjeff.net">
+    <img alt="BlueSky URL" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky" target="_blank" />
+  </a>
+    <a href="https://techbyjeff.net">
+    <img alt="Blog" src="https://img.shields.io/badge/Read%20My%20Blog-grey?style=flat-square&logo=ghost" target="_blank" />
+  </a>
+
 - [PowerShell Resources](#powershell-resources)
   - [Books](#books)
   - [Browser Extensions](#browser-extensions)
@@ -19,7 +28,7 @@
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
 - [Certifications](#certifications)
-  - [Axelos](#axelos)
+  - [~~Axelos~~ PeopleCert](#axelos-peoplecert)
     - [ITIL 4 Foundation](#itil-4-foundation)
   - [BetterCloud](#bettercloud)
     - [BetterCloud Certified Administrator](#bettercloud-certified-administrator)
@@ -134,35 +143,40 @@
 ### Microsoft Modules ###
 
 - ActiveDirectory
-- Az
-- ExchangeOnlineManagement
-- Microsoft.Graph and Microsoft.Graph.Beta
+- Az ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Az)
+- ExchangeOnlineManagement ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ExchangeOnlineManagement)
+- Microsoft.Graph and Microsoft.Graph.Beta ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph)
+
   - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest`or `Invoke-RestMethod` direct can provide more functionality than this module.  The Microsoft.Graph.PlusPlus module below helps if you really hate the structure.
-- [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta
+- [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.Entra)
+
   - This was made for Admins who weren't used to the structuring graph expects, and is a direct replacement for AzureAD module.
-- Microsoft.Online.SharePoint.PowerShell
-- Microsoft.PowerShell.ConsoleGuiTools
+- Microsoft.Online.SharePoint.PowerShell ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Online.SharePoint.PowerShell)
+- Microsoft.PowerShell.ConsoleGuiTools ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.PowerShell.ConsoleGuiTools)
+
   - `Out-ConsoleGridView` is great for analyzing data within the terminal.
 - Microsoft.PowerShell.GraphicalTools
   - `Out-Gridview` is a GUI popout for analyzing data.
-- MicrosoftTeams
-- PowerShellGet
+- MicrosoftTeams ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/MicrosoftTeams)
+- PowerShellGet ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/PowerShellGet)
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 
 ### 3rd Party Modules ###
 **Always make sure to assess and evaluate before implementing in production.**
-- [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM)
+- [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)
   - Activating PIM roles via CLI rather than GUI blades.
-- [ImportExcel](https://github.com/dfinke/ImportExcel)
+- [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)
   - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
-- [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph)
+- [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.PlusPlus)
+
   - Extends Microsoft.Graph SDK to be more PowerShell like.
-- [platyPS](https://github.com/PowerShell/platyPS)
+- [platyPS](https://github.com/PowerShell/platyPS) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/platyPS)
   - Great for building out documentation for modules you make once you get used to the schema it needs.
 - [PSClippy.FBP.CrossPlatform](https://github.com/HCRitter/PSClippy.FBP.CrossPlatform) 
   - For getting advices to improve cross platform scripts, while scripting.
-- [psframework](https://github.com/PowershellFrameworkCollective/psframework)
-  - A great logging module that I wish I had found years ago, saves so much time.
+- [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)
+
+  - A great logging module that I wish I had found years ago, saves so much time.  Found more use cases than logging, makes some Param functions simpler.
 
 # Useful non-portal MS websites #
 
@@ -188,7 +202,7 @@
 
 Personal thoughts on industry certification usefulness, all opinions my own.
 
-## Axelos ##
+## ~~Axelos~~ PeopleCert ##
 
 Whether it was due to acquisition by PeopleCert or their own fault, this company is everything bad with the certification industry.  They make you pay a subscription in order to keep your digital badge up to date, they introduced renewals on their certs despite adding no new knowledge.  That being said they are firmly entrenched in the industry now, with Agile, ITIL, Prince2, PMP, etc.  We just have to suck it up and deal with their demands.
 

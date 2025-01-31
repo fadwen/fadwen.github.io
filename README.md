@@ -21,6 +21,7 @@
   - [Modules Commonly Used](#modules-commonly-used)
     - [Microsoft Modules](#microsoft-modules)
     - [3rd Party Modules](#3rd-party-modules)
+- [MgGraph bits](#mggraph-bits)
 - [Useful non-portal MS websites](#useful-non-portal-ms-websites)
   - [365 Configuration Tool](#365-configuration-tool)
   - [Graph Explorer](#graph-explorer)
@@ -178,6 +179,15 @@
 
   - A great logging module that I wish I had found years ago, saves so much time.  Found more use cases than logging, makes some Param functions simpler.
 
+# MgGraph bits #
+
+  - [Find-MgGraphCommand](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-command?view=graph-powershell-1.0) 
+    - To see what perms are needed, as well as URI it is hitting.
+  - [Find-MgGraphPermission](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0) 
+    - To look up details on the permission that a script/app has.
+  - [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)
+    - Cleaner Graph specific invoke that can be used rather than `Invoke-WebRequest` or `Invoke-RestMethod` if the API endpoint does not have a cmdlet built out with all options yet.
+
 # Useful non-portal MS websites #
 
 ## [365 Configuration Tool](https://config.office.com/deploymentsettings)
@@ -197,6 +207,8 @@
    - On-Prem Mockup WS22 AD, SCCM, SQL, and Workstations
  - [Microsoft 365 Test Environment](https://github.com/DevClate/365AutomatedLab)
    - If you don't have a dev tenant before they stopped issuing them.
+ - [Cybersecurity Lab](https://benheater.com/proxmox-laptop-cybersecurity-lab/)  
+   - Focuses on Proxmox as the hypervisor, Wazuh SIEM, and various pentesting VMs.
 
 # Certifications #
 

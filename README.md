@@ -55,10 +55,11 @@
 ## Books ##
 
 - **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**
-  - The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. Really informative book that I wish I'd been recommended instead of stumbling through trial and error.  They try hard to sell PowerShell as good for Linux and Mac with the 4th edition. Which, if you want to do that then you do you.
+  - The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. Really informative book that I wish I'd been recommended instead of stumbling through trial and error.
 
 - **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**
-  - This goes above and beyond the above book, assuming your familiarity and that you are now writing your own modules/functions.
+  - This goes above and beyond the aforementioned book, assuming your familiarity and that you are now writing your own modules/functions.
+  - [Companion Github](https://github.com/psjamesp/MOL-Scripting/tree/main)
 
 - **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
   - Honestly any of the [DevOps Collective](https://leanpub.com/u/devopscollective) books are recommended.
@@ -209,6 +210,8 @@
    - If you don't have a dev tenant before they stopped issuing them.
  - [Cybersecurity Lab](https://benheater.com/proxmox-laptop-cybersecurity-lab/)  
    - Focuses on Proxmox as the hypervisor, Wazuh SIEM, and various pentesting VMs.
+ - [Ludus](https://docs.ludus.cloud/docs/category/quick-start)
+   - Another Debian/Proxmox specific, but completely takes over so if you need the host for other things be warned.
 
 # Certifications #
 

@@ -2,10 +2,18 @@
 
 This page is used to keep track of resources used in my professional development, or things I have found afterward that I wish I had known.
 
-[![hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffadwen.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jeffrey-stuhr-034214aa/)
-[![BlueSky](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky)](https://bsky.app/profile/techbyjeff.net)
-[![Blog](https://img.shields.io/badge/Read%20My%20Blog-grey?style=flat-square&logo=ghost)](https://techbyjeff.net)
+<a href="https://hits.seeyoufarm.com">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffadwen.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="hits">
+</a>
+<a href="https://www.linkedin.com/in/jeffrey-stuhr-034214aa/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn">
+</a>
+<a href="https://bsky.app/profile/techbyjeff.net">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky" alt="BlueSky">
+</a>
+<a href="https://techbyjeff.net">
+    <img src="https://img.shields.io/badge/Read%20My%20Blog-grey?style=flat-square&logo=ghost" alt="Blog">
+</a>
 
 </div>
 

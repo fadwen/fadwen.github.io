@@ -2,6 +2,8 @@
 
 This page is used to keep track of resources used in my professional development, or things I have found afterward that I wish I had known.
 
+<br></br>
+
 <a href="https://hits.seeyoufarm.com">
     <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffadwen.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="hits">
 </a>

@@ -1,11 +1,15 @@
-  <a href="https://www.linkedin.com/in/jeffrey-stuhr-034214aa/">
-    <img height="22" width="22" alt="LinkedInUrl" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png" target= "_blank" />
-  <a href="https://bsky.app/profile/techbyjeff.net">
-    <img alt="BlueSky URL" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky" target="_blank" />
-  </a>
-    <a href="https://techbyjeff.net">
-    <img alt="Blog" src="https://img.shields.io/badge/Read%20My%20Blog-grey?style=flat-square&logo=ghost" target="_blank" />
-  </a>
+ <div align="center"> 
+
+This page is used to keep track of resources used in my professional development, or things I have found afterward that I wish I had known.
+
+[![hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffadwen.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jeffrey-stuhr-034214aa/)
+[![BlueSky](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky)](https://bsky.app/profile/techbyjeff.net)
+[![Blog](https://img.shields.io/badge/Read%20My%20Blog-grey?style=flat-square&logo=ghost)](https://techbyjeff.net)
+
+</div>
+
+## Table of Contents <!-- omit in toc -->
 
 - [PowerShell Resources](#powershell-resources)
   - [Books](#books)
@@ -64,6 +68,8 @@
 - **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
   - Honestly any of the [DevOps Collective](https://leanpub.com/u/devopscollective) books are recommended.
 
+[🔝 Back to Top](#toc)
+
 ## Browser Extensions ##
 
 - [Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)
@@ -75,6 +81,8 @@
 - [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
   - For when you want to see or replay the api query on something Graph X-ray/browser dev tools doesn't capture.
 
+[🔝 Back to Top](#toc)
+
 ## Discords ##
 
 - **[PowerShell](https://discord.gg/PowerShell)**
@@ -82,6 +90,8 @@
 
 - **[WinAdmins](https://discord.gg/winadmins)**
   - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during East Coast business hours.
+
+[🔝 Back to Top](#toc)
 
 ## Practical Hands-on ##
 
@@ -93,6 +103,8 @@
 - **[UnderTheWire Wargames](https://underthewire.tech/wargames)**
   - Fun little ssh challenges that require you to fact find on the host to get password to next ssh session . Practical and helps you think critically about solving issues without being spoon-fed.
 
+[🔝 Back to Top](#toc)
+
 ## Videos ##
 
 - **[PowerShell Master Class - PowerShell Fundamentals](https://www.youtube.com/watch?v=sQm4zRvvX58&list=PLlVtbbG169nFq_hR7FcMYg32xsSAObuq8)**
@@ -102,6 +114,8 @@
 - **[PowerShell Conferences EU](https://www.youtube.com/@PowerShellConferenceEU/playlists)**
 
 - **[Getting Started with Graph](https://www.youtube.com/playlist?list=PLKROqDcmQsFls8cPHk3HFz2mUURHx46_O)**
+
+[🔝 Back to Top](#toc)
 
 ## Websites ##
 
@@ -113,6 +127,8 @@
   - While not PowerShell specific, useful for regex examples. [RegEx Tester](https://www.regextester.com/) can be used to validate.
 
 - **[Sample Code](https://powershell.one/code)**
+
+[🔝 Back to Top](#toc)
 
 # VSCode
 
@@ -128,6 +144,8 @@
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
+[🔝 Back to Top](#toc)
+
 ## More VSCode Goodies
 
 - [Viewing Default Settings in VS Code](https://ninmonkeys.com/blog/2022/05/01/viewing-default-settings-in-vs-code/)
@@ -135,6 +153,8 @@
   - Good-to-know keybindings. Example: `CTRL + H` for find and replace makes things smoother.
 - [Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
   - Different themes for your terminal.  VS Code font types has to be setup through the Integrated Font Family settings.  `$PROFILE` for VSCode is separate from your non-vscode pwsh. Current favorites are `night-owl` and `quick-term`.
+
+[🔝 Back to Top](#toc)
 
 # Working with PowerShell
 
@@ -163,6 +183,8 @@
 - PowerShellGet ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/PowerShellGet)
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 
+[🔝 Back to Top](#toc)
+
 ### 3rd Party Modules ###
 **Always make sure to assess and evaluate before implementing in production.**
 - [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)
@@ -180,6 +202,8 @@
 
   - A great logging module that I wish I had found years ago, saves so much time.  Found more use cases than logging, makes some Param functions simpler.
 
+[🔝 Back to Top](#toc)
+
 # MgGraph bits #
 
   - [Find-MgGraphCommand](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-command?view=graph-powershell-1.0) 
@@ -188,6 +212,8 @@
     - To look up details on the permission that a script/app has.
   - [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)
     - Cleaner Graph specific invoke that can be used rather than `Invoke-WebRequest` or `Invoke-RestMethod` if the API endpoint does not have a cmdlet built out with all options yet.
+
+[🔝 Back to Top](#toc)
 
 # Useful non-portal MS websites #
 
@@ -199,6 +225,8 @@
 
 ## [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com) ##
   - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.
+
+[🔝 Back to Top](#toc)
 
 # Test Lab #
 
@@ -213,6 +241,8 @@
  - [Ludus](https://docs.ludus.cloud/docs/category/quick-start)
    - Another Debian/Proxmox specific, but completely takes over so if you need the host for other things be warned.
 
+[🔝 Back to Top](#toc)
+
 # Certifications #
 
 Personal thoughts on industry certification usefulness, all opinions my own.
@@ -221,17 +251,25 @@ Personal thoughts on industry certification usefulness, all opinions my own.
 
 Whether it was due to acquisition by PeopleCert or their own fault, this company is everything bad with the certification industry.  They make you pay a subscription in order to keep your digital badge up to date, they introduced renewals on their certs despite adding no new knowledge.  That being said they are firmly entrenched in the industry now, with Agile, ITIL, Prince2, PMP, etc.  We just have to suck it up and deal with their demands.
 
+[🔝 Back to Top](#toc)
+
 ### [ITIL 4 Foundation](https://www.axelos.com/certifications/itil-service-management/itil-4-foundation) ###
 
 - This establishes a framework that modern enterprises follow.  Change management, Issue vs Incident vs Problem, and a ton of other ITIL specific vocabulary that requires rote memorization.  This is a general purpose certification that adds value to a resume, whether you are technically inclined, sales, or management.  This used to be a lifetime certification, but now renews on a 3 year cycle, despite there being no revisions to the learning material.
+
+[🔝 Back to Top](#toc)
 
 ## BetterCloud ##
 
 The product itself is not complex, competing with other lifecycle management tools: Entra, Okta, etc.  It seems to have emphasis/more functionality on working with Google Workspace and Slack functionality over Microsoft offerings.  The plus side is their [Flight School website](https://www.bettercloud.com/training/) gives you a free code to take their exams, on top of swag mailed to you on completion.
 
+[🔝 Back to Top](#toc)
+
 ### [BetterCloud Certified Administrator](https://learn.bettercloud.com/path/certification) ###
 
  - This exam tests for competency in the product as an administrator: connecting to HRIS, connecting to IDP,  DLP options, etc. With a spoon fed free learning webinar that will walk you through what the exam tests on, if you fail it I assume you have never been in the admin portal at all.  Anecdotally I've never met another person who's worked in the product, and a recruiter has never reached out to me for it.
+
+[🔝 Back to Top](#toc)
 
 ## CompTIA ##
 
@@ -239,22 +277,33 @@ These are great as they are vendor agnostic. The CompTIA certs are slightly cost
 
 There are plenty of learning sources out there, but I can't recommend [ProfessorMesser](https://www.professormesser.com/) enough for the "CompTIA Trifecta" (A/Net/Sec).  His Youtube playlists are updated to the latest versions, comprehensive, and always free.
 
+[🔝 Back to Top](#toc)
+
 ### [A+](https://www.comptia.org/certifications/a) ###
 - The industry standard certification for IT professionals starting their careers. It's a mile wide and an inch deep.  It's there to introduce you to the basics of everything.  This one takes two tests to pass, you are not A+ certified until you pass both.  By itself, holds no weight on the resume, but will get you to the interview for entry level jobs.
+
+[🔝 Back to Top](#toc)
 
 ### [Network+](https://www.comptia.org/certifications/network) ###
 - This focuses on wired and wireless networks with emphasis on subnetting without a calculator like a monster.  It will give foundational network familiarity that goes beyond what the A+ does.  If I had to do-over I would get a CCNA instead as it holds more weight and goes slightly beyond with ios commands.
 
+[🔝 Back to Top](#toc)
+
 ### [Security+](https://www.comptia.org/certifications/security) ###
 - It covers key topics like network security, risk management, cryptography, and threat mitigation. This one is the one you'll get the most mileage out of on your resume.  Virtually any professional IT-adjacent would benefit from the concepts in this, you don't have to be shooting for a InfoSec or Pentest position.
+
+[🔝 Back to Top](#toc)
 
 ### [Linux+](https://www.comptia.org/certifications/linux) ###
 - Honestly I bought the voucher to Linux+ with the above CompTIA vouchers to get the most discount of my CompTIA Store subscription.  I took it a week before the voucher expired with 0 prep and passed.  TLDR: it teaches a surface level of Linux that anyone slightly familiar could pass, LPIC or RHEL certs would get more mileage.
 
+[🔝 Back to Top](#toc)
 
 ## Microsoft ##
 
 This mainly goes into the certifications as those add value to the resume/employers, but Microsoft does have something relatively new called [Applied Skills](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=applied%20skills) which are free to take and showcase your proficiency in a specific task.  I'm not sure if they are prestigious enough to add to a resume, but it can certainly validate a role-based skill if you're looking to make an internal move.
+
+[🔝 Back to Top](#toc)
 
 ### [-900s/foundations exams](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&levels=beginner) ###
 - These last a lifetime and provide a very general overview of what that category/service entails.  They won’t add value to a resume or validate skills but it’s good to dip your feet in.  I picture these as existing for recruiters, non-technical managers to get an overall understanding, or a way to see if it’s something you’re interested in.
@@ -269,31 +318,51 @@ It’s tough to practice some of these outside of a production environment as th
 
 You can setup a free trial via [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/) and then further activate free trial licenses for various plans you are testing.  Be cautious when going this route as generally you have to put a card on file and if you’re not careful you may blow past the $200/mo free cap pretty easily.  Also check out the [Lab Setup](#lab-setup) section to create your own, keeping in mind for some cloud features you may be charged if you go on past trial dates.
 
+[🔝 Back to Top](#toc)
+
 ### [MD-102 – Endpoint Administrator](https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
 - A lot of people I’ve talked to think this is Microsoft’s equivalent of the A+ because it used to be called Managing Modern Desktops, but it provides a lot more value if you are working with the Windows stack.  This describes everything from the different versions of Windows (10/11, Home, Professional, Enterprise, etc), Windows Server, registry, active directory, as well as going in depth on prem/cloud solutions like GPO’s/OMA-URI’s, MDT/Autopilot, SCCM/Intune, WSUS/WufB.  I would really recommend this as the first Microsoft cert to get if you are dealing with workstations on a regular basis.  Also if you’re discussing with someone and they mention the old MCSA, this is the one that translates most to it.
+
+[🔝 Back to Top](#toc)
 
 ### [SC-300 – Identity and Access Administrator](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
 - This is a great foundation for understanding the Entra tenant.  Users, groups, roles, application registrations, SSO, etc.  If you deal or are looking to deal with IAM, this would be a great validation/intro.
 
+[🔝 Back to Top](#toc)
+
 ### [MS-102 – Enterprise Administrator](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/?WT.mc_id=certposter_poster-wwl) ###
 - This is an Expert certification that builds on the knowledge from MD-102 and SC-300 as well as some voip/teams.  This has emphasis on building out a tenant, IAM polices like Conditional Access, how to configure Defender, and managing retention/compliance policies with Purview.  This is the nearest equivalent of the older MCSE.
+
+[🔝 Back to Top](#toc)
 
 ### [AZ-104 – Azure Administrator](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
 - This is great for showing you have the technical skills for Azure with an emphasis on DevOps.  Managing VMs, Networks, Subscriptions, Kubernetes clusters, and Storage solutions with Powershell, Az CLI, or ARM templates to implement them to describe a few.
 
+[🔝 Back to Top](#toc)
+
 ### [AZ-305 – Azure Solutions Architect](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/?WT.mc_id=certposter_poster-wwl) ###
 - This is an Expert level certification with AZ-104 as a pre-requisite.  While AZ-104 focuses on the technical aspects and how to implement, this focuses on the why.  Emphasis on VM change control, network peering/failover, disaster recovery solutions, choosing different SQL implementations, requirements to shift from on-prem to cloud, and auditing role assignments between subscriptions as some examples.
+
+[🔝 Back to Top](#toc)
 
 ### [AZ-800/801 – Windows Server Hybrid Administrator](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/?WT.mc_id=certposter_poster-wwl) ###
 - Unlike the MD/MS-102 Microsoft hasn’t combined both into a single exam yet and there is some overlap.  In most companies you’ll have a hybrid tenant at some level not pure cloud (unless you get lucky) and the Learn pages will provide a great benefit in the configuration needed to implement it.  This is also really the only path currently available for Windows Server skill validation.
 
+[🔝 Back to Top](#toc)
+
 ### [Specialty: Azure Virtual Desktop](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ### 
-- AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation and they did it surprisingly well.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to implement and administrate it.
+- AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to implement and administrate it.
+
+[🔝 Back to Top](#toc)
 
 ## Okta ##
 
 Okta tests are interesting in that you cannot go back and review your answers/change them.  The format I've had is that each question is weighted and you have to choose the best answer, not necessarily the only right answer.
 
+[🔝 Back to Top](#toc)
+
 ### [Okta Certified Professional](https://certification.okta.com/okta-certified-professional-hands-on-configuration-exam-for-oie) ###
 
 - This is a bit more intensive than a -900 from Microsoft but still geared to Sales, Managers, or entry level administrators.  You'll know the capabilities of the product and a base level of things to do with it.  I earned mine while having basic help desk permissions within the product, and renewed it successfully on my first try after not touching it for two years and no studying.  I'm not sure if this adds anything of value to your resume for job seekers, more of a progression internally if you are in a company with the product.
+
+[🔝 Back to Top](#toc)

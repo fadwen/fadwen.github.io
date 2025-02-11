@@ -72,7 +72,7 @@
   - The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. Really informative book that I wish I'd been recommended instead of stumbling through trial and error.
 
 - **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**
-  - This goes above and beyond the aforementioned book, assuming your familiarity and that you are now writing your own modules/functions.
+  - This goes above and beyond the aforementioned book, assuming your familiarity and that you are now writing your own modules/functions.  Has some things on pestering as well.
   - [Companion Github](https://github.com/psjamesp/MOL-Scripting/tree/main)
 
 - **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
@@ -175,22 +175,19 @@
 ### Microsoft Modules ###
 
 - ActiveDirectory
-- Az ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Az)
-- ExchangeOnlineManagement ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ExchangeOnlineManagement)
-- Microsoft.Graph and Microsoft.Graph.Beta ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph)
-
+- Az
+- ExchangeOnlineManagement
+- Microsoft.Graph and Microsoft.Graph.Beta 
   - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest`or `Invoke-RestMethod` direct can provide more functionality than this module.  The Microsoft.Graph.PlusPlus module below helps if you really hate the structure.
-- [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.Entra)
-
+- [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta
   - This was made for Admins who weren't used to the structuring graph expects, and is a direct replacement for AzureAD module.
-- Microsoft.Online.SharePoint.PowerShell ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Online.SharePoint.PowerShell)
-- Microsoft.PowerShell.ConsoleGuiTools ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.PowerShell.ConsoleGuiTools)
-
+- Microsoft.Online.SharePoint.PowerShell
+- Microsoft.PowerShell.ConsoleGuiTools
   - `Out-ConsoleGridView` is great for analyzing data within the terminal.
 - Microsoft.PowerShell.GraphicalTools
   - `Out-Gridview` is a GUI popout for analyzing data.
-- MicrosoftTeams ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/MicrosoftTeams)
-- PowerShellGet ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/PowerShellGet)
+- MicrosoftTeams
+- PowerShellGet
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 
 [🔝 Back to Top](#toc)

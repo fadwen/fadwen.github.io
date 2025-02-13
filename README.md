@@ -76,8 +76,21 @@
   - [Companion Github](https://github.com/psjamesp/MOL-Scripting/tree/main)
 
 - **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
-  - Honestly any of the [DevOps Collective](https://leanpub.com/u/devopscollective) books are recommended.
+  - While *Learn PowerShell in a Month of Lunches* dives into PSRemoting/WSMan, this explains nuances.  Honestly all of the [DevOps Collective](https://leanpub.com/u/devopscollective) books are recommended.
 
+- **[Mastering Powershell Scripting](https://www.packtpub.com/en-us/product/mastering-powershell-scripting-9781805124153)**
+  - Chris Dent is very active and knowledgable and this book on automations does not disappoint.  If you join either of the discords I mention he's easily accessible. 
+
+- **[Practical Automation with PowerShell](https://www.manning.com/books/practical-automation-with-powershell)**
+  - Another book of example automations and designing your own.
+  - [Companion Github](https://github.com/mdowst/Practical-Automation-with-PowerShell/tree/main)
+
+- **[PowerShell Automation and Scripting for Cybersecurity](https://www.packtpub.com/en-us/product/powershell-automation-and-scripting-for-cybersecurity-9781800569263)**
+  - The other automation books are great, but I've always had a soft spot for working with InfoSec.  Learning what they look for helps collaborations and implementing things securely.
+
+- **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**
+  - Unlike the other ones this is not just PowerShell specific, in fact there's an included book [Automating Microsoft 365 with PowerShell](https://o365itpros.gumroad.com/l/M365PS) that you can breakout and purchase separately if you just want the PS stuff.  I recommend the whole thing though if you are working in the MS stack as it's just a treasure trove of resources and constantly being added onto/updated.  Unlike the others listed, this is purely in E-book format.
+ 
 [🔝 Back to Top](#toc)
 
 ## Browser Extensions ##
@@ -89,7 +102,7 @@
   - Great way to see what GUI actions use Graph behind the scenes as well as translating to powershell for your own scripts.
 
 - [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
-  - For when you want to see or replay the api query on something Graph X-ray/browser dev tools doesn't capture.
+  - For when you want to see or replay the api query on something Graph X-ray/browser dev tools doesn't capture.  Just as an aside, Postman and VSCode have colloborated in such a fashion that you can get full functionality by installing the VSCode extension so that you don't need both apps as separate.  
 
 [🔝 Back to Top](#toc)
 
@@ -109,6 +122,7 @@
   - The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
 
 - **[PSKoans](https://github.com/vexx32/PSKoans)**
+  - I've had this on my list for awhile, looking at the docs it seems like a great learning tool.  The downside is it doesn't appear to have been updated for several years.
 
 - **[UnderTheWire Wargames](https://underthewire.tech/wargames)**
   - Fun little ssh challenges that require you to fact find on the host to get password to next ssh session . Practical and helps you think critically about solving issues without being spoon-fed.

@@ -208,6 +208,8 @@
 
 ### 3rd Party Modules ###
 **Always make sure to assess and evaluate before implementing in production.**
+- [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)
+  - Sending custom toast notifications.
 - [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)
   - Activating PIM roles via CLI rather than GUI blades.
 - [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)

@@ -236,6 +236,9 @@
   - [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)
     - Cleaner Graph specific invoke that can be used rather than `Invoke-WebRequest` or `Invoke-RestMethod` if the API endpoint does not have a cmdlet built out with all options yet.
 
+  - [This Series by Paul Winstanley](https://sccmentor.com/2023/10/31/automating-windows-365-part-1-introducing-graph-and-setting-up-visual-studio-code/).
+    - While the overall series is about W365, I do like parts 1 and 2 for the Graph bits.  It explains the foundations: Setting up VSCode, making an application and adding which permissions are needed, connecting via the just-made application, and leveraging Graph X-ray for command discovery.
+
 [🔝 Back to Top](#toc)
 
 # Useful non-portal MS websites #

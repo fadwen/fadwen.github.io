@@ -145,6 +145,9 @@
 
 - **[Deep Dives on MSLearn](https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/overview?view=powershell-7.4&viewFallbackFrom=powershell-7.3)**
 
+- **[Piet's Pester Crash Course](https://manbearpiet.com/posts/pester/)**
+  - Pester is great for Powershell testing.  If you use something like [Maester](https://github.com/maester365/maester) for Entra auditing, the custom tests are done via Pester.
+
 - **[PowerShell Practice and Style](https://poshcode.gitbook.io/PowerShell-practice-and-style)**
 
 - **[RegExLibrary](https://regexlib.com/)**

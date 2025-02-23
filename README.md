@@ -145,6 +145,9 @@
 
 - **[Deep Dives on MSLearn](https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/overview?view=powershell-7.4&viewFallbackFrom=powershell-7.3)**
 
+- **[Parts 1 and 2 of this Series by Paul Winstanley](https://sccmentor.com/2023/10/31/automating-windows-365-part-1-introducing-graph-and-setting-up-visual-studio-code/)**
+  - While the overall series is about W365, I do like parts 1 and 2 specifically for the Graph bits.  It explains the foundations: Setting up VSCode, making an application and adding which permissions are needed, connecting via the just-made application, and leveraging Graph X-ray for command discovery.
+
 - **[Piet's Pester Crash Course](https://manbearpiet.com/posts/pester/)**
   - Pester is great for Powershell testing.  If you use something like [Maester](https://github.com/maester365/maester) for Entra auditing, the custom tests are done via Pester.
 
@@ -159,7 +162,7 @@
 
 # VSCode
 
-> Note that PowerShell ISE does not support version 7+ and is not getting any new features.  Learn to use VSCode, install it on your servers that used ISE, set up an ADMX with Intune to ensure only approved extensions and features are used.
+> Note that PowerShell ISE does not support version 7+ and is not getting any new features.  Learn to use VSCode, install it on your jump boxes that used ISE, set up an ADMX with Intune to ensure only approved extensions and features are used.
 > 
 > Tunnels are a great remoting feature if you secure them properly.
 >
@@ -189,15 +192,17 @@
 
 ## Modules Commonly Used
 
+This list in not all encompassing, but the majority of what I do are handled by them and I consider them must-haves on new workstations for me.
+
 ### Microsoft Modules ###
 
 - ActiveDirectory
 - Az
 - ExchangeOnlineManagement
 - Microsoft.Graph and Microsoft.Graph.Beta 
-  - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest`or `Invoke-RestMethod` direct can provide more functionality than this module.  The Microsoft.Graph.PlusPlus module below helps if you really hate the structure.
+  - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest`or `Invoke-RestMethod` direct can provide more functionality than this module.  The Microsoft.Graph.PlusPlus 3rd party module helps if you really hate the structure.
 - [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta
-  - This was made for Admins who weren't used to the structuring graph expects, and is a direct replacement for AzureAD module.
+  - This was made for Admins who weren't used to the structuring graph expects, and is a direct replacement for AzureAD module.  It doesn't contain all the functionality as the above module, but it serves as a bridge.
 - Microsoft.Online.SharePoint.PowerShell
 - Microsoft.PowerShell.ConsoleGuiTools
   - `Out-ConsoleGridView` is great for analyzing data within the terminal.
@@ -218,14 +223,10 @@
 - [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)
   - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
 - [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.PlusPlus)
-
-  - Extends Microsoft.Graph SDK to be more PowerShell like.
+  - This one is entirely optional and I don't personally use it, but I can see it being useful.  Extends Microsoft.Graph SDK to be more PowerShell like.  
 - [platyPS](https://github.com/PowerShell/platyPS) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/platyPS)
   - Great for building out documentation for modules you make once you get used to the schema it needs.
-- [PSClippy.FBP.CrossPlatform](https://github.com/HCRitter/PSClippy.FBP.CrossPlatform) 
-  - For getting advices to improve cross platform scripts, while scripting.
 - [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)
-
   - A great logging module that I wish I had found years ago, saves so much time.  Found more use cases than logging, makes some Param functions simpler.
 
 [🔝 Back to Top](#toc)
@@ -239,9 +240,6 @@
   - [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)
     - Cleaner Graph specific invoke that can be used rather than `Invoke-WebRequest` or `Invoke-RestMethod` if the API endpoint does not have a cmdlet built out with all options yet.
 
-  - [This Series by Paul Winstanley](https://sccmentor.com/2023/10/31/automating-windows-365-part-1-introducing-graph-and-setting-up-visual-studio-code/).
-    - While the overall series is about W365, I do like parts 1 and 2 for the Graph bits.  It explains the foundations: Setting up VSCode, making an application and adding which permissions are needed, connecting via the just-made application, and leveraging Graph X-ray for command discovery.
-
 [🔝 Back to Top](#toc)
 
 # Useful non-portal MS websites #
@@ -253,8 +251,8 @@
   - Useful to explore Graph's URI structure, needed permissions, and responses.
 
 ## [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com) ##
-  - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember. Doesn't work.
-
+  - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember.
+  - 
 [🔝 Back to Top](#toc)
 
 # Test Lab #

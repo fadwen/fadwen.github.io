@@ -213,6 +213,9 @@ This list in not all encompassing, but the majority of what I do are handled by 
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 
 [🔝 Back to Top](#toc)
+### Vendor Specific Modules ###
+- [Lenovo Client Scripting Module](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Lenovo.Client.Scripting)
+  - If you're in a Lenovo shop - first of all, I'm sorry - but this module helps getting device/docking station info. 
 
 ### 3rd Party Modules ###
 **Always make sure to assess and evaluate before implementing in production.**

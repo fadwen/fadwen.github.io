@@ -193,7 +193,7 @@
 
 ## Modules Commonly Used
 
-This list in not all encompassing, but the majority of what I do are handled by them and I consider them must-haves on new workstations for me.
+This list in not all encompassing, but the majority of what I do are handled by them and I consider them must-haves on new workstations for me.  As a brief mention, `Install-Module` is slowly being phased out as 7.x.x becomes the standard, might as well get used to it's replacement `Install-PSResource` instead.
 
 ### Microsoft Modules ###
 
@@ -217,7 +217,8 @@ This list in not all encompassing, but the majority of what I do are handled by 
 ### Vendor Specific Modules ###
 - [Lenovo Client Scripting Module](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Lenovo.Client.Scripting)
   - If you're in a Lenovo shop - first of all, I'm sorry - but this module helps getting device/docking station info. 
-
+  
+[🔝 Back to Top](#toc)
 ### 3rd Party Modules ###
 **Always make sure to assess and evaluate before implementing in production.**
 - [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)
@@ -231,7 +232,7 @@ This list in not all encompassing, but the majority of what I do are handled by 
 - [platyPS](https://github.com/PowerShell/platyPS) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/platyPS)
   - Great for building out documentation for modules you make once you get used to the schema it needs.
 - [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)
-  - A great logging module that I wish I had found years ago, saves so much time.  Found more use cases than logging, makes some Param functions simpler.
+  - A great logging module that I wish I had found years ago, saves so much time.  Plenty more use cases than just logging, for example: makes some Param functions simpler.
 
 [🔝 Back to Top](#toc)
 

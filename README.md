@@ -34,6 +34,7 @@
 - [Working with PowerShell](#working-with-powershell)
   - [Modules Commonly Used](#modules-commonly-used)
     - [Microsoft Modules](#microsoft-modules)
+    - [Vendor Specific Modules](#vendor-specific-modules)
     - [3rd Party Modules](#3rd-party-modules)
 - [MgGraph bits](#mggraph-bits)
 - [Useful non-portal MS websites](#useful-non-portal-ms-websites)
@@ -343,6 +344,8 @@ All other MS exam vouchers cost $165 each and if passed the certification is val
 
 An overall view of existing certifications and their prerequisites can be found at [Become Microsoft Certified](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI) with click throughs to the specific exam(s) and the associated Learn pages.
 Speaking of, the Learn pages are excellent study materials for the exams and completely free.  I would recommend the Learn pages over the Linkedin Learning videos on the same topic, as they are often out-of-date and incorrect from the few I’ve audited.  Familiarizing yourself with the content in Learn is great since you can now access Learn pages during the exam.
+
+They've also recently added some actual videos as supplementary in their [Course Videos on Shows](https://learn.microsoft.com/en-us/training/course-videos-on-shows).
 
 It’s tough to practice some of these outside of a production environment as things become more cloud based and the average subscriptions aren’t feasible for a personal user.
 

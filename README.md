@@ -184,6 +184,7 @@
   - Good-to-know keybindings. Example: `CTRL + H` for find and replace makes things smoother.
 - [Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
   - Different themes for your terminal.  VS Code font types has to be setup through the Integrated Font Family settings.  `$PROFILE` for VSCode is separate from your non-vscode pwsh. Current favorites are `night-owl` and `quick-term`.
+  - ![night-owl themed terminal](image.png)
 
 [🔝 Back to Top](#toc)
 

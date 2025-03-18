@@ -179,12 +179,14 @@
 
 ## More VSCode Goodies
 
-- [Viewing Default Settings in VS Code](https://ninmonkeys.com/blog/2022/05/01/viewing-default-settings-in-vs-code/)
-- [VS Code Keybindings](https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing)
-  - Good-to-know keybindings. Example: `CTRL + H` for find and replace makes things smoother.
+- [Copilot Commit Instructions](https://gist.github.com/okineadev/8a3f392a93ae50e8d523e4ba7f9f9ac3)
+  - If you've used the github copilot generation for commits there is a lack of detail and consistency.  Editing your settings.json with this solves for that.
 - [Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
   - Different themes for your terminal.  VS Code font types has to be setup through the Integrated Font Family settings.  `$PROFILE` for VSCode is separate from your non-vscode pwsh. Current favorites are `night-owl` and `quick-term`.
   - ![night-owl themed terminal](image.png)
+- [Viewing Default Settings in VS Code](https://ninmonkeys.com/blog/2022/05/01/viewing-default-settings-in-vs-code/)
+- [VS Code Keybindings](https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing)
+  - Good-to-know keybindings. Example: `CTRL + H` for find and replace makes things smoother.
 
 [🔝 Back to Top](#toc)
 

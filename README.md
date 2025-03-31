@@ -232,6 +232,8 @@ This list in not all encompassing, but the majority of what I do are handled by 
   - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
 - [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.PlusPlus)
   - This one is entirely optional and I don't personally use it, but I can see it being useful.  Extends Microsoft.Graph SDK to be more PowerShell like.  
+- [Pansies](https://github.com/PoshCode/Pansies) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Pansies)
+  - Put some flavor on your output messages. Clickable hyperlinks, gradient/complementary colors, and [HTML named entities](https://www.w3schools.com/charsets/ref_html_entities_4.asp).
 - [platyPS](https://github.com/PowerShell/platyPS) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/platyPS)
   - Great for building out documentation for modules you make once you get used to the schema it needs.
 - [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)
@@ -275,6 +277,8 @@ This list in not all encompassing, but the majority of what I do are handled by 
    - Focuses on Proxmox as the hypervisor, Wazuh SIEM, and various pentesting VMs.
  - [Ludus](https://docs.ludus.cloud/docs/category/quick-start)
    - Another Debian/Proxmox specific, but completely takes over so if you need the host for other things be warned.
+- [10 Free Azure SQL](https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-the-enhanced-azure-sql-database-free-offer-now-generally-available/4372418)
+  - They've updated it from 1 to 10 free DBs of up to 32GB storage.
 
 [🔝 Back to Top](#toc)
 

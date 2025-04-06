@@ -64,7 +64,7 @@
     - [Specialty: Azure Virtual Desktop](#specialty-azure-virtual-desktop)
   - [Okta](#okta)
     - [Okta Certified Professional](#okta-certified-professional)
-  - [Western Governors University](#western-governors-university)
+- [Western Governors University](#western-governors-university)
 
 # PowerShell Resources #
 
@@ -415,7 +415,7 @@ Okta tests are interesting in that you cannot go back and review your answers/ch
 
 [🔝 Back to Top](#toc)
 
-## [Western Governors University](https://www.wgu.edu/)
+# [Western Governors University](https://www.wgu.edu/) #
 
 It feels like the CCNA cert and a WGU degree are the things that most people in IT start studying for and never actually complete.  WGU provides [Bachelor's and Master's](https://www.wgu.edu/online-it-degrees.html) at your own pace and completely online.  You pay for a term block that is 6 months, and you can test out of as many classes as possible during that time, it's up to you on the pacing.
 

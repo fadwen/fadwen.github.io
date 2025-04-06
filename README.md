@@ -64,7 +64,7 @@
     - [Specialty: Azure Virtual Desktop](#specialty-azure-virtual-desktop)
   - [Okta](#okta)
     - [Okta Certified Professional](#okta-certified-professional)
-    - [Western Governors University](#western-governors-university)
+  - [Western Governors University](#western-governors-university)
 
 # PowerShell Resources #
 
@@ -114,14 +114,16 @@
   - A bunch of hard-hitting PowerShell nerds here, from people involved with the actual PowerShell GitHub/dev to those who manage aspects of VSCode. Very friendly place as I haven't been shamed for any of the pretty dumb questions I've put to them.
 
 - **[WinAdmins](https://discord.gg/winadmins)**
-  - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during East Coast business hours.
+  - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during US East Coast business hours.
 
 [🔝 Back to Top](#toc)
 
 ## Practical Hands-on ##
 
+The best experience is to have a need and implement it yourself.  That said, these do offer some ways to learn hands-on.
+
 - **[HacktheBox Academy](https://academy.hackthebox.com/)**
-  - The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
+  - Some great general Windows/powershell, with some steps to securing AD.  The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
 
 - **[PSKoans](https://github.com/vexx32/PSKoans)**
   - I've had this on my list for awhile, looking at the docs it seems like a great learning tool.  The downside is it doesn't appear to have been updated for several years.
@@ -140,6 +142,7 @@
 - **[PowerShell Conferences EU](https://www.youtube.com/@PowerShellConferenceEU/playlists)**
 
 - **[Getting Started with Graph](https://www.youtube.com/playlist?list=PLKROqDcmQsFls8cPHk3HFz2mUURHx46_O)**
+  > I lump graph in with powershell here, sure you can just `invoke-restmethod` the api endpoints direct, or use a language that isn't powershell at all.  I personally see the two linked inseparably.  If you're using pwsh, you'll be using graph unless it's a completely on-prem environment with zero 365 apps, and you should know how to get started with that.
 
 [🔝 Back to Top](#toc)
 
@@ -174,6 +177,7 @@
 
 - [PowerShell Extension Pack](https://marketplace.visualstudio.com/items?itemName=justin-grote.PowerShell-extension-pack)
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+- [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 [🔝 Back to Top](#toc)
@@ -204,6 +208,8 @@ This list in not all encompassing, but the majority of what I do are handled by 
 - ActiveDirectory
 - Az
 - ExchangeOnlineManagement
+- [EnhancedHTML2](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/EnhancedHTML2)
+  - If the `ConvertTo-HTML` isn't enough, this helps makes some pretty great reports.
 - Microsoft.Graph and Microsoft.Graph.Beta 
   - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest`or `Invoke-RestMethod` direct can provide more functionality than this module.  The Microsoft.Graph.PlusPlus 3rd party module helps if you really hate the structure.
 - [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta
@@ -227,8 +233,6 @@ This list in not all encompassing, but the majority of what I do are handled by 
 **Always make sure to assess and evaluate before implementing in production.**
 - [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)
   - Sending custom toast notifications.
-- [EnhancedHTML2](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/EnhancedHTML2)
-  - If the `ConvertTo-HTML` isn't enough, this helps makes some pretty great reports.
 - [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)
   - Activating PIM roles via CLI rather than GUI blades.
 - [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)
@@ -411,7 +415,7 @@ Okta tests are interesting in that you cannot go back and review your answers/ch
 
 [🔝 Back to Top](#toc)
 
-### [Western Governors University](https://www.wgu.edu/)
+## [Western Governors University](https://www.wgu.edu/)
 
 It feels like the CCNA cert and a WGU degree are the things that most people in IT start studying for and never actually complete.  WGU provides [Bachelor's and Master's](https://www.wgu.edu/online-it-degrees.html) at your own pace and completely online.  You pay for a term block that is 6 months, and you can test out of as many classes as possible during that time, it's up to you on the pacing.
 

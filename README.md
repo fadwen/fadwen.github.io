@@ -64,6 +64,7 @@
     - [Specialty: Azure Virtual Desktop](#specialty-azure-virtual-desktop)
   - [Okta](#okta)
     - [Okta Certified Professional](#okta-certified-professional)
+    - [Western Governors University](#western-governors-university)
 
 # PowerShell Resources #
 
@@ -167,7 +168,7 @@
 > 
 > Tunnels are a great remoting feature if you secure them properly.
 >
-> If VSCode is too dev-y and you really liked ISE [Powershell Studio](https://www.sapien.com/software/powershell_studio) is a solid replacement.  If you can get the approval to shell out for the $550 license.
+> If VSCode is too dev-y, you really liked ISE, and maybe you build a lot of GUIs [Powershell Studio](https://www.sapien.com/software/powershell_studio) is a solid work horse.  If you can get the approval to shell out for the $550 license.
 
 ## VSCode Extensions
 
@@ -226,6 +227,8 @@ This list in not all encompassing, but the majority of what I do are handled by 
 **Always make sure to assess and evaluate before implementing in production.**
 - [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)
   - Sending custom toast notifications.
+- [EnhancedHTML2](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/EnhancedHTML2)
+  - If the `ConvertTo-HTML` isn't enough, this helps makes some pretty great reports.
 - [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)
   - Activating PIM roles via CLI rather than GUI blades.
 - [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)
@@ -405,5 +408,24 @@ Okta tests are interesting in that you cannot go back and review your answers/ch
 ### [Okta Certified Professional](https://certification.okta.com/okta-certified-professional-hands-on-configuration-exam-for-oie) ###
 
 - This is a bit more intensive than a -900 from Microsoft but still geared to Sales, Managers, or entry level administrators.  You'll know the capabilities of the product and a base level of things to do with it.  I earned mine while having basic help desk permissions within the product, and renewed it successfully on my first try after not touching it for two years and no studying.  I'm not sure if this adds anything of value to your resume for job seekers, more of a progression internally if you are in a company with the product.
+
+[🔝 Back to Top](#toc)
+
+### [Western Governors University](https://www.wgu.edu/)
+
+It feels like the CCNA cert and a WGU degree are the things that most people in IT start studying for and never actually complete.  WGU provides [Bachelor's and Master's](https://www.wgu.edu/online-it-degrees.html) at your own pace and completely online.  You pay for a term block that is 6 months, and you can test out of as many classes as possible during that time, it's up to you on the pacing.
+
+What I anecdotally see, is people start it and then life gets in the way and they eventually drop it after the term(s) they pay for are up.  With some ground work you can knock out the degree you want quicker and cheaper than you'd think.   
+
+Before enrolling with WGU start with [Sophia](https://www.sophia.org/) which is ~$400 USD for 4 months, vs WGU's ~4k for 6 mo, and knock out as many courses as you can that can be [transferred](https://partners.wgu.edu/transferring-page-preview?stateId=80&instId=796). As long as 25% of the degree originates from WGU they will award you their degree.  For military friends Sophia is similar to CLEP/DANTE, at your own pace and unproctored, and you can take two of their courses at once, unlimited with how many you can complete in that 4 months.
+
+After Sophia, you can still earn even more courses without committing to that 6 month block with [WGU Academy](https://www.wgu.edu/academy.html) which is $99 for a 2 month block for one class, and they reimburse you for it once you actually enroll into WGU.
+
+Finally, while WGU is great in that it covers exam vouchers for certain certifications related to your degree, if you already have some THOSE can [also be used as credit](https://www.wgu.edu/admissions/transfers/wgu-transcript-request/transferable-certifications.html) for certain classes too.
+
+Of course this is talking if you're net new.  If you have an Associate's already those can count too.  Really recommend talking to an enrollment person at WGU and they are super friendly and will walk you through what you need to do.  The leadup time from when you start talking to them to actually starting your term at WGU is ~45 days or ~2 months depending.  I mention this so you can plan on when you'll actually start taking courses with WGU vs deciding to.
+
+With the above prep work done, you could transfer into their IT Bachelor's with only around 60 credits left.  Which can greatly ease that 6 month term/payment if you're motivated -- knocking out a Bachelor's in one or two terms.
+
 
 [🔝 Back to Top](#toc)

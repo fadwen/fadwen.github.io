@@ -421,7 +421,7 @@ It feels like the CCNA cert and a WGU degree are the things that most people in 
 
 What I anecdotally see, is people start it and then life gets in the way and they eventually drop it after the term(s) they pay for are up.  With some ground work you can knock out the degree you want quicker and cheaper than you'd think.   
 
-Before enrolling with WGU start with [Sophia](https://www.sophia.org/) which is ~$400 USD for 4 months, vs WGU's ~4k for 6 mo, and knock out as many courses as you can that can be [transferred](https://partners.wgu.edu/transferring-page-preview?stateId=80&instId=796). As long as 25% of the degree originates from WGU they will award you their degree.  For military friends Sophia is similar to CLEP/DANTE, at your own pace and unproctored, and you can take two of their courses at once, unlimited with how many you can complete in that 4 months.
+Before enrolling with WGU start with [Sophia](https://www.sophia.org/) which is ~$300 USD for 4 months, vs WGU's ~$3600 for 6 mo, and knock out as many courses as you can that can be [transferred](https://partners.wgu.edu/transferring-page-preview?stateId=80&instId=796). As long as 25% of the degree originates from WGU they will award you their degree.  For military friends Sophia is similar to CLEP/DANTE, at your own pace and unproctored, and you can take two of their courses at once, unlimited with how many you can complete in that 4 months.
 
 After Sophia, you can still earn even more courses without committing to that 6 month block with [WGU Academy](https://www.wgu.edu/academy.html) which is $99 for a 2 month block for one class, and they reimburse you for it once you actually enroll into WGU.
 

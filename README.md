@@ -43,6 +43,7 @@
   - [Microsoft Remote Connectivity Analyzer](#microsoft-remote-connectivity-analyzer)
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
+  - [MCPs](#mcps)
 - [Certifications](#certifications)
   - [~~Axelos~~ PeopleCert](#axelos-peoplecert)
     - [ITIL 4 Foundation](#itil-4-foundation)
@@ -286,6 +287,17 @@ This list in not all encompassing, but the majority of what I do are handled by 
    - Another Debian/Proxmox specific, but completely takes over so if you need the host for other things be warned.
 - [10 Free Azure SQL](https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-the-enhanced-azure-sql-database-free-offer-now-generally-available/4372418)
   - They've updated it from 1 to 10 free DBs of up to 32GB storage.
+
+## MCPs ##
+
+I'm including these under test lab because they are basically proof of concept and should not be run as-is in production.  MCP or [Model-Context-Protocol](https://modelcontextprotocol.io/introduction) is an open standard Anthropic put out to better facilitate an LLM's connection to a data source.  They are really neat in that you can use natural language to return something that normally either someone familiar with admin portals/code would be able to find.  
+
+From my test drives they are really bad for write unless it's a one-off (adding 20 members to a group took almost 20+min in one test I did). But where they do excel is in read operations and data analysis from that read.
+
+- [Lokka](https://lokka.dev/)
+  - Merill yet again delivers and this is an MCP or Entra/Azure.  I put [together a post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/) describing my experience installing and using it.
+- [Koppla](https://lazyadmin.nl/koppla/) 
+  - This MCP is designed for on prem AD by Microsoft MVP Ruud.  It has some guard rails built in, but I would still heavily evaluate before implementing in production.
 
 [🔝 Back to Top](#toc)
 

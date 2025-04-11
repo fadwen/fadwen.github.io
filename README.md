@@ -295,7 +295,7 @@ I'm including these under test lab because they are basically proof of concept a
 From my test drives they are really bad for write unless it's a one-off (adding 20 members to a group took almost 20+min in one test I did). But where they do excel is in read operations and data analysis from that read.
 
 - [Lokka](https://lokka.dev/)
-  - Merill yet again delivers and this is an MCP or Entra/Azure.  I put [together a post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/) describing my experience installing and using it.
+  - Merill yet again delivers and this is an MCP for Entra/Azure.  I put [together a post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/) describing my experience installing and using it.
 - [Koppla](https://lazyadmin.nl/koppla/) 
   - This MCP is designed for on prem AD by Microsoft MVP Ruud.  It has some guard rails built in, but I would still heavily evaluate before implementing in production.
 

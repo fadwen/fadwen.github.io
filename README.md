@@ -298,6 +298,8 @@ From my test drives they are really bad for write unless it's a one-off (adding 
   - Merill yet again delivers and this is an MCP for Entra/Azure.  I put [together a post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/) describing my experience installing and using it.
 - [Koppla](https://lazyadmin.nl/koppla/) 
   - This MCP is designed for on prem AD by Microsoft MVP Ruud.  It has some guard rails built in, but I would still heavily evaluate before implementing in production.
+- [Official Azure MCP](https://github.com/Azure/azure-mcp)
+  - Finally put out in an official capacity and with a [blog post that dives into details](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).
 
 [🔝 Back to Top](#toc)
 

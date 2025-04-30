@@ -37,6 +37,8 @@
     - [Vendor Specific Modules](#vendor-specific-modules)
     - [3rd Party Modules](#3rd-party-modules)
 - [MgGraph bits](#mggraph-bits)
+- [Intune](#intune)
+  - [Videos](#videos-1)
 - [Useful non-portal MS websites](#useful-non-portal-ms-websites)
   - [365 Configuration Tool](#365-configuration-tool)
   - [Graph Explorer](#graph-explorer)
@@ -204,6 +206,7 @@ The best experience is to have a need and implement it yourself.  That said, the
 
 This list in not all encompassing, but the majority of what I do are handled by them and I consider them must-haves on new workstations for me.  As a brief mention, `Install-Module` is slowly being phased out as 7.x.x becomes the standard, might as well get used to it's replacement `Install-PSResource` instead.
 
+
 ### Microsoft Modules ###
 
 - ActiveDirectory
@@ -257,6 +260,11 @@ This list in not all encompassing, but the majority of what I do are handled by 
     - To look up details on the permission that a script/app has.
   - [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)
     - Cleaner Graph specific invoke that can be used rather than `Invoke-WebRequest` or `Invoke-RestMethod` if the API endpoint does not have a cmdlet built out with all options yet.
+
+# Intune #
+
+## Videos
+ - This [course at robopack](https://learn.robopack.com/course/intune-for-windows) is completely free and contains a great how-to for those new to intune.  Just ignore the robopack videos as that's a separate product :smile:
 
 [🔝 Back to Top](#toc)
 
@@ -367,7 +375,7 @@ This mainly goes into the certifications as those add value to the resume/employ
 
 ### [-900s/foundations exams](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&levels=beginner) ###
 - These last a lifetime and provide a very general overview of what that category/service entails.  They won’t add value to a resume or validate skills but it’s good to dip your feet in.  I picture these as existing for recruiters, non-technical managers to get an overall understanding, or a way to see if it’s something you’re interested in.
-  - **Note:**	Never pay for these as you can get for free via a [virtual training day](https://events.microsoft.com/en-us/mvtd?startTime=08:00&endTime=17:00) event.  Sign up for any event, join the day of, and earn a free voucher that’s applicable to any -900 not just the one you attended.  These happen at least twice a month in English, sign up for one and your inbox will forever be spammed on new ones.
+  - **Note:**	It seems the 100% free training days vouchers are no longer a thing.  If you are looking for discounted vouchers I would use the [Certification Hub](https://certs.msfthub.wiki/guide/introduction/) to check on current offerings.
 
 All other MS exam vouchers cost $165 each and if passed the certification is valid for a year.  The option to renew being free and a self paced quiz via your Microsoft account that will also have some Learn pages with anything new compared to when you last took it.
 

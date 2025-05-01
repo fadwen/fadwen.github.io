@@ -37,14 +37,15 @@
     - [Vendor Specific Modules](#vendor-specific-modules)
     - [3rd Party Modules](#3rd-party-modules)
 - [MgGraph bits](#mggraph-bits)
-- [Intune](#intune)
-  - [Videos](#videos-1)
+- [M365](#m365)
+  - [Interview Prep](#interview-prep)
 - [Useful non-portal MS websites](#useful-non-portal-ms-websites)
   - [365 Configuration Tool](#365-configuration-tool)
   - [Graph Explorer](#graph-explorer)
   - [Microsoft Remote Connectivity Analyzer](#microsoft-remote-connectivity-analyzer)
 - [Test Lab](#test-lab)
   - [Lab Setup](#lab-setup)
+    - [Guides](#guides)
   - [MCPs](#mcps)
 - [Certifications](#certifications)
   - [~~Axelos~~ PeopleCert](#axelos-peoplecert)
@@ -96,7 +97,6 @@
 - **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**
   - Unlike the other ones this is not just PowerShell specific, in fact there's an included book [Automating Microsoft 365 with PowerShell](https://o365itpros.gumroad.com/l/M365PS) that you can breakout and purchase separately if you just want the PS stuff.  I recommend the whole thing though if you are working in the MS stack as it's just a treasure trove of resources and constantly being added onto/updated.  Unlike the others listed, this is purely in E-book format.
  
-[🔝 Back to Top](#toc)
 
 ## Browser Extensions ##
 
@@ -109,7 +109,6 @@
 - [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
   - For when you want to see or replay the api query on something Graph X-ray/browser dev tools doesn't capture.  Just as an aside, Postman and VSCode have colloborated in such a fashion that you can get full functionality by installing the VSCode extension so that you don't need both apps as separate.  
 
-[🔝 Back to Top](#toc)
 
 ## Discords ##
 
@@ -119,7 +118,6 @@
 - **[WinAdmins](https://discord.gg/winadmins)**
   - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during US East Coast business hours.
 
-[🔝 Back to Top](#toc)
 
 ## Practical Hands-on ##
 
@@ -134,7 +132,6 @@ The best experience is to have a need and implement it yourself.  That said, the
 - **[UnderTheWire Wargames](https://underthewire.tech/wargames)**
   - Fun little ssh challenges that require you to fact find on the host to get password to next ssh session . Practical and helps you think critically about solving issues without being spoon-fed.
 
-[🔝 Back to Top](#toc)
 
 ## Videos ##
 
@@ -147,7 +144,6 @@ The best experience is to have a need and implement it yourself.  That said, the
 - **[Getting Started with Graph](https://www.youtube.com/playlist?list=PLKROqDcmQsFls8cPHk3HFz2mUURHx46_O)**
   > I lump graph in with powershell here, sure you can just `invoke-restmethod` the api endpoints direct, or use a language that isn't powershell at all.  I personally see the two linked inseparably.  If you're using pwsh, you'll be using graph unless it's a completely on-prem environment with zero 365 apps, and you should know how to get started with that.
 
-[🔝 Back to Top](#toc)
 
 ## Websites ##
 
@@ -166,7 +162,6 @@ The best experience is to have a need and implement it yourself.  That said, the
 
 - **[Sample Code](https://powershell.one/code)**
 
-[🔝 Back to Top](#toc)
 
 # VSCode
 
@@ -183,7 +178,6 @@ The best experience is to have a need and implement it yourself.  That said, the
 - [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
 - [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
-[🔝 Back to Top](#toc)
 
 ## More VSCode Goodies
 
@@ -196,7 +190,6 @@ The best experience is to have a need and implement it yourself.  That said, the
 - [VS Code Keybindings](https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing)
   - Good-to-know keybindings. Example: `CTRL + H` for find and replace makes things smoother.
 
-[🔝 Back to Top](#toc)
 
 # Working with PowerShell
 
@@ -227,12 +220,10 @@ This list in not all encompassing, but the majority of what I do are handled by 
 - PowerShellGet
   - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
 
-[🔝 Back to Top](#toc)
 ### Vendor Specific Modules ###
 - [Lenovo Client Scripting Module](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Lenovo.Client.Scripting)
   - If you're in a Lenovo shop - first of all, I'm sorry - but this module helps getting device/docking station info. 
   
-[🔝 Back to Top](#toc)
 ### 3rd Party Modules ###
 **Always make sure to assess and evaluate before implementing in production.**
 - [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)
@@ -250,7 +241,6 @@ This list in not all encompassing, but the majority of what I do are handled by 
 - [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)
   - A great logging module that I wish I had found years ago, saves so much time.  Plenty more use cases than just logging, for example: makes some Param functions simpler.
 
-[🔝 Back to Top](#toc)
 
 # MgGraph bits #
 
@@ -261,12 +251,10 @@ This list in not all encompassing, but the majority of what I do are handled by 
   - [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)
     - Cleaner Graph specific invoke that can be used rather than `Invoke-WebRequest` or `Invoke-RestMethod` if the API endpoint does not have a cmdlet built out with all options yet.
 
-# Intune #
+# M365 #
 
-## Videos
- - This [course at robopack](https://learn.robopack.com/course/intune-for-windows) is completely free and contains a great how-to for those new to intune.  Just ignore the robopack videos as that's a separate product :smile:
-
-[🔝 Back to Top](#toc)
+## Interview Prep ##
+ - Despite having hands on experience it's useful to prepare and not stumble.  I've leveraged [this](https://www.aguidetocloud.com/interview-questions/microsoft-365-interview-questions) as a refresher.
 
 # Useful non-portal MS websites #
 
@@ -279,7 +267,6 @@ This list in not all encompassing, but the majority of what I do are handled by 
 ## [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com) ##
   - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember.
   - 
-[🔝 Back to Top](#toc)
 
 # Test Lab #
 
@@ -293,8 +280,18 @@ This list in not all encompassing, but the majority of what I do are handled by 
    - Focuses on Proxmox as the hypervisor, Wazuh SIEM, and various pentesting VMs.
  - [Ludus](https://docs.ludus.cloud/docs/category/quick-start)
    - Another Debian/Proxmox specific, but completely takes over so if you need the host for other things be warned.
-- [10 Free Azure SQL](https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-the-enhanced-azure-sql-database-free-offer-now-generally-available/4372418)
-  - They've updated it from 1 to 10 free DBs of up to 32GB storage.
+ - [10 Free Azure SQL](https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-the-enhanced-azure-sql-database-free-offer-now-generally-available/4372418)
+   - They've updated it from 1 to 10 free DBs of up to 32GB storage.
+
+### Guides ###
+
+For when you set up the lab, now what?
+
+ - [Learn to Cloud](https://learntocloud.guide/)
+   - This is vendor agnostic, letting you choose between learning AWS, GCP, and Azure, and contains great foundations.
+ - [Bootcamps from a guide to cloud](https://www.aguidetocloud.com/bootcamps)
+   - Some great free videos on various Microsoft things, the bulk is on Azure but you can find 365 and Sentinel as well in there.
+ - This [course at robopack](https://learn.robopack.com/course/intune-for-windows) is completely free and contains a great how-to for those new to Intune.  Just ignore the robopack videos as that's a separate product :smile:
 
 ## MCPs ##
 
@@ -309,7 +306,6 @@ From my test drives they are really bad for write unless it's a one-off (adding 
 - [Official Azure MCP](https://github.com/Azure/azure-mcp)
   - Finally put out in an official capacity and with a [blog post that dives into details](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).
 
-[🔝 Back to Top](#toc)
 
 # Certifications #
 
@@ -319,25 +315,21 @@ Personal thoughts on industry certification usefulness, all opinions my own.
 
 Whether it was due to acquisition by PeopleCert or their own fault, this company is everything bad with the certification industry.  They make you pay a subscription in order to keep your digital badge up to date, they introduced renewals on their certs despite adding no new knowledge.  That being said they are firmly entrenched in the industry now, with Agile, ITIL, Prince2, PMP, etc.  We just have to suck it up and deal with their demands.
 
-[🔝 Back to Top](#toc)
 
 ### [ITIL 4 Foundation](https://www.axelos.com/certifications/itil-service-management/itil-4-foundation) ###
 
 - This establishes a framework that modern enterprises follow.  Change management, Issue vs Incident vs Problem, and a ton of other ITIL specific vocabulary that requires rote memorization.  This is a general purpose certification that adds value to a resume, whether you are technically inclined, sales, or management.  This used to be a lifetime certification, but now renews on a 3 year cycle, despite there being no revisions to the learning material.
 
-[🔝 Back to Top](#toc)
 
 ## BetterCloud ##
 
 The product itself is not complex, competing with other lifecycle management tools: Entra, Okta, etc.  It seems to have emphasis/more functionality on working with Google Workspace and Slack functionality over Microsoft offerings.  The plus side is their [Flight School website](https://www.bettercloud.com/training/) gives you a free code to take their exams, on top of swag mailed to you on completion.
 
-[🔝 Back to Top](#toc)
 
 ### [BetterCloud Certified Administrator](https://learn.bettercloud.com/path/certification) ###
 
  - This exam tests for competency in the product as an administrator: connecting to HRIS, connecting to IDP,  DLP options, etc. With a spoon fed free learning webinar that will walk you through what the exam tests on, if you fail it I assume you have never been in the admin portal at all.  Anecdotally I've never met another person who's worked in the product, and a recruiter has never reached out to me for it.
 
-[🔝 Back to Top](#toc)
 
 ## CompTIA ##
 
@@ -345,33 +337,27 @@ These are great as they are vendor agnostic. The CompTIA certs are slightly cost
 
 There are plenty of learning sources out there, but I can't recommend [ProfessorMesser](https://www.professormesser.com/) enough for the "CompTIA Trifecta" (A/Net/Sec).  His Youtube playlists are updated to the latest versions, comprehensive, and always free.
 
-[🔝 Back to Top](#toc)
 
 ### [A+](https://www.comptia.org/certifications/a) ###
 - The industry standard certification for IT professionals starting their careers. It's a mile wide and an inch deep.  It's there to introduce you to the basics of everything.  This one takes two tests to pass, you are not A+ certified until you pass both.  By itself, holds no weight on the resume, but will get you to the interview for entry level jobs.
 
-[🔝 Back to Top](#toc)
 
 ### [Network+](https://www.comptia.org/certifications/network) ###
 - This focuses on wired and wireless networks with emphasis on subnetting without a calculator like a monster.  It will give foundational network familiarity that goes beyond what the A+ does.  If I had to do-over I would get a CCNA instead as it holds more weight and goes slightly beyond with ios commands.
 
-[🔝 Back to Top](#toc)
 
 ### [Security+](https://www.comptia.org/certifications/security) ###
 - It covers key topics like network security, risk management, cryptography, and threat mitigation. This one is the one you'll get the most mileage out of on your resume.  Virtually any professional IT-adjacent would benefit from the concepts in this, you don't have to be shooting for a InfoSec or Pentest position.
 
-[🔝 Back to Top](#toc)
 
 ### [Linux+](https://www.comptia.org/certifications/linux) ###
 - Honestly I bought the voucher to Linux+ with the above CompTIA vouchers to get the most discount of my CompTIA Store subscription.  I took it a week before the voucher expired with 0 prep and passed.  TLDR: it teaches a surface level of Linux that anyone slightly familiar could pass, LPIC or RHEL certs would get more mileage.
 
-[🔝 Back to Top](#toc)
 
 ## Microsoft ##
 
 This mainly goes into the certifications as those add value to the resume/employers, but Microsoft does have something relatively new called [Applied Skills](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=applied%20skills) which are free to take and showcase your proficiency in a specific task.  I'm not sure if they are prestigious enough to add to a resume, but it can certainly validate a role-based skill if you're looking to make an internal move.
 
-[🔝 Back to Top](#toc)
 
 ### [-900s/foundations exams](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&levels=beginner) ###
 - These last a lifetime and provide a very general overview of what that category/service entails.  They won’t add value to a resume or validate skills but it’s good to dip your feet in.  I picture these as existing for recruiters, non-technical managers to get an overall understanding, or a way to see if it’s something you’re interested in.
@@ -388,54 +374,44 @@ It’s tough to practice some of these outside of a production environment as th
 
 You can setup a free trial via [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/) and then further activate free trial licenses for various plans you are testing.  Be cautious when going this route as generally you have to put a card on file and if you’re not careful you may blow past the $200/mo free cap pretty easily.  Also check out the [Lab Setup](#lab-setup) section to create your own, keeping in mind for some cloud features you may be charged if you go on past trial dates.
 
-[🔝 Back to Top](#toc)
 
 ### [MD-102 – Endpoint Administrator](https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
 - A lot of people I’ve talked to think this is Microsoft’s equivalent of the A+ because it used to be called Managing Modern Desktops, but it provides a lot more value if you are working with the Windows stack.  This describes everything from the different versions of Windows (10/11, Home, Professional, Enterprise, etc), Windows Server, registry, active directory, as well as going in depth on prem/cloud solutions like GPO’s/OMA-URI’s, MDT/Autopilot, SCCM/Intune, WSUS/WufB.  I would really recommend this as the first Microsoft cert to get if you are dealing with workstations on a regular basis.  Also if you’re discussing with someone and they mention the old MCSA, this is the one that translates most to it.
 
-[🔝 Back to Top](#toc)
 
 ### [SC-300 – Identity and Access Administrator](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
 - This is a great foundation for understanding the Entra tenant.  Users, groups, roles, application registrations, SSO, etc.  If you deal or are looking to deal with IAM, this would be a great validation/intro.
 
-[🔝 Back to Top](#toc)
 
 ### [MS-102 – Enterprise Administrator](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/?WT.mc_id=certposter_poster-wwl) ###
 - This is an Expert certification that builds on the knowledge from MD-102 and SC-300 as well as some voip/teams.  This has emphasis on building out a tenant, IAM polices like Conditional Access, how to configure Defender, and managing retention/compliance policies with Purview.  This is the nearest equivalent of the older MCSE.
 
-[🔝 Back to Top](#toc)
 
 ### [AZ-104 – Azure Administrator](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
 - This is great for showing you have the technical skills for Azure with an emphasis on DevOps.  Managing VMs, Networks, Subscriptions, Kubernetes clusters, and Storage solutions with Powershell, Az CLI, or ARM templates to implement them to describe a few.
 
-[🔝 Back to Top](#toc)
 
 ### [AZ-305 – Azure Solutions Architect](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/?WT.mc_id=certposter_poster-wwl) ###
 - This is an Expert level certification with AZ-104 as a pre-requisite.  While AZ-104 focuses on the technical aspects and how to implement, this focuses on the why.  Emphasis on VM change control, network peering/failover, disaster recovery solutions, choosing different SQL implementations, requirements to shift from on-prem to cloud, and auditing role assignments between subscriptions as some examples.
 
-[🔝 Back to Top](#toc)
 
 ### [AZ-800/801 – Windows Server Hybrid Administrator](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/?WT.mc_id=certposter_poster-wwl) ###
 - Unlike the MD/MS-102 Microsoft hasn’t combined both into a single exam yet and there is some overlap.  In most companies you’ll have a hybrid tenant at some level not pure cloud (unless you get lucky) and the Learn pages will provide a great benefit in the configuration needed to implement it.  This is also really the only path currently available for Windows Server skill validation.
 
-[🔝 Back to Top](#toc)
 
 ### [Specialty: Azure Virtual Desktop](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ### 
 - AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to implement and administrate it.
 
-[🔝 Back to Top](#toc)
 
 ## Okta ##
 
 Okta tests are interesting in that you cannot go back and review your answers/change them.  The format I've had is that each question is weighted and you have to choose the best answer, not necessarily the only right answer.
 
-[🔝 Back to Top](#toc)
 
 ### [Okta Certified Professional](https://certification.okta.com/okta-certified-professional-hands-on-configuration-exam-for-oie) ###
 
 - This is a bit more intensive than a -900 from Microsoft but still geared to Sales, Managers, or entry level administrators.  You'll know the capabilities of the product and a base level of things to do with it.  I earned mine while having basic help desk permissions within the product, and renewed it successfully on my first try after not touching it for two years and no studying.  I'm not sure if this adds anything of value to your resume for job seekers, more of a progression internally if you are in a company with the product.
 
-[🔝 Back to Top](#toc)
 
 # [Western Governors University](https://www.wgu.edu/) #
 
@@ -452,6 +428,3 @@ Finally, while WGU is great in that it covers exam vouchers for certain certific
 Of course this is talking if you're net new.  If you have an Associate's already those can count too.  Really recommend talking to an enrollment person at WGU and they are super friendly and will walk you through what you need to do.  The leadup time from when you start talking to them to actually starting your term at WGU is ~45 days or ~2 months depending.  I mention this so you can plan on when you'll actually start taking courses with WGU vs deciding to.
 
 With the above prep work done, you could transfer into their IT Bachelor's with only around 60 credits left.  Which can greatly ease that 6 month term/payment if you're motivated -- knocking out a Bachelor's in one or two terms.
-
-
-[🔝 Back to Top](#toc)

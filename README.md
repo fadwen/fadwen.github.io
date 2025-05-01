@@ -304,6 +304,8 @@ From my test drives they are really bad for write unless it's a one-off (adding 
   - This MCP is designed for on prem AD by Microsoft MVP Ruud.  It has some guard rails built in, but I would still heavily evaluate before implementing in production.
 - [Official Azure MCP](https://github.com/Azure/azure-mcp)
   - Finally put out in an official capacity and with a [blog post that dives into details](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).
+- [PSMCP](https://github.com/dfinke/PSMCP)
+  - Published by n+1 year MVP Doug Finke, I love that this allows you to add pwsh functions and query them in natural language.  Extremely important to not only have the function be `global` but comments detailing use case.
 
 
 # Certifications #

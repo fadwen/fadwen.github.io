@@ -266,7 +266,6 @@ This list in not all encompassing, but the majority of what I do are handled by 
 
 ## [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com) ##
   - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember.
-  - 
 
 # Test Lab #
 

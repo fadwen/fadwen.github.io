@@ -3,18 +3,11 @@
 <p>This page is used to keep track of resources used in my professional development, or things I have found afterward that I wish I had known.</p>
 
 <p>
-<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ffadwen%2Ffadwen.github.io">
-    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Ffadwen%2Ffadwen.github.io&label=Visitors&countColor=%2379C83D&style=flat" alt="Visitors Badge">
-</a>
-<a href="https://www.linkedin.com/in/jeffrey-stuhr-034214aa/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn">
-</a>
-<a href="https://bsky.app/profile/techbyjeff.net">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky" alt="BlueSky">
-</a>
-<a href="https://techbyjeff.net">
-    <img src="https://img.shields.io/badge/Read%20My%20Blog-grey?style=flat-square&logo=ghost" alt="Blog">
-</a>
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ffadwen%2Ffadwen.github.io"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Ffadwen%2Ffadwen.github.io&label=Visitors&countColor=%2379C83D&style=flat" alt="Visitors Badge"></a>
+<a href="https://www.linkedin.com/in/jeffrey-stuhr-034214aa/"><img src="https://img.shields.io/badge/LinkedIn-Jeffrey_Stuhr-0077B5?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://bsky.app/profile/techbyjeff.net"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky" alt="BlueSky"></a>
+<a href="https://techbyjeff.net"><img src="https://img.shields.io/badge/Read_My_Blog-TechbyJeff-lightgrey?style=flat-square&logo=ghost" alt="Blog"></a>
+<a href="https://github.com/fadwen/fadwen"><img src="https://img.shields.io/badge/Last_Updated-May_2025-green?style=flat-square&logo=github" alt="Last Updated"></a>
 </p>
 
 </div>

@@ -234,7 +234,6 @@ Also note: as PowerShell 7 becomes the default, `Install-Module` is being phased
 
 ### Microsoft Modules
 
-- `ActiveDirectory`
 - `Az`
 - `ExchangeOnlineManagement`
 - [EnhancedHTML2](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/EnhancedHTML2)  

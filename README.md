@@ -24,31 +24,32 @@
 - [PowerShell Resources](#powershell-resources)
   - [Books](#books)
   - [Browser Extensions](#browser-extensions)
-  - [Discords](#discords)
-  - [Practical Hands-on](#practical-hands-on)
+  - [Discord Communities](#discord-communities)
+  - [Practical Hands-On](#practical-hands-on)
   - [Videos](#videos)
   - [Websites](#websites)
 - [VSCode](#vscode)
   - [VSCode Extensions](#vscode-extensions)
   - [More VSCode Goodies](#more-vscode-goodies)
 - [Working with PowerShell](#working-with-powershell)
-  - [Modules Commonly Used](#modules-commonly-used)
+  - [Commonly Used Modules](#commonly-used-modules)
     - [Microsoft Modules](#microsoft-modules)
-    - [Vendor Specific Modules](#vendor-specific-modules)
-    - [3rd Party Modules](#3rd-party-modules)
-- [MgGraph bits](#mggraph-bits)
-- [M365](#m365)
+    - [Vendor-Specific Modules](#vendor-specific-modules)
+    - [Third-Party Modules](#third-party-modules)
+    - [Microsoft Graph Command Helpers](#microsoft-graph-command-helpers)
+- [Microsoft 365](#microsoft-365)
   - [Interview Prep](#interview-prep)
-- [Useful non-portal MS websites](#useful-non-portal-ms-websites)
-  - [365 Configuration Tool](#365-configuration-tool)
-  - [Graph Explorer](#graph-explorer)
+- [Useful Non-Portal Microsoft Tools](#useful-non-portal-microsoft-tools)
+  - [Microsoft 365 Apps Configuration Tool](#microsoft-365-apps-configuration-tool)
+  - [Microsoft Graph Explorer](#microsoft-graph-explorer)
   - [Microsoft Remote Connectivity Analyzer](#microsoft-remote-connectivity-analyzer)
-- [Test Lab](#test-lab)
+- [Test Lab Resources](#test-lab-resources)
   - [Lab Setup](#lab-setup)
     - [Guides](#guides)
-  - [MCPs](#mcps)
+  - [MCPs (Model-Context-Protocol)](#mcps-model-context-protocol)
+    - [Available MCP Projects](#available-mcp-projects)
 - [Certifications](#certifications)
-  - [~~Axelos~~ PeopleCert](#axelos-peoplecert)
+  - [PeopleCert (formerly Axelos)](#peoplecert-formerly-axelos)
     - [ITIL 4 Foundation](#itil-4-foundation)
   - [BetterCloud](#bettercloud)
     - [BetterCloud Certified Administrator](#bettercloud-certified-administrator)
@@ -58,80 +59,104 @@
     - [Security+](#security)
     - [Linux+](#linux)
   - [Microsoft](#microsoft)
-    - [-900s/foundations exams](#-900sfoundations-exams)
+    - [-900 Series / Fundamentals](#-900-series--fundamentals)
+    - [Study \& Practice Environments](#study--practice-environments)
     - [MD-102 – Endpoint Administrator](#md-102--endpoint-administrator)
     - [SC-300 – Identity and Access Administrator](#sc-300--identity-and-access-administrator)
-    - [MS-102 – Enterprise Administrator](#ms-102--enterprise-administrator)
+    - [MS-102 – Microsoft 365 Administrator](#ms-102--microsoft-365-administrator)
     - [AZ-104 – Azure Administrator](#az-104--azure-administrator)
-    - [AZ-305 – Azure Solutions Architect](#az-305--azure-solutions-architect)
-    - [AZ-800/801 – Windows Server Hybrid Administrator](#az-800801--windows-server-hybrid-administrator)
+    - [AZ-305 – Azure Solutions Architect Expert](#az-305--azure-solutions-architect-expert)
+    - [AZ-800 / AZ-801 – Windows Server Hybrid Administrator](#az-800--az-801--windows-server-hybrid-administrator)
     - [Specialty: Azure Virtual Desktop](#specialty-azure-virtual-desktop)
   - [Okta](#okta)
     - [Okta Certified Professional](#okta-certified-professional)
-- [Western Governors University](#western-governors-university)
+- [Western Governors University (WGU)](#western-governors-university-wgu)
+    - [Common Pitfall](#common-pitfall)
+    - [Pre-WGU Prep](#pre-wgu-prep)
+    - [Enrollment Timing](#enrollment-timing)
+    - [Summary](#summary)
 
 # PowerShell Resources #
 
 ## Books ##
 
-- **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**
-  - The authors recommend one chapter a day, but if you're not a complete beginner, you can get through chapter 8 before things start getting insightful. Really informative book that I wish I'd been recommended instead of stumbling through trial and error.
+Recommended reading for expanding your PowerShell knowledge, from beginner fundamentals to scripting, automation, security, and Microsoft 365 integration.
 
-- **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**
-  - This goes above and beyond the aforementioned book, assuming your familiarity and that you are now writing your own modules/functions.  Has some things on pestering as well.
-  - [Companion Github](https://github.com/psjamesp/MOL-Scripting/tree/main)
+- **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**  
+  - A great starting point. If you're not a complete beginner, the first few chapters may feel basic, but the later ones offer more depth.  
+  This is a foundational resource worth starting with.
 
-- **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**
-  - While *Learn PowerShell in a Month of Lunches* dives into PSRemoting/WSMan, this explains nuances.  Honestly all of the [DevOps Collective](https://leanpub.com/u/devopscollective) books are recommended.
+- **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**  
+  - Builds on the first book, covering scripting techniques, module creation, and testing with Pester.  
+  Companion GitHub: [psjamesp/MOL-Scripting](https://github.com/psjamesp/MOL-Scripting/tree/main)
 
-- **[Mastering Powershell Scripting](https://www.packtpub.com/en-us/product/mastering-powershell-scripting-9781805124153)**
-  - Chris Dent is very active and knowledgable and this book on automations does not disappoint.  If you join either of the discords I mention he's easily accessible. 
+- **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**  
+  - Goes beyond the PSRemoting basics found in the Lunches book, offering more nuance and practical tips.  
+  Part of the broader [DevOps Collective book series](https://leanpub.com/u/devopscollective), which is also highly recommended.
 
-- **[Practical Automation with PowerShell](https://www.manning.com/books/practical-automation-with-powershell)**
-  - Another book of example automations and designing your own.
-  - [Companion Github](https://github.com/mdowst/Practical-Automation-with-PowerShell/tree/main)
+- **[Mastering PowerShell Scripting](https://www.packtpub.com/en-us/product/mastering-powershell-scripting-9781805124153)**  
+  - Written by Chris Dent, a knowledgeable and approachable figure in the PowerShell community.  
+  The book covers automation strategies and scalable scripting practices.
 
-- **[PowerShell Automation and Scripting for Cybersecurity](https://www.packtpub.com/en-us/product/powershell-automation-and-scripting-for-cybersecurity-9781800569263)**
-  - The other automation books are great, but I've always had a soft spot for working with InfoSec.  Learning what they look for helps collaborations and implementing things securely.
+- **[Practical Automation with PowerShell](https://www.manning.com/books/practical-automation-with-powershell)**  
+  - A practical guide to building real-world automation solutions.  
+  Companion GitHub: [mdowst/Practical-Automation-with-PowerShell](https://github.com/mdowst/Practical-Automation-with-PowerShell/tree/main)
 
-- **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**
-  - Unlike the other ones this is not just PowerShell specific, in fact there's an included book [Automating Microsoft 365 with PowerShell](https://o365itpros.gumroad.com/l/M365PS) that you can breakout and purchase separately if you just want the PS stuff.  I recommend the whole thing though if you are working in the MS stack as it's just a treasure trove of resources and constantly being added onto/updated.  Unlike the others listed, this is purely in E-book format.
- 
+- **[PowerShell Automation and Scripting for Cybersecurity](https://www.packtpub.com/en-us/product/powershell-automation-and-scripting-for-cybersecurity-9781800569263)**  
+  - Focused on automation with a security lens.  
+  Helpful for understanding what InfoSec teams look for and how to build secure solutions.
 
-## Browser Extensions ##
+- **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**  
+  - A deeply detailed and continuously updated eBook for Microsoft 365 administrators.  
+  Includes a separate volume: [Automating Microsoft 365 with PowerShell](https://o365itpros.gumroad.com/l/M365PS), which can also be purchased on its own.  
+  If you work in the Microsoft stack, this resource is well worth it.
 
-- [Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)
-  - With every MS product having a portal and no connecting links, saves so much time flipping through tabs/bookmarks.
-  
-- [Graph X-Ray](https://graphxray.merill.net/)
-  - Great way to see what GUI actions use Graph behind the scenes as well as translating to powershell for your own scripts.
+## Browser Extensions
 
-- [Postman Interceptor](https://www.postman.com/product/postman-interceptor/)
-  - For when you want to see or replay the api query on something Graph X-ray/browser dev tools doesn't capture.  Just as an aside, Postman and VSCode have colloborated in such a fashion that you can get full functionality by installing the VSCode extension so that you don't need both apps as separate.  
+These tools streamline working with Microsoft 365, Graph API, and portal sprawl. All are free and extremely useful in both exploratory and automation scenarios.
 
+- **[Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)**  
+  - Consolidates links to all Microsoft 365 admin portals in one place.  
+  - Huge time-saver compared to flipping through bookmarks or trying to remember portal URLs.
 
-## Discords ##
+- **[Graph X-Ray](https://graphxray.merill.net/)**  
+  - Reveals which Graph API calls are made during portal interactions.  
+  - Translates actions into PowerShell or REST calls, making it easier to automate what you previously did manually.
 
-- **[PowerShell](https://discord.gg/PowerShell)**
-  - A bunch of hard-hitting PowerShell nerds here, from people involved with the actual PowerShell GitHub/dev to those who manage aspects of VSCode. Very friendly place as I haven't been shamed for any of the pretty dumb questions I've put to them.
-
-- **[WinAdmins](https://discord.gg/winadmins)**
-  - This is a good discord with a lot of MSPs who work with different stacks. It has active Microsoft MVPs and some actual Microsoft employees. Most of the server is active during US East Coast business hours.
+- **[Postman Interceptor](https://www.postman.com/product/postman-interceptor/)**  
+  - Captures and replays browser-based API calls that dev tools or Graph X-Ray might miss.  
+  - Tip: Postman functionality is now available via a [VSCode extension](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode), reducing the need for a separate desktop app.
 
 
-## Practical Hands-on ##
 
-The best experience is to have a need and implement it yourself.  That said, these do offer some ways to learn hands-on.
+## Discord Communities
 
-- **[HacktheBox Academy](https://academy.hackthebox.com/)**
-  - Some great general Windows/powershell, with some steps to securing AD.  The free version can be frustrating due to laggy VPNs and non-responsive VMs. Interestingly, the very first day I made the account I didn't have this issue, it was in subsequent visits that performance degraded.
+A few active and supportive communities for learning, troubleshooting, and sharing knowledge with emphasis around PowerShell and Microsoft environments.
 
-- **[PSKoans](https://github.com/vexx32/PSKoans)**
-  - I've had this on my list for awhile, looking at the docs it seems like a great learning tool.  The downside is it doesn't appear to have been updated for several years.
+- **[PowerShell Discord](https://discord.gg/PowerShell)**  
+  - Home to PowerShell enthusiasts, contributors, and even members of the core development team.  
+  - Great place to ask questions no matter how basic. I’ve never been shamed for asking something obvious.
 
-- **[UnderTheWire Wargames](https://underthewire.tech/wargames)**
-  - Fun little ssh challenges that require you to fact find on the host to get password to next ssh session . Practical and helps you think critically about solving issues without being spoon-fed.
+- **[WinAdmins Discord](https://discord.gg/winadmins)**  
+  - Focused on Windows system administration, with many members working in MSP environments.  
+  - Includes active Microsoft MVPs and employees. Most discussion happens during US East Coast business hours.
 
+
+## Practical Hands-On
+
+The best way to learn is by solving real problems—but when that’s not an option, the following resources offer hands-on PowerShell experience in structured or gamified environments.
+
+- **[Hack The Box Academy](https://academy.hackthebox.com/)**  
+  - Offers training on general Windows administration, PowerShell usage, and securing Active Directory.  
+  - The free tier can be hit-or-miss: I had a smooth experience on day one, but performance degraded in later sessions with laggy VPNs and unresponsive VMs.
+
+- **[PSKoans](https://github.com/vexx32/PSKoans)**  
+  - Interactive PowerShell learning tool inspired by the Koans model.  
+  - A great concept for reinforcing syntax and logic, though it hasn’t been actively updated in recent years.
+
+- **[UnderTheWire Wargames](https://underthewire.tech/wargames)**  
+  - SSH-based PowerShell challenges where each level requires you to uncover clues and credentials on the host.  
+  - Encourages critical thinking and exploration without relying on step-by-step instructions.
 
 ## Videos ##
 
@@ -142,8 +167,9 @@ The best experience is to have a need and implement it yourself.  That said, the
 - **[PowerShell Conferences EU](https://www.youtube.com/@PowerShellConferenceEU/playlists)**
 
 - **[Getting Started with Graph](https://www.youtube.com/playlist?list=PLKROqDcmQsFls8cPHk3HFz2mUURHx46_O)**
-  > I lump graph in with powershell here, sure you can just `invoke-restmethod` the api endpoints direct, or use a language that isn't powershell at all.  I personally see the two linked inseparably.  If you're using pwsh, you'll be using graph unless it's a completely on-prem environment with zero 365 apps, and you should know how to get started with that.
-
+  > While you can interact with Graph directly using `Invoke-RestMethod` or other programming languages, I consider PowerShell and Graph inseparable in modern environments.  
+  > 
+  > If you're working in PowerShell and managing Microsoft 365—even minimally—you'll almost certainly rely on Microsoft Graph. Unless you're in a fully on-prem setup with no M365 presence, you should know how to get started with it.
 
 ## Websites ##
 
@@ -165,11 +191,13 @@ The best experience is to have a need and implement it yourself.  That said, the
 
 # VSCode
 
-> Note that PowerShell ISE does not support version 7+ and is not getting any new features.  Learn to use VSCode, install it on your jump boxes that used ISE, set up an ADMX with Intune to ensure only approved extensions and features are used.
-> 
-> Tunnels are a great remoting feature if you secure them properly.
->
-> If VSCode is too dev-y, you really liked ISE, and maybe you build a lot of GUIs [Powershell Studio](https://www.sapien.com/software/powershell_studio) is a solid work horse.  If you can get the approval to shell out for the $550 license.
+> PowerShell ISE does not support version 7+ and is no longer receiving updates. Transition to Visual Studio Code (VSCode) as your primary PowerShell editor.
+
+VSCode is the modern, supported platform for PowerShell development. Install it on any system still using ISE, especially jump boxes, and configure centralized policies with Intune and ADMX templates to restrict extensions and features to only what’s approved.
+
+VSCode also supports **Tunnels**, a secure and flexible remote editing feature, just ensure proper security configurations are in place.
+
+If you find VSCode too developer-oriented or you miss ISE’s simplicity—especially for building GUIs—[PowerShell Studio](https://www.sapien.com/software/powershell_studio) from Sapien is a powerful alternative. It’s a solid option if your organization can justify the $550 license cost.
 
 ## VSCode Extensions
 
@@ -193,94 +221,111 @@ The best experience is to have a need and implement it yourself.  That said, the
 
 # Working with PowerShell
 
-> There are two versions of PowerShell.  Windows PowerShell `powershell.exe` that comes baked into the OS and PowerShell 7.x.x `pwsh.exe` which has to be downloaded and installed separately.  Install PowerShell 7 and make it your default in everything before you start installing modules as it will just make things easier.  Most modules developed after 2020 are intended for 7, and if you need to run something that errors and requires the 5.x of Windows PowerShell, you can use the `-UseWindowsPowerShell` switch when you import the modules.
+> **Two PowerShell Versions**  
+> Windows PowerShell (`powershell.exe`) is built into the OS, while PowerShell 7+ (`pwsh.exe`) is cross-platform and must be installed separately. Most modern modules (post-2020) are designed for PowerShell 7.
 
-## Modules Commonly Used
+Install PowerShell 7 and set it as your default environment before installing modules—it will simplify your experience and avoid compatibility headaches. For legacy modules that only work with Windows PowerShell, use the `-UseWindowsPowerShell` switch when importing them.
 
-This list in not all encompassing, but the majority of what I do are handled by them and I consider them must-haves on new workstations for me.  As a brief mention, `Install-Module` is slowly being phased out as 7.x.x becomes the standard, might as well get used to it's replacement `Install-PSResource` instead.
+## Commonly Used Modules
+
+This isn't an exhaustive list, but these modules cover most of what I do and are must-haves on any new workstation I configure.
+
+Also note: as PowerShell 7 becomes the default, `Install-Module` is being phased out in favor of `Install-PSResource`. It's worth getting familiar with the new syntax now.
+
+### Microsoft Modules
+
+- `ActiveDirectory`
+- `Az`
+- `ExchangeOnlineManagement`
+- [EnhancedHTML2](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/EnhancedHTML2)  
+  - Extends `ConvertTo-HTML` to support cleaner, customizable HTML reports.
+- `Microsoft.Graph` and `Microsoft.Graph.Beta`  
+  - SDK-style module with a steeper learning curve. Most advanced functionality resides in the Beta module, which hits the `/beta` Graph endpoint. Eventually, you may prefer calling the endpoints directly with `Invoke-WebRequest` or `Invoke-RestMethod`.  
+  - If the SDK feels cumbersome, [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) can provide a more PowerShell-friendly experience.
+- [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and `Microsoft.Graph.Entra.Beta`  
+  - A simplified experience for admins familiar with the legacy `AzureAD` module. It bridges the gap but does not yet offer full Graph functionality.
+- `Microsoft.Online.SharePoint.PowerShell`
+- `Microsoft.PowerShell.ConsoleGuiTools`  
+  - `Out-ConsoleGridView` provides an in-terminal, interactive way to explore data.
+- `Microsoft.PowerShell.GraphicalTools`  
+  - `Out-GridView` opens a GUI window for data filtering and exploration.
+- `MicrosoftTeams`
+- `PowerShellGet`  
+  - Required for module management in Windows PowerShell only. PowerShell 7.4+ uses `Microsoft.PowerShell.PSResourceGet` by default.
+
+### Vendor-Specific Modules
+
+- [Lenovo Client Scripting Module](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Lenovo.Client.Scripting)  
+  - For Lenovo environments—provides access to system and docking station details.
+
+### Third-Party Modules
+
+> ⚠️ Always vet third-party modules before using them in production.
+
+- [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)  
+  - Enables sending custom toast notifications in Windows.
+- [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)  
+  - Allows activation of PIM roles via CLI, skipping the Entra portal.
+- [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)  
+  - Despite the name, it's most useful for exporting. Offers well-formatted Excel output with autosizing, pivot tables, charts, and more—especially useful in environments where `.csv` is frustrating (like Google Sheets).
+- [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.PlusPlus)  
+  - Adds PowerShell-style wrappers to Microsoft.Graph SDK. Optional but helpful for readability.
+- [Pansies](https://github.com/PoshCode/Pansies) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Pansies)  
+  - Adds styled terminal output: gradients, hyperlinks, and HTML-named colors.
+- [platyPS](https://github.com/PowerShell/platyPS) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/platyPS)  
+  - Useful for documenting your own PowerShell modules using Markdown and comment-based help.
+- [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)  
+  - Fantastic logging utility with additional features like advanced parameter handling. A major time-saver.
+
+### Microsoft Graph Command Helpers
+
+- [Find-MgGraphCommand](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-command?view=graph-powershell-1.0)  
+  - Helps identify the Graph endpoint and required permissions for a cmdlet.
+- [Find-MgGraphPermission](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0)  
+  - Used to look up permissions required by scripts or apps.
+- [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)  
+  - Graph-specific alternative to `Invoke-RestMethod` for scenarios where no prebuilt cmdlet exists.
+
+# Microsoft 365
+
+## Interview Prep
+
+Even with hands-on experience, it helps to prep for interviews to avoid stumbling through familiar topics.  
+I recommend reviewing [this M365 interview question guide](https://www.aguidetocloud.com/interview-questions/microsoft-365-interview-questions) as a refresher.
+
+# Useful Non-Portal Microsoft Tools
+
+## [Microsoft 365 Apps Configuration Tool](https://config.office.com/deploymentsettings)
+
+Instead of writing custom scripts or remediation tasks to manage Office configuration, use this tool to generate XML-based deployment configs. It supports GUI-driven policy selection and minimizes human error.
+
+## [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+
+Explore Microsoft Graph endpoints interactively—view required permissions, test queries, and examine API responses. A great way to learn the structure of Graph calls before scripting.
+
+## [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com)
+
+Helps troubleshoot Exchange, Teams, DNS, and mail flow issues. I often forget this tool exists and come up with manual workarounds—leaving it here as a reminder to use it first.
+
+# Test Lab Resources
+
+## Lab Setup
+
+- [**Hydration Kit for Windows Server 2022**](https://github.com/DeploymentResearch/HydrationKitWS2022)  
+  - Creates a fully on-prem mock lab: AD, SCCM, SQL, and Windows clients.
+
+- [**Microsoft 365 Test Environment**](https://github.com/DevClate/365AutomatedLab)  
+  - For automating setup of a full M365 lab tenant—especially useful now that Microsoft has stopped issuing dev tenants.
+
+- [**Cybersecurity Lab by Ben Heater**](https://benheater.com/proxmox-laptop-cybersecurity-lab/)  
+  - Uses Proxmox with Wazuh SIEM and penetration testing VMs for a home lab with a security focus.
+
+- [**Ludus Cloud Lab**](https://docs.ludus.cloud/docs/category/quick-start)  
+  - Proxmox-based turnkey lab solution. Be aware—it takes full control of the host, so not ideal if you're running other workloads.
 
 
-### Microsoft Modules ###
-
-- ActiveDirectory
-- Az
-- ExchangeOnlineManagement
-- [EnhancedHTML2](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/EnhancedHTML2)
-  - If the `ConvertTo-HTML` isn't enough, this helps makes some pretty great reports.
-- Microsoft.Graph and Microsoft.Graph.Beta 
-  - This is an SDK so expect some different powershell inputs, using this you are dev-lite.  Install both, most functionality comes from mgbeta commands which hits the `/beta` api endpoint of graph.  Eventually as you learn graph you'll find that hitting the graph endpoints with `Invoke-WebRequest`or `Invoke-RestMethod` direct can provide more functionality than this module.  The Microsoft.Graph.PlusPlus 3rd party module helps if you really hate the structure.
-- [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and Microsoft.Graph.Entra.Beta
-  - This was made for Admins who weren't used to the structuring graph expects, and is a direct replacement for AzureAD module.  It doesn't contain all the functionality as the above module, but it serves as a bridge.
-- Microsoft.Online.SharePoint.PowerShell
-- Microsoft.PowerShell.ConsoleGuiTools
-  - `Out-ConsoleGridView` is great for analyzing data within the terminal.
-- Microsoft.PowerShell.GraphicalTools
-  - `Out-Gridview` is a GUI popout for analyzing data.
-- MicrosoftTeams
-- PowerShellGet
-  - This is only needed if you're running Windows PowerShell.  7.4 and later comes with Microsoft.PowerShell.PSResourceGet preinstalled.
-
-### Vendor Specific Modules ###
-- [Lenovo Client Scripting Module](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Lenovo.Client.Scripting)
-  - If you're in a Lenovo shop - first of all, I'm sorry - but this module helps getting device/docking station info. 
-  
-### 3rd Party Modules ###
-**Always make sure to assess and evaluate before implementing in production.**
-- [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)
-  - Sending custom toast notifications.
-- [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)
-  - Activating PIM roles via CLI rather than GUI blades.
-- [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)
-  - Despite the module being **import** I most often use in exporting.  Working in a Google Workspace environment made me hate Sheets interactions with csv files so much that I became dependent on this module to export spreadsheets formatted properly.  It can do a ton of the Excel functions like autosize columns, pivot tables, and charts. 
-- [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.PlusPlus)
-  - This one is entirely optional and I don't personally use it, but I can see it being useful.  Extends Microsoft.Graph SDK to be more PowerShell like.  
-- [Pansies](https://github.com/PoshCode/Pansies) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Pansies)
-  - Put some flavor on your output messages. Clickable hyperlinks, gradient/complementary colors, and [HTML named entities](https://www.w3schools.com/charsets/ref_html_entities_4.asp).
-- [platyPS](https://github.com/PowerShell/platyPS) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/platyPS)
-  - Great for building out documentation for modules you make once you get used to the schema it needs.
-- [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)
-  - A great logging module that I wish I had found years ago, saves so much time.  Plenty more use cases than just logging, for example: makes some Param functions simpler.
-
-
-# MgGraph bits #
-
-  - [Find-MgGraphCommand](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-command?view=graph-powershell-1.0) 
-    - To see what perms are needed, as well as URI it is hitting.
-  - [Find-MgGraphPermission](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0) 
-    - To look up details on the permission that a script/app has.
-  - [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)
-    - Cleaner Graph specific invoke that can be used rather than `Invoke-WebRequest` or `Invoke-RestMethod` if the API endpoint does not have a cmdlet built out with all options yet.
-
-# M365 #
-
-## Interview Prep ##
- - Despite having hands on experience it's useful to prepare and not stumble.  I've leveraged [this](https://www.aguidetocloud.com/interview-questions/microsoft-365-interview-questions) as a refresher.
-
-# Useful non-portal MS websites #
-
-## [365 Configuration Tool](https://config.office.com/deploymentsettings)
- - I often see people deploying scripts or remediations for Office configs when this tool should be used instead.
-
-## [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
-  - Useful to explore Graph's URI structure, needed permissions, and responses.
-
-## [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com) ##
-  - Hub for testing issues with Exchange, Teams, DNS. I often forget about it and have come up with some interesting work arounds. Put it here to try to remember.
-
-# Test Lab #
-
-## Lab Setup ##
-
- - [HydrationKit for WS22](https://github.com/DeploymentResearch/HydrationKitWS2022)
-   - On-Prem Mockup WS22 AD, SCCM, SQL, and Workstations
- - [Microsoft 365 Test Environment](https://github.com/DevClate/365AutomatedLab)
-   - If you don't have a dev tenant before they stopped issuing them.
- - [Cybersecurity Lab](https://benheater.com/proxmox-laptop-cybersecurity-lab/)  
-   - Focuses on Proxmox as the hypervisor, Wazuh SIEM, and various pentesting VMs.
- - [Ludus](https://docs.ludus.cloud/docs/category/quick-start)
-   - Another Debian/Proxmox specific, but completely takes over so if you need the host for other things be warned.
- - [10 Free Azure SQL](https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-the-enhanced-azure-sql-database-free-offer-now-generally-available/4372418)
-   - They've updated it from 1 to 10 free DBs of up to 32GB storage.
+- [**Free Azure SQL Databases**](https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-the-enhanced-azure-sql-database-free-offer-now-generally-available/4372418)
+  - Microsoft increased their free tier to 10 databases with up to 32 GB each—great for development or test automation.
 
 ### Guides ###
 
@@ -292,140 +337,203 @@ For when you set up the lab, now what?
    - Some great free videos on various Microsoft things, the bulk is on Azure but you can find 365 and Sentinel as well in there.
  - This [course at robopack](https://learn.robopack.com/course/intune-for-windows) is completely free and contains a great how-to for those new to Intune.  Just ignore the robopack videos as that's a separate product :smile:
 
-## MCPs ##
+## MCPs (Model-Context-Protocol)
 
-I'm including these under test lab because they are basically proof of concept and should not be run as-is in production.  MCP or [Model-Context-Protocol](https://modelcontextprotocol.io/introduction) is an open standard Anthropic put out to better facilitate an LLM's connection to a data source.  They are really neat in that you can use natural language to return something that normally either someone familiar with admin portals/code would be able to find.  
+Listed under test lab resources since MCPs are proof-of-concept tools and **not recommended for production without evaluation**.  
+[Model-Context-Protocol](https://modelcontextprotocol.io/introduction) is an open standard introduced by Anthropic to help large language models (LLMs) interact more effectively with data sources using natural language.
 
-From my test drives they are really bad for write unless it's a one-off (adding 20 members to a group took almost 20+min in one test I did). But where they do excel is in read operations and data analysis from that read.
+MCPs shine in **read operations and data analysis**, allowing users to query environments like Entra or Active Directory without needing deep scripting or portal experience. However, performance on **write operations** is currently lacking—batch tasks like adding group members can be slow and inefficient.
 
-- [Lokka](https://lokka.dev/)
-  - Merill yet again delivers and this is an MCP for Entra/Azure.  I put [together a post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/) describing my experience installing and using it.
-- [Koppla](https://lazyadmin.nl/koppla/) 
-  - This MCP is designed for on prem AD by Microsoft MVP Ruud.  It has some guard rails built in, but I would still heavily evaluate before implementing in production.
-- [Official Azure MCP](https://github.com/Azure/azure-mcp)
-  - Finally put out in an official capacity and with a [blog post that dives into details](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).
-- [PSMCP](https://github.com/dfinke/PSMCP)
-  - Published by n+1 year MVP Doug Finke, I love that this allows you to add pwsh functions and query them in natural language.  Extremely important to not only have the function be `global` but comments detailing use case.
+### Available MCP Projects
+
+- [**Lokka**](https://lokka.dev/)  
+  - MCP for Entra/Azure by Merill Fernando.  
+  I wrote about my setup experience in [this post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/). Excellent for querying Entra data via natural language.
+
+- [**Koppla**](https://lazyadmin.nl/koppla/)  
+  - MCP for on-prem Active Directory by Microsoft MVP Ruud.  
+  Built-in guardrails help, but still requires careful review before any production usage.
+
+- [**Official Azure MCP**](https://github.com/Azure/azure-mcp)  
+  - Released by Microsoft with an in-depth [blog post](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).  
+  Represents the most formal implementation of MCP so far.
+
+- [**PSMCP**](https://github.com/dfinke/PSMCP)  
+  - Created by MVP Doug Finke.  
+  Lets you define PowerShell functions with descriptive comments, then query them using natural language. Note: functions must be declared `global` to be accessible.
+
 
 
 # Certifications #
 
 Personal thoughts on industry certification usefulness, all opinions my own.
 
-## ~~Axelos~~ PeopleCert ##
+## PeopleCert (formerly Axelos)
 
-Whether it was due to acquisition by PeopleCert or their own fault, this company is everything bad with the certification industry.  They make you pay a subscription in order to keep your digital badge up to date, they introduced renewals on their certs despite adding no new knowledge.  That being said they are firmly entrenched in the industry now, with Agile, ITIL, Prince2, PMP, etc.  We just have to suck it up and deal with their demands.
+Whether due to the PeopleCert acquisition or their own internal decisions, this organization represents some of the more frustrating trends in the certification space. They now require a paid subscription to maintain a digital badge and have introduced renewals on certifications without updating the material.
 
+Despite these practices, PeopleCert holds a strong position in the industry through certifications like Agile, ITIL, PRINCE2, and PMP. For now, professionals largely have to work within their system.
 
-### [ITIL 4 Foundation](https://www.axelos.com/certifications/itil-service-management/itil-4-foundation) ###
+### [ITIL 4 Foundation](https://www.axelos.com/certifications/itil-service-management/itil-4-foundation)
 
-- This establishes a framework that modern enterprises follow.  Change management, Issue vs Incident vs Problem, and a ton of other ITIL specific vocabulary that requires rote memorization.  This is a general purpose certification that adds value to a resume, whether you are technically inclined, sales, or management.  This used to be a lifetime certification, but now renews on a 3 year cycle, despite there being no revisions to the learning material.
+- Introduces service management concepts such as change control, incident vs problem handling, and ITIL-specific terminology.
+- Valuable for individuals in technical, sales, or managerial roles due to its broad, foundational nature.
+- Previously a lifetime certification, now on a 3-year renewal cycle—despite no changes to the core content.
 
+## BetterCloud
 
-## BetterCloud ##
+BetterCloud is a SaaS management platform competing with tools like Microsoft Entra and Okta. It offers stronger integrations with Google Workspace and Slack than with Microsoft products.
 
-The product itself is not complex, competing with other lifecycle management tools: Entra, Okta, etc.  It seems to have emphasis/more functionality on working with Google Workspace and Slack functionality over Microsoft offerings.  The plus side is their [Flight School website](https://www.bettercloud.com/training/) gives you a free code to take their exams, on top of swag mailed to you on completion.
+The standout feature is their [Flight School training portal](https://www.bettercloud.com/training/), which provides free certification exam access and even sends out swag for completion.
 
+### [BetterCloud Certified Administrator](https://learn.bettercloud.com/path/certification)
 
-### [BetterCloud Certified Administrator](https://learn.bettercloud.com/path/certification) ###
+- Validates product knowledge around integrations with HRIS and IDPs, DLP configuration, and overall administration.
+- The guided webinar prepares you directly for the exam; if you’ve ever used the admin portal, passing should be straightforward.
+- While useful internally for teams using BetterCloud, the certification lacks visibility—recruiters rarely mention it, and it's uncommon to meet others certified.
 
- - This exam tests for competency in the product as an administrator: connecting to HRIS, connecting to IDP,  DLP options, etc. With a spoon fed free learning webinar that will walk you through what the exam tests on, if you fail it I assume you have never been in the admin portal at all.  Anecdotally I've never met another person who's worked in the product, and a recruiter has never reached out to me for it.
+## CompTIA
 
+CompTIA offers vendor-neutral certifications that are well-respected across the IT industry. While slightly pricey for early-career professionals ($300–$400 per exam), they provide foundational knowledge and broad applicability.
 
-## CompTIA ##
+Certifications are valid for three years and can be renewed by passing a higher-level CompTIA exam or qualifying vendor certifications ([details here](https://www.comptia.org/continuing-education/learn/renewing-multiple-certifications)).
 
-These are great as they are vendor agnostic. The CompTIA certs are slightly costly, especially at the beginning of your career, ranging in the $300-400 price range per certification.  They last three years from earning if you don't get one that renews "[downstream](https://www.comptia.org/continuing-education/learn/renewing-multiple-certifications)".  They also renew/stay current if you get other vendor's certifications - my Microsoft ones renew everything I've earned.
+For study resources, [Professor Messer](https://www.professormesser.com/) is a top recommendation for the A+/Network+/Security+ trio. His content is always current, thorough, and free on YouTube.
 
-There are plenty of learning sources out there, but I can't recommend [ProfessorMesser](https://www.professormesser.com/) enough for the "CompTIA Trifecta" (A/Net/Sec).  His Youtube playlists are updated to the latest versions, comprehensive, and always free.
+### [A+](https://www.comptia.org/certifications/a)
 
+- Entry-level certification covering a wide range of IT topics—hardware, software, troubleshooting, and more.
+- Requires passing two exams.
+- Helpful for landing interviews, but rarely carries weight on its own beyond entry-level roles.
 
-### [A+](https://www.comptia.org/certifications/a) ###
-- The industry standard certification for IT professionals starting their careers. It's a mile wide and an inch deep.  It's there to introduce you to the basics of everything.  This one takes two tests to pass, you are not A+ certified until you pass both.  By itself, holds no weight on the resume, but will get you to the interview for entry level jobs.
+### [Network+](https://www.comptia.org/certifications/network)
 
+- Focuses on networking fundamentals, including wired/wireless networks, protocols, and subnetting (without a calculator).
+- Builds on A+ and is useful for infrastructure roles.
+- In hindsight, the CCNA may be a better investment due to broader recognition and deeper content.
 
-### [Network+](https://www.comptia.org/certifications/network) ###
-- This focuses on wired and wireless networks with emphasis on subnetting without a calculator like a monster.  It will give foundational network familiarity that goes beyond what the A+ does.  If I had to do-over I would get a CCNA instead as it holds more weight and goes slightly beyond with ios commands.
+### [Security+](https://www.comptia.org/certifications/security)
 
+- Covers network security, risk management, cryptography, and threat mitigation.
+- Highly valuable and widely recognized; one of the most resume-friendly CompTIA certs.
+- Relevant even for non-security professionals in IT-adjacent roles.
 
-### [Security+](https://www.comptia.org/certifications/security) ###
-- It covers key topics like network security, risk management, cryptography, and threat mitigation. This one is the one you'll get the most mileage out of on your resume.  Virtually any professional IT-adjacent would benefit from the concepts in this, you don't have to be shooting for a InfoSec or Pentest position.
+### [Linux+](https://www.comptia.org/certifications/linux)
 
+- Offers basic exposure to Linux commands and systems.
+- Can be passed with minimal prep if you have prior Linux experience.
+- For deeper or more widely respected credentials, consider LPIC or Red Hat certifications.
 
-### [Linux+](https://www.comptia.org/certifications/linux) ###
-- Honestly I bought the voucher to Linux+ with the above CompTIA vouchers to get the most discount of my CompTIA Store subscription.  I took it a week before the voucher expired with 0 prep and passed.  TLDR: it teaches a surface level of Linux that anyone slightly familiar could pass, LPIC or RHEL certs would get more mileage.
+## Microsoft
 
+Microsoft certifications are highly recognized and aligned to specific roles. While most require an annual renewal via a free online assessment, foundational exams are lifetime-valid.
 
-## Microsoft ##
+Microsoft also offers [Applied Skills](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=applied%20skills), which are task-focused, scenario-based microcredentials. While not resume game-changers, they’re useful for internal mobility or skill validation.
 
-This mainly goes into the certifications as those add value to the resume/employers, but Microsoft does have something relatively new called [Applied Skills](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=applied%20skills) which are free to take and showcase your proficiency in a specific task.  I'm not sure if they are prestigious enough to add to a resume, but it can certainly validate a role-based skill if you're looking to make an internal move.
+### [-900 Series / Fundamentals](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&levels=beginner)
 
+- Entry-level, lifetime-valid exams covering high-level overviews of Microsoft products and services.
+- Great for recruiters, managers, or individuals exploring new technology areas.
+- These used to be free via training days, but that program has ended. For discounts, check the [Certification Hub](https://certs.msfthub.wiki/guide/introduction/).
 
-### [-900s/foundations exams](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&levels=beginner) ###
-- These last a lifetime and provide a very general overview of what that category/service entails.  They won’t add value to a resume or validate skills but it’s good to dip your feet in.  I picture these as existing for recruiters, non-technical managers to get an overall understanding, or a way to see if it’s something you’re interested in.
-  - **Note:**	It seems the 100% free training days vouchers are no longer a thing.  If you are looking for discounted vouchers I would use the [Certification Hub](https://certs.msfthub.wiki/guide/introduction/) to check on current offerings.
+All other Microsoft certification exams cost $165 and are valid for one year, with free online renewal available via Microsoft Learn.
 
-All other MS exam vouchers cost $165 each and if passed the certification is valid for a year.  The option to renew being free and a self paced quiz via your Microsoft account that will also have some Learn pages with anything new compared to when you last took it.
+For a complete list of certifications and their prerequisites, see [Become Microsoft Certified (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI). Microsoft Learn is the recommended study platform—accurate, up-to-date, and accessible during the exams themselves.
 
-An overall view of existing certifications and their prerequisites can be found at [Become Microsoft Certified](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI) with click throughs to the specific exam(s) and the associated Learn pages.
-Speaking of, the Learn pages are excellent study materials for the exams and completely free.  I would recommend the Learn pages over the Linkedin Learning videos on the same topic, as they are often out-of-date and incorrect from the few I’ve audited.  Familiarizing yourself with the content in Learn is great since you can now access Learn pages during the exam.
+They’ve also begun publishing official [course videos](https://learn.microsoft.com/en-us/training/course-videos-on-shows) to supplement learning.
 
-They've also recently added some actual videos as supplementary in their [Course Videos on Shows](https://learn.microsoft.com/en-us/training/course-videos-on-shows).
+### Study & Practice Environments
 
-It’s tough to practice some of these outside of a production environment as things become more cloud based and the average subscriptions aren’t feasible for a personal user.
+Hands-on experience is increasingly difficult as services move to the cloud. You can spin up a temporary lab with the [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/) and activate trial licenses for services. Be cautious: a credit card is required, and it’s easy to exceed the $200 cap.
 
-You can setup a free trial via [Azure Free Trial](https://azure.microsoft.com/en-us/pricing/offers/ms-azr-0044p/) and then further activate free trial licenses for various plans you are testing.  Be cautious when going this route as generally you have to put a card on file and if you’re not careful you may blow past the $200/mo free cap pretty easily.  Also check out the [Lab Setup](#lab-setup) section to create your own, keeping in mind for some cloud features you may be charged if you go on past trial dates.
+Also see the [Lab Setup](#lab-setup) section for ideas on building your own practice tenant.
 
+---
 
-### [MD-102 – Endpoint Administrator](https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
-- A lot of people I’ve talked to think this is Microsoft’s equivalent of the A+ because it used to be called Managing Modern Desktops, but it provides a lot more value if you are working with the Windows stack.  This describes everything from the different versions of Windows (10/11, Home, Professional, Enterprise, etc), Windows Server, registry, active directory, as well as going in depth on prem/cloud solutions like GPO’s/OMA-URI’s, MDT/Autopilot, SCCM/Intune, WSUS/WufB.  I would really recommend this as the first Microsoft cert to get if you are dealing with workstations on a regular basis.  Also if you’re discussing with someone and they mention the old MCSA, this is the one that translates most to it.
+### [MD-102 – Endpoint Administrator](https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl)
 
+- Formerly “Managing Modern Desktops,” this certification is ideal for those managing Windows clients.
+- Covers Windows versions, Active Directory, Group Policy, SCCM, Intune, and Autopilot.
+- The modern successor to the legacy MCSA for desktop management.
 
-### [SC-300 – Identity and Access Administrator](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
-- This is a great foundation for understanding the Entra tenant.  Users, groups, roles, application registrations, SSO, etc.  If you deal or are looking to deal with IAM, this would be a great validation/intro.
+### [SC-300 – Identity and Access Administrator](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl)
 
+- Focuses on Microsoft Entra (Azure AD), user/group management, SSO, and app registrations.
+- Ideal for professionals working with IAM and access control policies.
 
-### [MS-102 – Enterprise Administrator](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/?WT.mc_id=certposter_poster-wwl) ###
-- This is an Expert certification that builds on the knowledge from MD-102 and SC-300 as well as some voip/teams.  This has emphasis on building out a tenant, IAM polices like Conditional Access, how to configure Defender, and managing retention/compliance policies with Purview.  This is the nearest equivalent of the older MCSE.
+### [MS-102 – Microsoft 365 Administrator](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/?WT.mc_id=certposter_poster-wwl)
 
+- Expert-level certification requiring MD-102 and SC-300.
+- Emphasizes tenant setup, conditional access, Defender, Teams, and compliance via Microsoft Purview.
+- Closest modern equivalent to the legacy MCSE.
 
-### [AZ-104 – Azure Administrator](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ###
-- This is great for showing you have the technical skills for Azure with an emphasis on DevOps.  Managing VMs, Networks, Subscriptions, Kubernetes clusters, and Storage solutions with Powershell, Az CLI, or ARM templates to implement them to describe a few.
+### [AZ-104 – Azure Administrator](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl)
 
+- Core Azure admin cert covering virtual machines, networking, storage, subscriptions, and identity.
+- Includes scripting and automation with PowerShell, ARM templates, and Azure CLI.
 
-### [AZ-305 – Azure Solutions Architect](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/?WT.mc_id=certposter_poster-wwl) ###
-- This is an Expert level certification with AZ-104 as a pre-requisite.  While AZ-104 focuses on the technical aspects and how to implement, this focuses on the why.  Emphasis on VM change control, network peering/failover, disaster recovery solutions, choosing different SQL implementations, requirements to shift from on-prem to cloud, and auditing role assignments between subscriptions as some examples.
+### [AZ-305 – Azure Solutions Architect Expert](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/?WT.mc_id=certposter_poster-wwl)
 
+- Builds on AZ-104 but focuses on solution planning, design choices, and justification.
+- Covers topics like disaster recovery, cost optimization, hybrid environments, and secure architecture.
 
-### [AZ-800/801 – Windows Server Hybrid Administrator](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/?WT.mc_id=certposter_poster-wwl) ###
-- Unlike the MD/MS-102 Microsoft hasn’t combined both into a single exam yet and there is some overlap.  In most companies you’ll have a hybrid tenant at some level not pure cloud (unless you get lucky) and the Learn pages will provide a great benefit in the configuration needed to implement it.  This is also really the only path currently available for Windows Server skill validation.
+### [AZ-800 / AZ-801 – Windows Server Hybrid Administrator](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/?WT.mc_id=certposter_poster-wwl)
 
+- Covers hybrid environments that combine Windows Server with cloud services.
+- Currently the only Microsoft certification path for validating Windows Server administration skills.
 
-### [Specialty: Azure Virtual Desktop](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl) ### 
-- AVD is currently hands down the best-in-class solution for VDI’s from both a cost and feature perspective.  If you are familiar with Citrix or VMware’s Horizon this is Microsoft’s implementation.  More and more companies use VDI’s to cut down on costs associated with hardware/power/licensing.  This will show/validate what skills are needed to implement and administrate it.
+### [Specialty: Azure Virtual Desktop](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification&WT.mc_id=certposter_poster-wwl)
 
+- Focuses on Microsoft’s VDI solution—an alternative to Citrix or VMware Horizon.
+- Ideal for admins supporting remote work environments or virtual desktops.
 
-## Okta ##
+## Okta
 
-Okta tests are interesting in that you cannot go back and review your answers/change them.  The format I've had is that each question is weighted and you have to choose the best answer, not necessarily the only right answer.
+Okta certifications take a slightly different approach: you cannot go back to review or change answers during the exam. Questions are weighted individually, and you're often asked to select the *best* answer—not just a correct one.
 
+### [Okta Certified Professional](https://certification.okta.com/okta-certified-professional-hands-on-configuration-exam-for-oie)
 
-### [Okta Certified Professional](https://certification.okta.com/okta-certified-professional-hands-on-configuration-exam-for-oie) ###
+- Intro-level certification for sales engineers, managers, or entry-level admins.
+- Demonstrates knowledge of Okta’s basic capabilities, UI navigation, and core configurations.
+- I earned this while having only basic Help Desk permissions and passed a renewal two years later without studying.
+- Adds more value internally at Okta-using companies than in the job market—it’s rarely recognized in hiring pipelines.
 
-- This is a bit more intensive than a -900 from Microsoft but still geared to Sales, Managers, or entry level administrators.  You'll know the capabilities of the product and a base level of things to do with it.  I earned mine while having basic help desk permissions within the product, and renewed it successfully on my first try after not touching it for two years and no studying.  I'm not sure if this adds anything of value to your resume for job seekers, more of a progression internally if you are in a company with the product.
+# [Western Governors University (WGU)](https://www.wgu.edu/)
 
+WGU offers fully online, self-paced Bachelor's and Master's degrees in IT and related fields. You pay by term (6 months) and can complete as many courses as you’re able to within that block.
 
-# [Western Governors University](https://www.wgu.edu/) #
+WGU degrees often include industry certification vouchers (CompTIA, Cisco, Microsoft, etc.), which can also count as course credit if you've already earned them. The flexibility and certification integration make WGU a cost-effective, accelerated option for motivated learners.
 
-It feels like the CCNA cert and a WGU degree are the things that most people in IT start studying for and never actually complete.  WGU provides [Bachelor's and Master's](https://www.wgu.edu/online-it-degrees.html) at your own pace and completely online.  You pay for a term block that is 6 months, and you can test out of as many classes as possible during that time, it's up to you on the pacing.
+### Common Pitfall
 
-What I anecdotally see, is people start it and then life gets in the way and they eventually drop it after the term(s) they pay for are up.  With some ground work you can knock out the degree you want quicker and cheaper than you'd think.   
+Many start with WGU but stall due to life circumstances or poor planning. With the right prep, you can dramatically shorten your degree path and save money.
 
-Before enrolling with WGU start with [Sophia](https://www.sophia.org/) which is ~$300 USD for 4 months, vs WGU's ~$3600 for 6 mo, and knock out as many courses as you can that can be [transferred](https://partners.wgu.edu/transferring-page-preview?stateId=80&instId=796). As long as 25% of the degree originates from WGU they will award you their degree.  For military friends Sophia is similar to CLEP/DANTE, at your own pace and unproctored, and you can take two of their courses at once, unlimited with how many you can complete in that 4 months.
+### Pre-WGU Prep
 
-After Sophia, you can still earn even more courses without committing to that 6 month block with [WGU Academy](https://www.wgu.edu/academy.html) which is $99 for a 2 month block for one class, and they reimburse you for it once you actually enroll into WGU.
+1. **[Sophia.org](https://www.sophia.org/)**  
+   - ~$300 for 4 months of unlimited, self-paced courses.
+   - Many of these credits transfer to WGU.  
+   - Similar to CLEP/DANTES (for military learners) and requires no proctoring.
+   - You can take two courses at a time.
 
-Finally, while WGU is great in that it covers exam vouchers for certain certifications related to your degree, if you already have some THOSE can [also be used as credit](https://www.wgu.edu/admissions/transfers/wgu-transcript-request/transferable-certifications.html) for certain classes too.
+   [Check transfer eligibility here.](https://partners.wgu.edu/transferring-page-preview?stateId=80&instId=796)
 
-Of course this is talking if you're net new.  If you have an Associate's already those can count too.  Really recommend talking to an enrollment person at WGU and they are super friendly and will walk you through what you need to do.  The leadup time from when you start talking to them to actually starting your term at WGU is ~45 days or ~2 months depending.  I mention this so you can plan on when you'll actually start taking courses with WGU vs deciding to.
+2. **[WGU Academy](https://www.wgu.edu/academy.html)**  
+   - $99 for a 2-month block covering one course.  
+   - Provides structured entry into WGU and credits toward your degree.  
+   - The $99 is reimbursed upon official enrollment.
 
-With the above prep work done, you could transfer into their IT Bachelor's with only around 60 credits left.  Which can greatly ease that 6 month term/payment if you're motivated -- knocking out a Bachelor's in one or two terms.
+3. **Transferable Certifications**  
+   - Many industry certs you've already earned can replace WGU course requirements.  
+   [Check accepted certs here.](https://www.wgu.edu/admissions/transfers/wgu-transcript-request/transferable-certifications.html)
+
+4. **Existing College Credit**  
+   - If you already have an Associate’s degree or previous coursework, that may count too.
+
+### Enrollment Timing
+
+The lead time from starting your application to beginning your term is typically 45–60 days. Plan ahead to align prep work with your intended start date.
+
+### Summary
+
+With enough transfer credits (from Sophia, WGU Academy, prior learning, or certifications), you could enter WGU’s IT Bachelor’s program with just 60 credits remaining—making it feasible to graduate in one or two terms.

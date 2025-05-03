@@ -1031,8 +1031,35 @@ section.col-md-3.card-wrapper.profile-card-wrapper.affix {
   section.col-md-9.card-wrapper.pull-right {
     margin-top: 0;
   }
+
+  /* Ensure proper vertical alignment between profile and background sections */
+  .row.main.clearfix {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
+body {
+  padding: 20px 0;
+}
+
+.main {
+  padding: 5px;
+}
+
+/* Fix for the background card alignment */
+.background-card {
+  margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  /* For mobile and tablet layouts */
+  section.col-md-3.card-wrapper.profile-card-wrapper.affix,
+  section.col-md-9.card-wrapper.pull-right {
+    width: 100%;
+    float: none;
+  }
+}
 </style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#certificates"><i class="mr-10 icon-profile"></i>Certificates</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Jeffrey Stuhr" src="https://s.gravatar.com/avatar/2f2b956111d90f4ee39aeae26ef30b22?s=100&amp;r=pg&amp;d=mm" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Jeffrey Stuhr</b></h3><h5 class="text-muted" itemprop="jobTitle"></h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Las Vegas, NV, US, 89117</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">(425) 343-4040</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:jeffreystuhr@pm.me" itemprop="email">jeffreystuhr@pm.me</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/jeffrey-stuhr-034214aa/" target="_blank" data-toggle="tooltip" title="Jeffrey Stuhr on LinkedIn"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Accomplished Senior System Engineer with extensive experience optimizing IT environments and driving substantial cost savings. Expertise in streamlining Microsoft licensing and implementing security measures that enhance organizational efficiency and data protection. Proven ability to lead complex migrations and transitions, ensuring seamless integration and minimal disruption. Adept at developing strategic solutions tailored to meet business needs, employing innovative technologies and methodologies to enhance performance and compliance. Highly skilled in managing both large-scale device upgrades and intricate network configurations, consistently delivering results that align with corporate objectives.</p>
 </div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Senior System Engineer</strong>,&nbsp;<a href="https://spotline.com/" target="_blank">Spotline</a></p><p class="text-muted"><small><span class="space-right">Jan, 2024 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>Optimize Microsoft licensing by consolidating assignments through groups, eliminating individual allocations. Implement self-service password reset functionalities via ManageEngine ADSS, incorporating Azure services for secure access and log management. Decommission final on-premises Exchange servers, facilitating the complete transition to the Gmail platform. Disable non-essential Microsoft 365 applications, standardize software usage and promote compliance with authorized tools.</p>
 </div><ul><li class="mop-wrapper"><p>Saved company $25,474 monthly through strategic licensing adjustments</p>

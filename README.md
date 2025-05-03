@@ -8,6 +8,7 @@
 <a href="https://bsky.app/profile/techbyjeff.net"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky" alt="BlueSky"></a>
 <a href="https://techbyjeff.net"><img src="https://img.shields.io/badge/Read_My_Blog-TechbyJeff-lightgrey?style=flat-square&logo=ghost" alt="Blog"></a>
 <a href="https://github.com/fadwen/fadwen"><img src="https://img.shields.io/badge/Last_Updated-May_2025-green?style=flat-square&logo=github" alt="Last Updated"></a>
+<a href="/resume/"><img src="https://img.shields.io/badge/View_My_Resume-blue?style=flat-square&logo=readme" alt="Resume"></a>
 </p>
 
 </div>

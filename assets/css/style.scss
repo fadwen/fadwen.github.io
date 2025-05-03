@@ -1,0 +1,36 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom styles to increase page width */
+.wrapper {
+  max-width: 1200px; /* Increase from default (usually around 600-700px) */
+  margin: 0 auto;
+  width: 90%;
+}
+
+section {
+  max-width: 1100px; /* Increase content area width */
+  width: 85%;
+  padding: 30px 30px 50px 30px;
+  margin: 0 auto;
+}
+
+/* Adjust header to match the wider layout */
+header {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Make content more responsive */
+@media print, screen and (max-width: 960px) {
+  div.wrapper {
+    width: 85%;
+  }
+
+  header, section, footer {
+    float: none;
+    width: 100%;
+  }
+}

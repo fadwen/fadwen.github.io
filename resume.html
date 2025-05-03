@@ -4,28 +4,51 @@ title: Jeffrey Stuhr - Resume
 permalink: /resume/
 ---
 <style>
-/* Hide GitHub Pages theme header elements */
-header.page-header {
-  display: none !important;
+/* Override Jekyll theme completely */
+body::before {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
-/* Hide the main title ("Learning Resources") */
-body > h1 {
+/* Force hide ALL Jekyll theme header elements */
+.page-header, 
+.project-name, 
+.project-tagline,
+#project_title,
+#project_tagline,
+.downloads,
+footer,
+header,
+body > h1, 
+body > h2,
+body > h3, 
+body > p,
+.main-content > h1,
+.main-content > h2, 
+.site-footer,
+.main-content > p:first-of-type,
+.main-content > h1:first-of-type {
   display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
 }
 
-/* Hide the subtitle description text */
-body > p {
-  display: none !important;
-}
-
-/* Hide Jekyll theme heading elements */
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  display: none !important;
-}
 /* Override GitHub Pages theme content padding */
 .main-content {
   padding: 0 !important;
+  margin-top: 0 !important;
+  max-width: none !important;
+}
+
+html, body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* Back to home link styling */
@@ -1221,7 +1244,7 @@ body {
 </span><span class="label label-keyword"><p>User Account Management</p>
 </span><span class="label label-keyword"><p>PowerShell scripting</p>
 </span><span class="label label-keyword"><p>Performance Management</p>
-</span></div></div></li></ul></div></div></div><div class="detail" id="certificates"><div class="icon"><i class="fs-lg icon-profile"></i><span class="mobile-title">Certificates</span></div><div class="info"><h4 class="title text-uppercase">Certificates</h4><div class="content"><div class="row certificate-grid"><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/3B846086A091677D?sharingId=310029E02CB72BAB" target="_blank">AZ-900: Azure Fundamentals</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Nov 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/CCE8EA0AA6774B49?sharingId=310029E02CB72BAB" target="_blank">AZ-104: Azure Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Jul 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/E8237A0E0EE75C5F?sharingId=310029E02CB72BAB" target="_blank">AZ-305: Azure Solutions Architect</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Aug 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/DD9EE676D835D822?sharingId=310029E02CB72BAB" target="_blank">MD-102: Endpoint Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Jun 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/BB6E3BFB4D82127F?sharingId=310029E02CB72BAB" target="_blank">SC-300: Identity and Access Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Dec 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/C7E6CC24C6C5778D?sharingId=310029E02CB72BAB" target="_blank">MS-102: Microsoft 365 Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Dec 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/639e7a45-8103-4b1a-9f4e-cb1c5e467a02/public_url" target="_blank">VCP-DCV2022: VMware Certified Professional - Data Center Virtualization</a>,&nbsp;</strong>VMWare</p><p class="text-muted"><small>Issued on: Aug 01, 2022</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/014a8349-eb72-4ac0-8963-b08feda58aa4/public_url" target="_blank">A+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Jan 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/f1b18611-ea95-4ef8-a86b-0e9a47650c8b/public_url" target="_blank">Network+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Sep 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/56a70a5a-a82b-421e-9527-6f7825ce92ef/public_url" target="_blank">Security+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Oct 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/b8559b41-bd56-4a71-999e-d634248e7667/public_url" target="_blank">Linux+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Sep 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/e8ace1a7-a26c-4d02-83a4-70ae1dfc7f89/public_url">Certified Professional</a>,&nbsp;</strong>Okta</p><p class="text-muted"><small>Issued on: Oct 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/cf3d0d40-2781-4581-9e60-0f4418c1f18e/public_url">ITIL v4 Foundations</a>,&nbsp;</strong>PeopleCert</p><p class="text-muted"><small>Issued on: May 01, 2022</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credential.net/a05cb0e2-1068-431e-abbb-ad3501a10aae#acc.6L085zNM">Certified Administrator</a>, </strong>BetterCloud</p><p class="text-muted"><small>Issued on: Dec 01, 2023</small></p></div></div></div></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
+</span></div></div></li></ul></div></div></div><div class="detail" id="certificates"><div class="icon"><i class="fs-lg icon-profile"></i><span class="mobile-title">Certificates</span></div><div class="info"><h4 class="title text-uppercase">Certificates</h4><div class="content"><div class="row certificate-grid"><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/3B846086A091677D?sharingId=310029E02CB72BAB" target="_blank">AZ-900: Azure Fundamentals</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Nov 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/CCE8EA0AA6774B49?sharingId=310029E02CB72BAB" target="_blank">AZ-104: Azure Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Jul 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/E8237A0E0EE75C5F?sharingId=310029E02CB72BAB" target="_blank">AZ-305: Azure Solutions Architect</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Aug 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/DD9EE676D835D822?sharingId=310029E02CB72BAB" target="_blank">MD-102: Endpoint Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Jun 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/BB6E3BFB4D82127F?sharingId=310029E02CB72BAB" target="_blank">SC-300: Identity and Access Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Dec 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://learn.microsoft.com/api/credentials/share/en-us/Jeff-9827/C7E6CC24C6C5778D?sharingId=310029E02CB72BAB" target="_blank">MS-102: Microsoft 365 Administrator</a>,&nbsp;</strong>Microsoft</p><p class="text-muted"><small>Issued on: Dec 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/639e7a45-8103-4b1a-9f4e-cb1c5e467a02/public_url" target="_blank">VCP-DCV2022: VMware Certified Professional - Data Center Virtualization</a>,&nbsp;</strong>VMWare</p><p class="text-muted"><small>Issued on: Aug 01, 2022</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/014a8349-eb72-4ac0-8963-b08feda58aa4/public_url" target="_blank">A+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Jan 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/f1b18611-ea95-4ef8-a86b-0e9a47650c8b/public_url" target="_blank">Network+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Sep 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/56a70a5a-a82b-421e-9527-6f7825ce92ef/public_url" target="_blank">Security+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Oct 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/b8559b41-bd56-4a71-999e-d634248e7667/public_url" target="_blank">Linux+</a>,&nbsp;</strong>CompTIA</p><p class="text-muted"><small>Issued on: Sep 01, 2023</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/e8ace1a7-a26c-4d02-83a4-70ae1dfc7f89/public_url">Certified Professional</a>,&nbsp;</strong>Okta</p><p class="text-muted"><small>Issued on: Oct 01, 2021</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credly.com/badges/cf3d0d40-2781-4581-9e60-0f4418c1f18e/public_url">ITIL v4 Foundations</a>,&nbsp;</strong>PeopleCert</p><p class="text-muted"><small>Issued on: May 01, 2022</small></p></div></div></div><div class="col-md-6 col-lg-4"><div class="card card-nested"><div class="content"><p class="clear-margin" itemprop="certificate"><strong><a href="https://www.credential.net/a05cb0e2-1068-431e-abbb-ad3501a10aae#acc.6L085zNM">Certified Administrator</a>, </strong>BetterCloud</p><p class="text-muted"><small>Issued on: Dec 01, 2023</small></p></div></div></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
   var toggleFloatingMenu = function() {
     $( '.js-floating-nav' ).toggleClass( 'is-visible' );
     $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );

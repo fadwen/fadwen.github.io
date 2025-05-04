@@ -16,21 +16,21 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [PowerShell Resources](#powershell-resources)
-  - [Books](#books)
+  - [📚 PowerShell Books (🧠 Learning Path Aligned)](#-powershell-books--learning-path-aligned)
   - [Browser Extensions](#browser-extensions)
   - [Discord Communities](#discord-communities)
-  - [Practical Hands-On](#practical-hands-on)
+  - [🛠️ Practical Hands-On PowerShell](#️-practical-hands-on-powershell)
   - [Videos](#videos)
   - [Websites](#websites)
 - [VSCode](#vscode)
   - [VSCode Extensions](#vscode-extensions)
   - [More VSCode Goodies](#more-vscode-goodies)
 - [Working with PowerShell](#working-with-powershell)
-  - [Commonly Used Modules](#commonly-used-modules)
-    - [Microsoft Modules](#microsoft-modules)
-    - [Vendor-Specific Modules](#vendor-specific-modules)
-    - [Third-Party Modules](#third-party-modules)
-    - [Microsoft Graph Command Helpers](#microsoft-graph-command-helpers)
+  - [📦 Common PowerShell Modules](#-common-powershell-modules)
+    - [🔷 Microsoft Core Modules](#-microsoft-core-modules)
+    - [🏢 Vendor-Specific Modules](#-vendor-specific-modules)
+    - [🌐 Third-Party Modules](#-third-party-modules)
+    - [🧭 Graph Command Reference](#-graph-command-reference)
 - [Microsoft 365](#microsoft-365)
   - [Interview Prep](#interview-prep)
 - [Useful Non-Portal Microsoft Tools](#useful-non-portal-microsoft-tools)
@@ -72,38 +72,20 @@
 
 # PowerShell Resources #
 
-## Books ##
+## 📚 PowerShell Books (🧠 Learning Path Aligned)
 
-Recommended reading for expanding your PowerShell knowledge, from beginner fundamentals to scripting, automation, security, and Microsoft 365 integration.
+A curated reading path from beginner to advanced topics in PowerShell, with direct links and companion resources where applicable.
 
-- **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)**  
-  - A great starting point. If you're not a complete beginner, the first few chapters may feel basic, but the later ones offer more depth.  
-  This is a foundational resource worth starting with.
+| Experience | Title & Link | Summary |
+|------------|--------------|---------|
+| 🟢 Beginner | **[Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)** | Foundational resource. The early chapters may feel basic to those with experience, but it builds solid habits. |
+| 🟡 Intermediate | **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**<br>[Companion GitHub](https://github.com/psjamesp/MOL-Scripting/tree/main) | Dives into functions, modules, and testing with Pester. Builds directly on the first book. |
+| 🟡 Intermediate | **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**<br>[DevOps Collective Book Series](https://leanpub.com/u/devopscollective) | Explains real-world remoting patterns beyond the basics. Great for enterprise workflows. |
+| 🔴 Advanced | **[Mastering PowerShell Scripting](https://www.packtpub.com/en-us/product/mastering-powershell-scripting-9781805124153)** | Automation and scripting at scale with strong community insights. Author: Chris Dent. |
+| 🔴 Advanced | **[Practical Automation with PowerShell](https://www.manning.com/books/practical-automation-with-powershell)**<br>[GitHub](https://github.com/mdowst/Practical-Automation-with-PowerShell/tree/main) | Use PowerShell to solve day-to-day automation needs with real-world examples. |
+| 🔴 Advanced | **[PowerShell Automation and Scripting for Cybersecurity](https://www.packtpub.com/en-us/product/powershell-automation-and-scripting-for-cybersecurity-9781800569263)** | A security-focused deep dive into scripting with real adversary defense examples. |
+| 🔴 Advanced | **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**<br>[Automation Companion](https://o365itpros.gumroad.com/l/M365PS) | Continuously updated. The de facto source for Microsoft 365 administration, plus automation. |
 
-- **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**  
-  - Builds on the first book, covering scripting techniques, module creation, and testing with Pester.  
-  Companion GitHub: [psjamesp/MOL-Scripting](https://github.com/psjamesp/MOL-Scripting/tree/main)
-
-- **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**  
-  - Goes beyond the PSRemoting basics found in the Lunches book, offering more nuance and practical tips.  
-  Part of the broader [DevOps Collective book series](https://leanpub.com/u/devopscollective), which is also highly recommended.
-
-- **[Mastering PowerShell Scripting](https://www.packtpub.com/en-us/product/mastering-powershell-scripting-9781805124153)**  
-  - Written by Chris Dent, a knowledgeable and approachable figure in the PowerShell community.  
-  The book covers automation strategies and scalable scripting practices.
-
-- **[Practical Automation with PowerShell](https://www.manning.com/books/practical-automation-with-powershell)**  
-  - A practical guide to building real-world automation solutions.  
-  Companion GitHub: [mdowst/Practical-Automation-with-PowerShell](https://github.com/mdowst/Practical-Automation-with-PowerShell/tree/main)
-
-- **[PowerShell Automation and Scripting for Cybersecurity](https://www.packtpub.com/en-us/product/powershell-automation-and-scripting-for-cybersecurity-9781800569263)**  
-  - Focused on automation with a security lens.  
-  Helpful for understanding what InfoSec teams look for and how to build secure solutions.
-
-- **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**  
-  - A deeply detailed and continuously updated eBook for Microsoft 365 administrators.  
-  Includes a separate volume: [Automating Microsoft 365 with PowerShell](https://o365itpros.gumroad.com/l/M365PS), which can also be purchased on its own.  
-  If you work in the Microsoft stack, this resource is well worth it.
 
 ## Browser Extensions
 
@@ -136,21 +118,15 @@ A few active and supportive communities for learning, troubleshooting, and shari
   - Includes active Microsoft MVPs and employees. Most discussion happens during US East Coast business hours.
 
 
-## Practical Hands-On
+## 🛠️ Practical Hands-On PowerShell
 
-The best way to learn is by solving real problems—but when that’s not an option, the following resources offer hands-on PowerShell experience in structured or gamified environments.
+> Real-world environments are the best teachers. These hands-on resources simulate real tasks or introduce structured challenges.
 
-- **[Hack The Box Academy](https://academy.hackthebox.com/)**  
-  - Offers training on general Windows administration, PowerShell usage, and securing Active Directory.  
-  - The free tier can be hit-or-miss: I had a smooth experience on day one, but performance degraded in later sessions with laggy VPNs and unresponsive VMs.
-
-- **[PSKoans](https://github.com/vexx32/PSKoans)**  
-  - Interactive PowerShell learning tool inspired by the Koans model.  
-  - A great concept for reinforcing syntax and logic, though it hasn’t been actively updated in recent years.
-
-- **[UnderTheWire Wargames](https://underthewire.tech/wargames)**  
-  - SSH-based PowerShell challenges where each level requires you to uncover clues and credentials on the host.  
-  - Encourages critical thinking and exploration without relying on step-by-step instructions.
+| Experience | Resource | Summary |
+|------------|----------|---------|
+| 🟢 Beginner | **[Hack The Box Academy](https://academy.hackthebox.com/)** | Offers training on Windows administration, PowerShell, and Active Directory. Free tier available. Performance may vary—laggy VMs were a downside in later sessions. |
+| 🟢 Beginner | **[PSKoans](https://github.com/vexx32/PSKoans)** | Interactive PowerShell learning in the style of Koans (fill-in-the-blank tests). Great for reinforcing syntax and logic, though it's no longer actively maintained. |
+| 🟡 Intermediate | **[UnderTheWire Wargames](https://underthewire.tech/wargames)** | PowerShell-based wargames using SSH. Requires clue-hunting and critical thinking to advance levels—ideal for skill sharpening without a walkthrough. |
 
 ## Videos ##
 
@@ -220,64 +196,56 @@ If you find VSCode too developer-oriented or you miss ISE’s simplicity—espec
 
 Install PowerShell 7 and set it as your default environment before installing modules—it will simplify your experience and avoid compatibility headaches. For legacy modules that only work with Windows PowerShell, use the `-UseWindowsPowerShell` switch when importing them.
 
-## Commonly Used Modules
+## 📦 Common PowerShell Modules
 
-This isn't an exhaustive list, but these modules cover most of what I do and are must-haves on any new workstation I configure.
+These modules are foundational to automation, Microsoft 365, and security-related tasks. Each includes installation tips and links where relevant.
 
-Also note: as PowerShell 7 becomes the default, `Install-Module` is being phased out in favor of `Install-PSResource`. It's worth getting familiar with the new syntax now.
+> Also note: as PowerShell 7 becomes the default, `Install-Module` is being phased out in favor of `Install-PSResource`. It's worth getting familiar with the new syntax now.
 
-### Microsoft Modules
 
-- `Az`
-- `ExchangeOnlineManagement`
-- [EnhancedHTML2](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/EnhancedHTML2)  
-  - Extends `ConvertTo-HTML` to support cleaner, customizable HTML reports.
-- `Microsoft.Graph` and `Microsoft.Graph.Beta`  
-  - SDK-style module with a steeper learning curve. Most advanced functionality resides in the Beta module, which hits the `/beta` Graph endpoint. Eventually, you may prefer calling the endpoints directly with `Invoke-WebRequest` or `Invoke-RestMethod`.  
-  - If the SDK feels cumbersome, [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) can provide a more PowerShell-friendly experience.
-- [Microsoft.Graph.Entra](https://github.com/microsoftgraph/entra-powershell) and `Microsoft.Graph.Entra.Beta`  
-  - A simplified experience for admins familiar with the legacy `AzureAD` module. It bridges the gap but does not yet offer full Graph functionality.
-- `Microsoft.Online.SharePoint.PowerShell`
-- `Microsoft.PowerShell.ConsoleGuiTools`  
-  - `Out-ConsoleGridView` provides an in-terminal, interactive way to explore data.
-- `Microsoft.PowerShell.GraphicalTools`  
-  - `Out-GridView` opens a GUI window for data filtering and exploration.
-- `MicrosoftTeams`
-- `PowerShellGet`  
-  - Required for module management in Windows PowerShell only. PowerShell 7.4+ uses `Microsoft.PowerShell.PSResourceGet` by default.
+### 🔷 Microsoft Core Modules
 
-### Vendor-Specific Modules
+| Module | Purpose | Experience | Notes |
+|--------|---------|------------|-------|
+| `Az` | Azure resource management | 🟡 | Use `Install-Module -Name Az` |
+| `ExchangeOnlineManagement` | Manage Exchange Online mailboxes, transport, and more | 🟡 | Essential for M365 admins |
+| `Microsoft.Graph` / `Microsoft.Graph.Beta` | Graph API SDK access | 🔴 | Beta includes newer features; SDK is evolving |
+| [`EnhancedHTML2`](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) | Builds cleaner HTML reports | 🟡 | Adds styling options to `ConvertTo-HTML` |
+| [`Microsoft.Graph.Entra`](https://github.com/microsoftgraph/entra-powershell) | Simplified Entra ID (Azure AD) module | 🟡 | More intuitive than Graph SDK, but still limited |
+| `Microsoft.Online.SharePoint.PowerShell` | SharePoint Online admin tasks | 🟡 | Standard module for SPO scripting |
+| `MicrosoftTeams` | Manage Teams, policies, and users | 🟡 | Some functions limited by permissions |
+| `Microsoft.PowerShell.ConsoleGuiTools` | Adds `Out-ConsoleGridView` | 🟢 | Console-based interactive filtering |
+| `Microsoft.PowerShell.GraphicalTools` | Adds `Out-GridView` (GUI filtering) | 🟢 | Windows-only, great for quick data views |
+| `PowerShellGet` / `PSResourceGet` | Module management | 🟢 | Use `Install-PSResource` for PowerShell 7+ |
 
-- [Lenovo Client Scripting Module](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Lenovo.Client.Scripting)  
-  - For Lenovo environments—provides access to system and docking station details.
+### 🏢 Vendor-Specific Modules
 
-### Third-Party Modules
+| Module | Purpose | Experience | Notes |
+|--------|---------|------------|-------|
+| [`Lenovo.Client.Scripting`](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) | Interact with Lenovo hardware | 🟡 | Useful in enterprise environments |
 
-> ⚠️ Always vet third-party modules before using them in production.
+### 🌐 Third-Party Modules
 
-- [BurntToast](https://github.com/Windos/BurntToast) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/BurntToast)  
-  - Enables sending custom toast notifications in Windows.
-- [Graph EasyPIM](https://github.com/rakheshster/PowerShell-GraphEasyPIM) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Graph.EasyPIM)  
-  - Allows activation of PIM roles via CLI, skipping the Entra portal.
-- [ImportExcel](https://github.com/dfinke/ImportExcel) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/ImportExcel)  
-  - Despite the name, it's most useful for exporting. Offers well-formatted Excel output with autosizing, pivot tables, charts, and more—especially useful in environments where `.csv` is frustrating (like Google Sheets).
-- [Microsoft.Graph.PlusPlus](https://github.com/jhoneill/MsftGraph) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Microsoft.Graph.PlusPlus)  
-  - Adds PowerShell-style wrappers to Microsoft.Graph SDK. Optional but helpful for readability.
-- [Pansies](https://github.com/PoshCode/Pansies) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/Pansies)  
-  - Adds styled terminal output: gradients, hyperlinks, and HTML-named colors.
-- [platyPS](https://github.com/PowerShell/platyPS) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/platyPS)  
-  - Useful for documenting your own PowerShell modules using Markdown and comment-based help.
-- [psframework](https://github.com/PowershellFrameworkCollective/psframework) ![PowerShell Gallery Downloads](https://img.shields.io/powershellgallery/dt/psframework)  
-  - Fantastic logging utility with additional features like advanced parameter handling. A major time-saver.
+> ⚠️ Always review before production use.
 
-### Microsoft Graph Command Helpers
+| Module | Purpose | Experience | Notes |
+|--------|---------|------------|-------|
+| [`BurntToast`](https://github.com/Windos/BurntToast) | Creates toast notifications in Windows | 🟢 | Great for alerts and user feedback |
+| [`Graph.EasyPIM`](https://github.com/rakheshster/PowerShell-GraphEasyPIM) | CLI-based role activation via Graph | 🔴 | Avoids manual steps in Entra PIM |
+| [`ImportExcel`](https://github.com/dfinke/ImportExcel) | Export structured Excel reports | 🟡 | Adds charts, formatting, autosize, and more |
+| [`Microsoft.Graph.PlusPlus`](https://github.com/jhoneill/MsftGraph) | Makes Graph SDK more PowerShell-like | 🔴 | Useful if SDK syntax is clunky |
+| [`Pansies`](https://github.com/PoshCode/Pansies) | Styled terminal output (colors, gradients) | 🟡 | Cosmetic improvements for terminals |
+| [`platyPS`](https://github.com/PowerShell/platyPS) | Markdown module documentation generator | 🟡 | Useful for writing help files |
+| [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) | Logging and parameter management | 🔴 | Highly structured and customizable |
 
-- [Find-MgGraphCommand](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-command?view=graph-powershell-1.0)  
-  - Helps identify the Graph endpoint and required permissions for a cmdlet.
-- [Find-MgGraphPermission](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0)  
-  - Used to look up permissions required by scripts or apps.
-- [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0)  
-  - Graph-specific alternative to `Invoke-RestMethod` for scenarios where no prebuilt cmdlet exists.
+### 🧭 Graph Command Reference
+
+| Tool | Purpose |
+|------|---------|
+| [Find-MgGraphCommand](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-command?view=graph-powershell-1.0) | Discover Graph SDK cmdlets and their endpoints |
+| [Find-MgGraphPermission](https://learn.microsoft.com/en-us/powershell/microsoftgraph/find-mg-graph-permission?view=graph-powershell-1.0) | Identify required permissions for a Graph cmdlet |
+| [Invoke-MgGraphRequest](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/invoke-mggraphrequest?view=graph-powershell-1.0) | Raw Graph requests when SDK cmdlets are missing |
+
 
 # Microsoft 365
 

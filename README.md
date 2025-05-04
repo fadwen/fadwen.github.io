@@ -82,9 +82,9 @@ A curated reading path from beginner to advanced topics in PowerShell, with dire
 | 🟡 Intermediate | **[Learn PowerShell Scripting in a Month of Lunches](https://www.manning.com/books/learn-powershell-scripting-in-a-month-of-lunches-second-edition)**<br>[Companion GitHub](https://github.com/psjamesp/MOL-Scripting/tree/main) | Dives into functions, modules, and testing with Pester. Builds directly on the first book. |
 | 🟡 Intermediate | **[Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)**<br>[DevOps Collective Book Series](https://leanpub.com/u/devopscollective) | Explains real-world remoting patterns beyond the basics. Great for enterprise workflows. |
 | 🔴 Advanced | **[Mastering PowerShell Scripting](https://www.packtpub.com/en-us/product/mastering-powershell-scripting-9781805124153)** | Automation and scripting at scale with strong community insights. Author: Chris Dent. |
-| 🔴 Advanced | **[Practical Automation with PowerShell](https://www.manning.com/books/practical-automation-with-powershell)**<br>[GitHub](https://github.com/mdowst/Practical-Automation-with-PowerShell/tree/main) | Use PowerShell to solve day-to-day automation needs with real-world examples. |
-| 🔴 Advanced | **[PowerShell Automation and Scripting for Cybersecurity](https://www.packtpub.com/en-us/product/powershell-automation-and-scripting-for-cybersecurity-9781800569263)** | A security-focused deep dive into scripting with real adversary defense examples. |
-| 🔴 Advanced | **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**<br>[Automation Companion](https://o365itpros.gumroad.com/l/M365PS) | Continuously updated. The de facto source for Microsoft 365 administration, plus automation. |
+| 🟡 Intermediate| **[Practical Automation with PowerShell](https://www.manning.com/books/practical-automation-with-powershell)**<br>[GitHub](https://github.com/mdowst/Practical-Automation-with-PowerShell/tree/main) | Use PowerShell to solve day-to-day automation needs with real-world examples. |
+| 🟡 Intermediate | **[PowerShell Automation and Scripting for Cybersecurity](https://www.packtpub.com/en-us/product/powershell-automation-and-scripting-for-cybersecurity-9781800569263)** | A security-focused deep dive into scripting with real adversary defense examples. |
+| 🟡 Intermediate - 🔴 Advanced | **[Office 365 for IT Pros](https://o365itpros.gumroad.com/l/O365IT)**<br>[Automation Companion](https://o365itpros.gumroad.com/l/M365PS) | Continuously updated. The de facto source for Microsoft 365 administration, plus automation. |
 
 
 ## 🔌 Browser Extensions
@@ -205,38 +205,38 @@ These modules are foundational to automation, Microsoft 365, and security-relate
 
 ### 🔷 Microsoft Core Modules
 
-| Module | Purpose | Experience | Notes |
-|--------|---------|------------|-------|
-| `Az` | Azure resource management | 🟡 | Use `Install-Module -Name Az` |
-| `ExchangeOnlineManagement` | Manage Exchange Online mailboxes, transport, and more | 🟡 | Essential for M365 admins |
-| `Microsoft.Graph` / `Microsoft.Graph.Beta` | Graph API SDK access | 🔴 | Beta includes newer features; SDK is evolving |
-| [`EnhancedHTML2`](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) | Builds cleaner HTML reports | 🟡 | Adds styling options to `ConvertTo-HTML` |
-| [`Microsoft.Graph.Entra`](https://github.com/microsoftgraph/entra-powershell) | Simplified Entra ID (Azure AD) module | 🟡 | More intuitive than Graph SDK, but still limited |
-| `Microsoft.Online.SharePoint.PowerShell` | SharePoint Online admin tasks | 🟡 | Standard module for SPO scripting |
-| `MicrosoftTeams` | Manage Teams, policies, and users | 🟡 | Some functions limited by permissions |
-| `Microsoft.PowerShell.ConsoleGuiTools` | Adds `Out-ConsoleGridView` | 🟢 | Console-based interactive filtering |
-| `Microsoft.PowerShell.GraphicalTools` | Adds `Out-GridView` (GUI filtering) | 🟢 | Windows-only, great for quick data views |
-| `PowerShellGet` / `PSResourceGet` | Module management | 🟢 | Use `Install-PSResource` for PowerShell 7+ |
+| Module | Purpose | Notes |
+|--------|---------|-------|
+| `Az` | Azure resource management | Use `Install-Module -Name Az` |
+| `ExchangeOnlineManagement` | Manage Exchange Online mailboxes, transport, and more | Essential for M365 admins |
+| `Microsoft.Graph` / `Microsoft.Graph.Beta` | Graph API SDK access | Beta includes newer features; SDK is evolving |
+| [`EnhancedHTML2`](https://www.powershellgallery.com/packages/EnhancedHTML2/2.0) | Builds cleaner HTML reports | Adds styling options to `ConvertTo-HTML` |
+| [`Microsoft.Graph.Entra`](https://github.com/microsoftgraph/entra-powershell) | Simplified Entra ID (Azure AD) module | More intuitive than Graph SDK, but still limited |
+| `Microsoft.Online.SharePoint.PowerShell` | SharePoint Online admin tasks | Standard module for SPO scripting |
+| `MicrosoftTeams` | Manage Teams, policies, and users | Some functions limited by permissions |
+| `Microsoft.PowerShell.ConsoleGuiTools` | Adds `Out-ConsoleGridView` | Console-based interactive filtering |
+| `Microsoft.PowerShell.GraphicalTools` | Adds `Out-GridView` (GUI filtering) | Windows-only, great for quick data views |
+| `PowerShellGet` / `PSResourceGet` | Module management | Use `Install-PSResource` for PowerShell 7+ |
 
 ### 🏢 Vendor-Specific Modules
 
-| Module | Purpose | Experience | Notes |
-|--------|---------|------------|-------|
-| [`Lenovo.Client.Scripting`](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) | Interact with Lenovo hardware | 🟡 | Useful in enterprise environments |
+| Module | Purpose | Notes |
+|--------|---------|-------|
+| [`Lenovo.Client.Scripting`](https://docs.lenovocdrt.com/guides/lcsm/lcsm_top/#cmdlet-reference) | Interact with Lenovo hardware | Useful in enterprise environments |
 
 ### 🌐 Third-Party Modules
 
 > ⚠️ Always review before production use.
 
-| Module | Purpose | Experience | Notes |
-|--------|---------|------------|-------|
-| [`BurntToast`](https://github.com/Windos/BurntToast) | Creates toast notifications in Windows | 🟢 | Great for alerts and user feedback |
-| [`Graph.EasyPIM`](https://github.com/rakheshster/PowerShell-GraphEasyPIM) | CLI-based role activation via Graph | 🔴 | Avoids manual steps in Entra PIM |
-| [`ImportExcel`](https://github.com/dfinke/ImportExcel) | Export structured Excel reports | 🟡 | Adds charts, formatting, autosize, and more |
-| [`Microsoft.Graph.PlusPlus`](https://github.com/jhoneill/MsftGraph) | Makes Graph SDK more PowerShell-like | 🔴 | Useful if SDK syntax is clunky |
-| [`Pansies`](https://github.com/PoshCode/Pansies) | Styled terminal output (colors, gradients) | 🟡 | Cosmetic improvements for terminals |
-| [`platyPS`](https://github.com/PowerShell/platyPS) | Markdown module documentation generator | 🟡 | Useful for writing help files |
-| [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) | Logging and parameter management | 🔴 | Highly structured and customizable |
+| Module | Purpose | Notes |
+|--------|---------|-------|
+| [`BurntToast`](https://github.com/Windos/BurntToast) | Creates toast notifications in Windows | Great for alerts and user feedback |
+| [`Graph.EasyPIM`](https://github.com/rakheshster/PowerShell-GraphEasyPIM) | CLI-based role activation via Graph | Avoids manual steps in Entra PIM |
+| [`ImportExcel`](https://github.com/dfinke/ImportExcel) | Export structured Excel reports | Adds charts, formatting, autosize, and more |
+| [`Microsoft.Graph.PlusPlus`](https://github.com/jhoneill/MsftGraph) | Makes Graph SDK more PowerShell-like | Useful if SDK syntax is clunky |
+| [`Pansies`](https://github.com/PoshCode/Pansies) | Styled terminal output (colors, gradients) | Cosmetic improvements for terminals |
+| [`platyPS`](https://github.com/PowerShell/platyPS) | Markdown module documentation generator | Useful for writing help files |
+| [`psframework`](https://github.com/PowershellFrameworkCollective/psframework) | Logging and parameter management | Highly structured and customizable |
 
 ### 🧭 Graph Command Reference
 

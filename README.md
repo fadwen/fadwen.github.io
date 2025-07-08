@@ -1,4 +1,4 @@
-<div align="center"> 
+<div align="center">
 
 <p>This page is used to keep track of resources used in my professional development, or things I have found afterward that I wish I had known.</p>
 
@@ -7,7 +7,7 @@
 <a href="https://www.linkedin.com/in/jeffrey-stuhr-034214aa/"><img src="https://img.shields.io/badge/LinkedIn-Jeffrey_Stuhr-0077B5?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
 <a href="https://bsky.app/profile/techbyjeff.net"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Dtechbyjeff.net&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20on%20BSky" alt="BlueSky"></a>
 <a href="https://techbyjeff.net"><img src="https://img.shields.io/badge/Read_My_Blog-TechbyJeff-lightgrey?style=flat-square&logo=ghost" alt="Blog"></a>
-<a href="https://github.com/fadwen/fadwen"><img src="https://img.shields.io/badge/Last_Updated-May_2025-green?style=flat-square&logo=github" alt="Last Updated"></a>
+<a href="https://github.com/fadwen/fadwen"><img src="https://img.shields.io/badge/Last_Updated-Jul_2025-green?style=flat-square&logo=github" alt="Last Updated"></a>
 <a href="/resume/"><img src="https://img.shields.io/badge/View_My_Resume-blue?style=flat-square&logo=readme" alt="Resume"></a>
 </p>
 
@@ -91,16 +91,16 @@ A curated reading path from beginner to advanced topics in PowerShell, with dire
 
 These tools streamline working with Microsoft 365, Graph API, and portal sprawl. All are free and extremely useful in both exploratory and automation scenarios.
 
-- **[Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)**  
-  - Consolidates links to all Microsoft 365 admin portals in one place.  
+- **[Centro 365](https://seanosullivan.co.uk/projects/centro365/welcome)**
+  - Consolidates links to all Microsoft 365 admin portals in one place.
   - Huge time-saver compared to flipping through bookmarks or trying to remember portal URLs.
 
-- **[Graph X-Ray](https://graphxray.merill.net/)**  
-  - Reveals which Graph API calls are made during portal interactions.  
+- **[Graph X-Ray](https://graphxray.merill.net/)**
+  - Reveals which Graph API calls are made during portal interactions.
   - Translates actions into PowerShell or REST calls, making it easier to automate what you previously did manually.
 
-- **[Postman Interceptor](https://www.postman.com/product/postman-interceptor/)**  
-  - Captures and replays browser-based API calls that dev tools or Graph X-Ray might miss.  
+- **[Postman Interceptor](https://www.postman.com/product/postman-interceptor/)**
+  - Captures and replays browser-based API calls that dev tools or Graph X-Ray might miss.
   - Tip: Postman functionality is now available via a [VSCode extension](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode), reducing the need for a separate desktop app.
 
 
@@ -109,12 +109,12 @@ These tools streamline working with Microsoft 365, Graph API, and portal sprawl.
 
 A few active and supportive communities for learning, troubleshooting, and sharing knowledge with emphasis around PowerShell and Microsoft environments.
 
-- **[PowerShell Discord](https://discord.gg/PowerShell)**  
-  - Home to PowerShell enthusiasts, contributors, and even members of the core development team.  
+- **[PowerShell Discord](https://discord.gg/PowerShell)**
+  - Home to PowerShell enthusiasts, contributors, and even members of the core development team.
   - Great place to ask questions no matter how basic. I’ve never been shamed for asking something obvious.
 
-- **[WinAdmins Discord](https://discord.gg/winadmins)**  
-  - Focused on Windows system administration, with many members working in MSP environments.  
+- **[WinAdmins Discord](https://discord.gg/winadmins)**
+  - Focused on Windows system administration, with many members working in MSP environments.
   - Includes active Microsoft MVPs and employees. Most discussion happens during US East Coast business hours.
 
 
@@ -137,8 +137,8 @@ A few active and supportive communities for learning, troubleshooting, and shari
 - **[PowerShell Conferences EU](https://www.youtube.com/@PowerShellConferenceEU/playlists)**
 
 - **[Getting Started with Graph](https://www.youtube.com/playlist?list=PLKROqDcmQsFls8cPHk3HFz2mUURHx46_O)**
-  > While you can interact with Graph directly using `Invoke-RestMethod` or other programming languages, I consider PowerShell and Graph inseparable in modern environments.  
-  > 
+  > While you can interact with Graph directly using `Invoke-RestMethod` or other programming languages, I consider PowerShell and Graph inseparable in modern environments.
+  >
   > If you're working in PowerShell and managing Microsoft 365—even minimally—you'll almost certainly rely on Microsoft Graph. Unless you're in a fully on-prem setup with no M365 presence, you should know how to get started with it.
 
 ## 🌐 Websites ##
@@ -191,7 +191,7 @@ If you find VSCode too developer-oriented or you miss ISE’s simplicity—espec
 
 # 💻 Working with PowerShell
 
-> **Two PowerShell Versions**  
+> **Two PowerShell Versions**
 > Windows PowerShell (`powershell.exe`) is built into the OS, while PowerShell 7+ (`pwsh.exe`) is cross-platform and must be installed separately. Most modern modules (post-2020) are designed for PowerShell 7.
 
 Install PowerShell 7 and set it as your default environment before installing modules—it will simplify your experience and avoid compatibility headaches. For legacy modules that only work with Windows PowerShell, use the `-UseWindowsPowerShell` switch when importing them.
@@ -251,7 +251,7 @@ These modules are foundational to automation, Microsoft 365, and security-relate
 
 ## 🎯 Interview Prep
 
-Even with hands-on experience, it helps to prep for interviews to avoid stumbling through familiar topics.  
+Even with hands-on experience, it helps to prep for interviews to avoid stumbling through familiar topics.
 I recommend reviewing [this M365 interview question guide](https://www.aguidetocloud.com/interview-questions/microsoft-365-interview-questions) as a refresher.
 
 # 🛠️ Useful Non-Portal Microsoft Tools
@@ -272,16 +272,16 @@ Helps troubleshoot Exchange, Teams, DNS, and mail flow issues. I often forget th
 
 ## 🏗️ Lab Setup
 
-- [**Hydration Kit for Windows Server 2022**](https://github.com/DeploymentResearch/HydrationKitWS2022)  
+- [**Hydration Kit for Windows Server 2022**](https://github.com/DeploymentResearch/HydrationKitWS2022)
   - Creates a fully on-prem mock lab: AD, SCCM, SQL, and Windows clients.
 
-- [**Microsoft 365 Test Environment**](https://github.com/DevClate/365AutomatedLab)  
+- [**Microsoft 365 Test Environment**](https://github.com/DevClate/365AutomatedLab)
   - For automating setup of a full M365 lab tenant—especially useful now that Microsoft has stopped issuing dev tenants.
 
-- [**Cybersecurity Lab by Ben Heater**](https://benheater.com/proxmox-laptop-cybersecurity-lab/)  
+- [**Cybersecurity Lab by Ben Heater**](https://benheater.com/proxmox-laptop-cybersecurity-lab/)
   - Uses Proxmox with Wazuh SIEM and penetration testing VMs for a home lab with a security focus.
 
-- [**Ludus Cloud Lab**](https://docs.ludus.cloud/docs/category/quick-start)  
+- [**Ludus Cloud Lab**](https://docs.ludus.cloud/docs/category/quick-start)
   - Proxmox-based turnkey lab solution. Be aware—it takes full control of the host, so not ideal if you're running other workloads.
 
 
@@ -300,27 +300,34 @@ For when you set up the lab, now what?
 
 ## 🤖 MCPs (Model-Context-Protocol)
 
-Listed under test lab resources since MCPs are proof-of-concept tools and **not recommended for production without evaluation**.  
+Listed under test lab resources since MCPs are proof-of-concept tools and **not recommended for production without evaluation**.
 [Model-Context-Protocol](https://modelcontextprotocol.io/introduction) is an open standard introduced by Anthropic to help large language models (LLMs) interact more effectively with data sources using natural language.
 
 MCPs shine in **read operations and data analysis**, allowing users to query environments like Entra or Active Directory without needing deep scripting or portal experience. However, performance on **write operations** is currently lacking—batch tasks like adding group members can be slow and inefficient.
 
 ### 📱 Available MCP Projects
 
-- [**Lokka**](https://lokka.dev/)  
-  - MCP for Entra/Azure by Merill Fernando.  
+- [**Lokka**](https://lokka.dev/)
+  - MCP for Entra/Azure by Merill Fernando.
   I wrote about my setup experience in [this post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/). Excellent for querying Entra data via natural language.
 
-- [**Koppla**](https://lazyadmin.nl/koppla/)  
-  - MCP for on-prem Active Directory by Microsoft MVP Ruud.  
+- [**Koppla**](https://lazyadmin.nl/koppla/)
+  - MCP for on-prem Active Directory by Microsoft MVP Ruud.
   Built-in guardrails help, but still requires careful review before any production usage.
 
-- [**Official Azure MCP**](https://github.com/Azure/azure-mcp)  
-  - Released by Microsoft with an in-depth [blog post](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).  
+- [**Official Azure MCP**](https://github.com/Azure/azure-mcp)
+  - Released by Microsoft with an in-depth [blog post](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).
   Represents the most formal implementation of MCP so far.
 
-- [**PSMCP**](https://github.com/dfinke/PSMCP)  
-  - Created by MVP Doug Finke.  
+- [**Microsoft Learn MCP**](https://github.com/microsoftdocs/mcp)
+  - Cloud-hosted MCP server providing AI assistants and IDEs with real-time access to official Microsoft documentation (Microsoft Learn, Azure, Microsoft 365, and more).
+  - Enables semantic search and retrieval of up-to-date, authoritative Microsoft docs content via the Model Context Protocol.
+  - Designed for integration with tools like GitHub Copilot, Cursor, and Claude Desktop.
+  - Returns high-quality, contextually relevant documentation chunks for grounding AI responses.
+  - Public Preview; implementation and endpoints may change before GA.
+
+- [**PSMCP**](https://github.com/dfinke/PSMCP)
+  - Created by MVP Doug Finke.
   Lets you define PowerShell functions with descriptive comments, then query them using natural language. Note: functions must be declared `global` to be accessible.
 
 
@@ -471,24 +478,24 @@ Many start with WGU but stall due to life circumstances or poor planning. With t
 
 ### 📋 Pre-WGU Prep
 
-1. **[Sophia.org](https://www.sophia.org/)**  
+1. **[Sophia.org](https://www.sophia.org/)**
    - ~$300 for 4 months of unlimited, self-paced courses.
-   - Many of these credits transfer to WGU.  
+   - Many of these credits transfer to WGU.
    - Similar to CLEP/DANTES (for military learners) and requires no proctoring.
    - You can take two courses at a time.
 
    [Check transfer eligibility here.](https://partners.wgu.edu/transferring-page-preview?stateId=80&instId=796)
 
-2. **[WGU Academy](https://www.wgu.edu/academy.html)**  
-   - $99 for a 2-month block covering one course.  
-   - Provides structured entry into WGU and credits toward your degree.  
+2. **[WGU Academy](https://www.wgu.edu/academy.html)**
+   - $99 for a 2-month block covering one course.
+   - Provides structured entry into WGU and credits toward your degree.
    - The $99 is reimbursed upon official enrollment.
 
-3. **Transferable Certifications**  
-   - Many industry certs you've already earned can replace WGU course requirements.  
+3. **Transferable Certifications**
+   - Many industry certs you've already earned can replace WGU course requirements.
    [Check accepted certs here.](https://www.wgu.edu/admissions/transfers/wgu-transcript-request/transferable-certifications.html)
 
-4. **Existing College Credit**  
+4. **Existing College Credit**
    - If you already have an Associate’s degree or previous coursework, that may count too.
 
 ### 📅 Enrollment Timing

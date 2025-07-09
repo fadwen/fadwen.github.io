@@ -308,16 +308,22 @@ MCPs shine in **read operations and data analysis**, allowing users to query env
 ### 📱 Available MCP Projects
 
 - [**Lokka**](https://lokka.dev/)
-  - MCP for Entra/Azure by Merill Fernando.
-  I wrote about my setup experience in [this post](https://www.techbyjeff.net/using-a-mcp-to-query-entra-with-natural-language/). Excellent for querying Entra data via natural language.
+  - Cloud-hosted MCP server for Microsoft Entra (Azure AD) environments, developed by Merill Fernando.
+  - Enables natural language querying of Entra tenant data (users, groups, roles, devices) via the Model Context Protocol.
+  - Integrates with AI assistants and IDEs for real-time, context-aware access to Entra directory information.
+  - Open source, with a focus on read operations and rapid prototyping for Entra data analysis.
 
 - [**Koppla**](https://lazyadmin.nl/koppla/)
-  - MCP for on-prem Active Directory by Microsoft MVP Ruud.
-  Built-in guardrails help, but still requires careful review before any production usage.
+  - MCP server for on-premises Active Directory, created by Microsoft MVP Ruud.
+  - Allows AI assistants and compatible clients to query Active Directory objects (users, groups, computers) using natural language.
+  - Implements guardrails and access controls to help prevent accidental modification of directory data.
+  - Designed for safe experimentation and proof-of-concept use in lab or test environments.
 
 - [**Official Azure MCP**](https://github.com/Azure/azure-mcp)
-  - Released by Microsoft with an in-depth [blog post](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/?WT.mc_id=AZ-MVP-5004796).
-  Represents the most formal implementation of MCP so far.
+  - Microsoft’s reference implementation of the Model Context Protocol for Azure.
+  - Provides a standardized MCP server for accessing Azure resource data and metadata via AI assistants and IDEs.
+  - Supports semantic search and retrieval of Azure resource information, with extensibility for custom data sources.
+  - Includes documentation, deployment instructions, and a sample client for integration and testing.
 
 - [**Microsoft Learn MCP**](https://github.com/microsoftdocs/mcp)
   - Cloud-hosted MCP server providing AI assistants and IDEs with real-time access to official Microsoft documentation (Microsoft Learn, Azure, Microsoft 365, and more).
@@ -327,8 +333,11 @@ MCPs shine in **read operations and data analysis**, allowing users to query env
   - Public Preview; implementation and endpoints may change before GA.
 
 - [**PSMCP**](https://github.com/dfinke/PSMCP)
-  - Created by MVP Doug Finke.
-  Lets you define PowerShell functions with descriptive comments, then query them using natural language. Note: functions must be declared `global` to be accessible.
+  - Open-source MCP server for PowerShell, created by MVP Doug Finke.
+  - Lets you define PowerShell functions with descriptive comments, then query them using natural language through the Model Context Protocol.
+  - Supports dynamic discovery and invocation of global PowerShell functions from AI assistants and compatible clients.
+  - Ideal for rapid prototyping, automation, and extending PowerShell environments with natural language interfaces.
+  - Note: Functions must be declared `global` to be accessible by the MCP server.
 
 
 
